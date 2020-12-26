@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Nova\AboutUs;
+use App\Nova\HomeBanner;
+use App\Nova\User;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Cards\Help;
 use Laravel\Nova\Nova;
@@ -87,6 +90,10 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     public function register()
     {
-        //
+        Nova::resources([
+            HomeBanner::class,
+            AboutUs::class,
+            User::class
+        ]);
     }
 }
