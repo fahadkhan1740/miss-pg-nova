@@ -3,19 +3,23 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class AboutUs extends Resource
+class NewsEvents extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Models\AboutUs::class;
+    public static $model = \App\Models\NewsEvents::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -47,8 +51,11 @@ class AboutUs extends Resource
                 'en' => 'English',
                 'ar' => 'Arabic',
             ])->rules('required'),
-            Trix::make('Overview')->alwaysShow(),
-            Trix::make('Mission & Vision', 'mission_vision')->alwaysShow(),
+            Text::make('Title')->rules('required', 'string'),
+            Textarea::make('Short Description')->rules('required', 'string', 'max:255'),
+            Trix::make('Long Description')->rules('required'),
+            Image::make('Banner', 'banner_path')->disk('public'),
+            Boolean::make('Is Published', 'status')->default(true),
         ];
     }
 
@@ -98,17 +105,17 @@ class AboutUs extends Resource
 
     public static function label(): string
     {
-        return 'About Us';
+        return 'News & Events';
     }
 
     public static function singularLabel()
     {
-        return 'About Us';
+        return 'News & Events';
     }
 
     public static function authorizedToCreate(Request $request): bool
     {
-        return !(\App\Models\AboutUs::query()->count() > 1);
+        return !(\App\Models\NewsEvents::query()->count() > 1);
     }
 
     public function authorizedToDelete(Request $request): bool
