@@ -176,51 +176,9 @@
                                 <span>Who we are</span>
                                 <h3 class="padding-top-3">Welcome to Miss Platinum Health Club!</h3>
 
-                                <p>
-                                    We are proud to be one of the most prestigious all-female Health & Fitness gym in
-                                    Kuwait
-                                    today, The club is equipped with the latest sports American brand ( Life fitness )
-                                    gym
-                                    equipment to ensure the safety of our members. The club boasts of vast free weights,
-                                    strengths and freestyle areas as well as luxurious & spacious changing rooms with
-                                    sauna and
-                                    bath; making it a complete health solutions haven for all ladies desiring fitness
-                                    with
-                                    exercise.
-                                </p>
-
-                                <p>
-                                    The gym holds nine studios (yoga, dance, boxing, spinning, pool, aerobic, and
-                                    squash), a
-                                    power lifting area, kids club, sauna and steam room, cafe, supplement fitness store,
-                                    an open
-                                    area rooftop, Parking and even a salon and spa.
-                                </p>
-
-                                <p>
-                                    To achieve your fitness goals, we are fully
-                                    equipped with the latest and highest standard of equipment, certified
-                                    instructors with creative and inventive training methods,also provide the ultimate
-                                    fitness experience.
-                                </p>
-
-                                <p>
-                                    Miss Platinum offers a range of classes from Zumba to Aqua Aerobics to Spinning,
-                                    Boxing and whatever you're looking for, you'll find here!
-                                </p>
-
-                                <p>
-                                    We also deliver customized training packages such as private workout classes,
-                                    tailor-made diet and exercise plans as well as InBody measurements.
-                                </p>
-
-                                <p>
-                                    Make your way to our prove list and packages and come join our family!
-                                </p>
-
-                                <p dir="ltr">
-                                    #Iam_missplatinum
-                                </p>
+                                <div style="color: black !important;">
+                                    {!! $aboutUs->overview !!}
+                                </div>
                             </div>
                         </div>
                     </div>
