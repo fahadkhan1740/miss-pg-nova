@@ -167,8 +167,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-xl-5">
                             <div class="left-content-area" id="twentytwenty-container">
-                                <img src="{{ asset('img/home/before.jpg') }}" alt="editing company image">
-                                <img src="{{ asset('img/home/after.jpg') }}" alt="editing company image">
+                                <img src="{{ asset($aboutUs->before_image_path) }}" alt="editing company image">
+                                <img src="{{ asset($aboutUs->after_image_path) }}" alt="editing company image">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-7">
