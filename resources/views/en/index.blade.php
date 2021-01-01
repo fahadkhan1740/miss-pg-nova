@@ -127,10 +127,9 @@
 
         <div class="banner-small-slider">
             <div class="small-slider">
-                <div class="slider-image1"><img src="{{ asset('img/home/sm-slider/1') }}.jpg" alt=""></div>
-                <div class="slider-image1"><img src="{{ asset('img/home/sm-slider/2') }}.jpg" alt=""></div>
-                <div class="slider-image1"><img src="{{ asset('img/home/sm-slider/3') }}.jpg" alt=""></div>
-                <div class="slider-image1"><img src="{{ asset('img/home/sm-slider/4') }}.jpg" alt=""></div>
+                @foreach($banners as $banner)
+                    <div class="slider-image1"><img src="{{ asset($banner->path) }}" alt=""></div>
+                @endforeach
             </div>
             <div class="controler-wrapper d-none d-lg-block">
                 <div class="progressbar">
