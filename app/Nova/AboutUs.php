@@ -19,6 +19,13 @@ class AboutUs extends Resource
     public static $model = \App\Models\AboutUs::class;
 
     /**
+     * Custom priority level of the resource.
+     *
+     * @var int
+     */
+    public static $priority = 3;
+
+    /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string

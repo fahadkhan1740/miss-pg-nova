@@ -20,6 +20,13 @@ class HomeBanner extends Resource
     public static $model = \App\Models\HomeBanner::class;
 
     /**
+     * Custom priority level of the resource.
+     *
+     * @var int
+     */
+    public static $priority = 2;
+
+    /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string

@@ -18,6 +18,13 @@ class User extends Resource
     public static $model = \App\Models\User::class;
 
     /**
+     * Custom priority level of the resource.
+     *
+     * @var int
+     */
+    public static $priority = 1;
+
+    /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
