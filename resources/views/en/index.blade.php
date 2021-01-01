@@ -205,87 +205,62 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="row d-flex justify-content-between">
-                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                <div class="service-box-style-01">
-                                    <div class="sb-icon">
-                                        <a href="#"><i class="flaticon-weight" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="sb-content">
-                                        <h4 class="title">Strength equipment</h4>
-                                        <p>Praesent a diam at velit finibus vehicula sit amet eu dui. Vestibulum rutrum
-                                            dignissim arcu, vitae convallis</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                <div class="service-box-style-01">
-                                    <div class="sb-icon">
-                                        <a href="#"><i class="flaticon-gym-1" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="sb-content">
-                                        <h4 class="title">Gym equipment</h4>
-                                        <p>Praesent a diam at velit finibus vehicula sit amet eu dui. Vestibulum rutrum
-                                            dignissim arcu, vitae convallis</p>
+                            @foreach($services->take(2) as $service)
+                                <div class="col-xl-3 col-lg-6 col-md-6">
+                                    <div class="service-box-style-01">
+                                        <div class="sb-icon">
+                                            <a href="#"><i class="flaticon-weight" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="sb-content">
+                                            <h4 class="title">{{ $service->title }}</h4>
+                                            <div style="color: black !important;">
+                                                {!! $service->short_description !!}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            @endforeach
+
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="row d-flex justify-content-between">
-                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                <div class="service-box-style-01">
-                                    <div class="sb-icon">
-                                        <a href="#"><i class="flaticon-woman" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="sb-content">
-                                        <h4 class="title">Health equipment</h4>
-                                        <p>Praesent a diam at velit finibus vehicula sit amet eu dui. Vestibulum rutrum
-                                            dignissim arcu, vitae convallis</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                <div class="service-box-style-01">
-                                    <div class="sb-icon">
-                                        <a href="#"><i class="flaticon-weightlifting" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="sb-content">
-                                        <h4 class="title">Weight equipment</h4>
-                                        <p>Praesent a diam at velit finibus vehicula sit amet eu dui. Vestibulum rutrum
-                                            dignissim arcu, vitae convallis</p>
+                            @foreach($services->skip(2)->take(2) as $service)
+                                <div class="col-xl-3 col-lg-6 col-md-6">
+                                    <div class="service-box-style-01">
+                                        <div class="sb-icon">
+                                            <a href="#"><i class="flaticon-weight" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="sb-content">
+                                            <h4 class="title">{{ $service->title }}</h4>
+                                            <div style="color: black !important;">
+                                                {!! $service->short_description !!}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="row d-flex justify-content-between">
-                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                <div class="service-box-style-01">
-                                    <div class="sb-icon">
-                                        <a href="#"><i class="flaticon-gym" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="sb-content">
-                                        <h4 class="title">Energy equipment</h4>
-                                        <p>Praesent a diam at velit finibus vehicula sit amet eu dui. Vestibulum rutrum
-                                            dignissim arcu, vitae convallis</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                <div class="service-box-style-01">
-                                    <div class="sb-icon">
-                                        <a href="#"><i class="flaticon-weight-lifting" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="sb-content">
-                                        <h4 class="title">Fitness equipment</h4>
-                                        <p>Praesent a diam at velit finibus vehicula sit amet eu dui. Vestibulum rutrum
-                                            dignissim arcu, vitae convallis</p>
+                            @foreach($services->skip(4)->take(2) as $service)
+                                <div class="col-xl-3 col-lg-6 col-md-6">
+                                    <div class="service-box-style-01">
+                                        <div class="sb-icon">
+                                            <a href="#"><i class="flaticon-weight" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="sb-content">
+                                            <h4 class="title">{{ $service->title }}</h4>
+                                            <div style="color: black !important;">
+                                                {!! $service->short_description !!}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            @endforeach
+
                         </div>
                     </div>
                 </div>

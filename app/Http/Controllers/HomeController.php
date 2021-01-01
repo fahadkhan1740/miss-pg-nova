@@ -12,9 +12,7 @@ class HomeController extends Controller
     {
         $aboutUs = AboutUs::locale(app()->getLocale())->first();
 
-        $services = Service::active()->take(6)->get();
-
-//        return $services;
+        $services = Service::locale(app()->getLocale())->active()->take(6)->get();
 
         return view(app()->getLocale().'.index')
             ->with('aboutUs', $aboutUs)
