@@ -23,4 +23,5 @@ mix.copyDirectory('resources/css/ar', 'public/ar/css');
 mix.copyDirectory('resources/js/ar', 'public/ar/js');
 
 mix.copyDirectory('resources/img', 'public/img');
-mix.copyDirectory('resources/fonts', 'public/fonts');
+mix.copyDirectory('resources/fonts', 'public/en/fonts');
+mix.copyDirectory('resources/fonts', 'public/ar/fonts');

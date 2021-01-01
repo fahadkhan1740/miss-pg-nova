@@ -75,10 +75,6 @@
             <div class="collapse navbar-collapse" id="billatrail_main_menu">
                 <ul class="navbar-nav menu-open">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('about', ['locale' => 'en']) }}">نبذة عنا</a></li>
-                    <li><a href="{{ route('classes', ['locale' => 'en']) }}">Classes</a></li>
-                    <li><a href="{{ route('eventNews', ['locale' => 'en']) }}">Event & News</a></li>
-                    <li><a href="{{ route('beMember', ['locale' => 'en']) }}">Be a Member</a></li>
                     <li><a href="{{ route('contact', ['locale' => 'en']) }}">إتصل بنا</a></li>
                 </ul>
             </div>
