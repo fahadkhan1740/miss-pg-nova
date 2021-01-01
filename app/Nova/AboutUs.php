@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -47,6 +48,9 @@ class AboutUs extends Resource
                 'en' => 'English',
                 'ar' => 'Arabic',
             ])->rules('required'),
+            Image::make('Banner', 'banner_path')->disk('public'),
+            Image::make('Before Image', 'before_image_path')->disk('public'),
+            Image::make('After Image', 'after_image_path')->disk('public'),
             Trix::make('Overview')->alwaysShow(),
             Trix::make('Mission & Vision', 'mission_vision')->alwaysShow(),
         ];
