@@ -210,7 +210,7 @@
                                 <div class="col-xl-3 col-lg-6 col-md-6">
                                     <div class="service-box-style-01">
                                         <div class="sb-icon">
-                                            <a href="#"><i class="flaticon-weight" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="{{ $service->icon ?? 'flaticon-weight' }}" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="sb-content">
                                             <h4 class="title">{{ $service->title }}</h4>
@@ -229,7 +229,7 @@
                                 <div class="col-xl-3 col-lg-6 col-md-6">
                                     <div class="service-box-style-01">
                                         <div class="sb-icon">
-                                            <a href="#"><i class="flaticon-weight" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="{{ $service->icon ?? 'flaticon-weight' }}" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="sb-content">
                                             <h4 class="title">{{ $service->title }}</h4>
@@ -249,7 +249,7 @@
                                 <div class="col-xl-3 col-lg-6 col-md-6">
                                     <div class="service-box-style-01">
                                         <div class="sb-icon">
-                                            <a href="#"><i class="flaticon-weight" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="{{ $service->icon ?? 'flaticon-weight' }}" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="sb-content">
                                             <h4 class="title">{{ $service->title }}</h4>
