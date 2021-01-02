@@ -2,10 +2,11 @@
     <!-- breadcrumb area -->
     <div class="breadcrumb-style-1 contact-breadcrumb-overlay" style="background-image:url(/img/bg/contact.png);">
         <div class="breadcrumb-inner">
-            <h1 class="page-title">Contact Us</h1>
+            <h1 class="page-title">{{ __('custom.links.contact') }}</h1>
             <ul class="page-list">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('contact', ['locale' => app()->getLocale()]) }}">Contact Us</a></li>
+                <li><a href="{{ route('home', ['locale' => 'en']) }}">{{ __('custom.links.home') }}</a></li>
+                <li><a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.contact') }}</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -65,12 +66,9 @@
                         <div class="contact-icon">
                             <i class="flaticon-placeholder"></i>
                         </div>
-                        <h3 class="cb-title">Office Address</h3>
+                        <h3 class="cb-title">{{ __('custom.contact_us.office_address') }}</h3>
                         <span>
-                            Miss Platinum, <br>
-                            Sabah Al Salem, Block-1, <br>
-                            Opposite Al Jamera Beach Hotel <br>
-                            Free parking available
+                            {!! $contact->address !!}
                         </span>
                         <h5> <a href="#">Get In Here</a></h5>
                     </div>
@@ -80,8 +78,8 @@
                         <div class="contact-icon">
                             <i class="flaticon-search"></i>
                         </div>
-                        <h3 class="cb-title">Email</h3>
-                        <span>missplatinum@alnawadiolding.com <br> www.missplatinum.com</span>
+                        <h3 class="cb-title">{{ __('custom.contact_us.email') }}</h3>
+                        <span>{{ $contact->email }} <br> {{ $contact->website }}</span>
                         <h5> <a href="#">Get In Here</a></h5>
                     </div>
                 </div>
@@ -90,8 +88,9 @@
                         <div class="contact-icon">
                             <i class="flaticon-phone-call"></i>
                         </div>
-                        <h3 class="cb-title">Phone</h3>
-                        <span>+965 2292 2570</span>
+                        <h3 class="cb-title">{{ __('custom.contact_us.phone') }}</h3>
+                        <span>{{ $contact->phone_1 }}</span>
+                        <span>{{ $contact->phone_2 }}</span>
                         <h5> <a href="#">Get In Here</a></h5>
                     </div>
                 </div>

@@ -24,5 +24,5 @@ Route::middleware('set.locale')->group(static function () {
     Route::get('branches/{id}', [BranchController::class, 'show'])->name('branch.show');
     Route::get('news-events', [NewsAndEventController::class, 'index'])->name('news-events');
     Route::get('news-events/{id}', [NewsAndEventController::class, 'show'])->name('news-events.show');
-    Route::get('contact-us', [ContactController::class, 'contact'])->name('contact');
+    Route::get('contact-us', [ContactController::class, 'index'])->name('contact');
 });

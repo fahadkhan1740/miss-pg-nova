@@ -88,5 +88,13 @@ return [
 
     'news_events' => [
         'latest_posts' => 'آخر المشاركات'
+    ],
+
+    'contact_us' => [
+        'drop_us_a_line' => 'ترك لنا خطا',
+        'office_address' => 'عنوان المكتب',
+        'email' => 'البريد الإلكتروني',
+        'Phone' => 'رقم الهاتف'
     ]
+
 ];

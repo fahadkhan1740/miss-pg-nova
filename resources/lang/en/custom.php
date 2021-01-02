@@ -88,5 +88,12 @@ return [
 
     'news_events' => [
         'latest_posts' => 'Latest Posts'
+    ],
+
+    'contact_us' => [
+        'drop_us_a_line' => 'Drop Us A Line',
+        'office_address' => 'Office Address',
+        'email' => 'Email',
+        'phone' => 'Phone'
     ]
 ];

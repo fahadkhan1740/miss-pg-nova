@@ -2,10 +2,11 @@
     <!-- breadcrumb area -->
     <div class="breadcrumb-style-1 contact-breadcrumb-overlay" style="background-image:url(/img/bg/contact.png);">
         <div class="breadcrumb-inner">
-            <h1 class="page-title">إتصل بنا</h1>
+            <h1 class="page-title">{{ __('custom.links.contact') }}</h1>
             <ul class="page-list">
-                <li><a href="{{ route('home', ['locale' => app()->getLocale()]) }}">Home</a></li>
-                <li><a href="{{ route('contact', ['locale' => app()->getLocale()]) }}">إتصل بنا</a></li>
+                <li><a href="{{ route('home', ['locale' => app()->getLocale()]) }}">{{ __('custom.links.home') }}</a></li>
+                <li><a href="{{ route('news-events', ['locale' => app()->getLocale()]) }}">{{ __('custom.links.contact') }}</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -19,7 +20,7 @@
                     <div class="contact-top">
                         <div class="col-lg-12">
                             <div class="contact-title text-center">
-                                <h2 class="title">Drop us a line</h2>
+                                <h2 class="title">{{ __('custom.contact_us.drop_us_a_line') }}</h2>
                                 <p class="subtitle">If you got any questions, or you just want to say hello to us. feel
                                     free to send us a message</p>
                             </div>
@@ -75,8 +76,10 @@
                         <div class="contact-icon">
                             <i class="flaticon-placeholder"></i>
                         </div>
-                        <h3 class="cb-title">Office Address</h3>
-                        <span>12/A, Pro Street City, Newyork <br> United States</span>
+                        <h3 class="cb-title">{{ __('custom.contact_us.office_address') }}</h3>
+                        <span>
+                            {!! $contact->address !!}
+                        </span>
                         <h5><a href="#">Get In Here</a></h5>
                     </div>
                 </div>
@@ -85,8 +88,8 @@
                         <div class="contact-icon">
                             <i class="flaticon-search"></i>
                         </div>
-                        <h3 class="cb-title">Email</h3>
-                        <span>information@zarxio.com <br> www.zarxio.com</span>
+                        <h3 class="cb-title">{{ __('custom.contact_us.email') }}</h3>
+                        <span>{{ $contact->email }} <br> {{ $contact->website }}</span>
                         <h5><a href="#">Get In Here</a></h5>
                     </div>
                 </div>
@@ -95,8 +98,9 @@
                         <div class="contact-icon">
                             <i class="flaticon-phone-call"></i>
                         </div>
-                        <h3 class="cb-title">Phone</h3>
-                        <span>+880 01318 55 66 00 <br>+880 123 123 123</span>
+                        <h3 class="cb-title">{{ __('custom.contact_us.phone') }}</h3>
+                        <span style="direction: ltr">{{ $contact->phone_1 }}</span>
+                        <span style="direction: ltr">{{ $contact->phone_2 }}</span>
                         <h5><a href="#">Get In Here</a></h5>
                     </div>
                 </div>
