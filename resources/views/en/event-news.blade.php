@@ -184,7 +184,7 @@
                         </div>
                         <div class="widget latest-post-widget">
                             <div class="eidget-title">
-                                <h1>Latest posts</h1>
+                                <h1>{{ __('custom.news_events.latest_posts') }}</h1>
                             </div>
                             @foreach($news as $new)
                                 <div class="share-img-item">
@@ -202,7 +202,7 @@
                         </div>
 
                         <div class="widget widget_categories">
-                            <h5 class="widget-title">Categories</h5>
+                            <h5 class="widget-title">{{ __('custom.categories') }}</h5>
                             <ul class="cat-menu">
                                 <li><a href="#">Boxing</a></li>
                                 <li><a href="#">Street</a></li>

@@ -84,5 +84,9 @@ return [
     'home' => [
         'services_we_provide' => 'Services We Provide',
         'services' => 'Our Services'
+    ],
+
+    'news_events' => [
+        'latest_posts' => 'Latest Posts'
     ]
 ];

@@ -84,5 +84,9 @@ return [
     'home' => [
         'services_we_provide' => 'الخدمات التي نقدمها',
         'services' => 'خدماتنا'
+    ],
+
+    'news_events' => [
+        'latest_posts' => 'آخر المشاركات'
     ]
 ];
