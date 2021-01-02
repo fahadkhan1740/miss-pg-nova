@@ -6,7 +6,7 @@
         <div class="breadcrumb-inner">
             <h1 class="page-title">{{ __('custom.links.about') }}</h1>
             <ul class="page-list">
-                <li><a href="/">{{ __('custom.links.home') }}</a></li>
+                <li><a href="{{ route('home') }}">{{ __('custom.links.home') }}</a></li>
                 <li><a href="{{ route('about', ['locale' => 'en']) }}">{{ __('custom.links.about') }}</a></li>
             </ul>
         </div>
