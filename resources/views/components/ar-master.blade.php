@@ -75,7 +75,8 @@
             <div class="collapse navbar-collapse" id="billatrail_main_menu">
                 <ul class="navbar-nav menu-open">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('contact', ['locale' => 'en']) }}">إتصل بنا</a></li>
+                    <li><a href="{{ route('contact', ['locale' => 'ar']) }}">إتصل بنا</a></li>
+                    <li><a href="{{ route('home', ['locale' => 'en']) }}">English</a></li>
                 </ul>
             </div>
         </div>

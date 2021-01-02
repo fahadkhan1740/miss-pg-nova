@@ -76,6 +76,7 @@
                 <ul class="navbar-nav menu-open">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li><a href="{{ route('contact', ['locale' => 'en']) }}">Contact Us</a></li>
+                    <li><a href="{{ route('home', ['locale' => 'ar']) }}">العربي</a></li>
                 </ul>
             </div>
         </div>
