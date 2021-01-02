@@ -195,8 +195,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title text-center padding-bottom-35">
-                        <p class="subtitle">Service we provide</p>
-                        <h1 class="title">Our Services</h1>
+                        <p class="subtitle">{{ __('custom.home.services_we_provide') }}</p>
+                        <h1 class="title">{{ __('custom.home.services') }}</h1>
                     </div>
                 </div>
             </div>
