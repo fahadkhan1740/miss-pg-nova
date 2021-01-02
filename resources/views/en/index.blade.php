@@ -178,6 +178,10 @@
                                 <div style="color: black !important;">
                                     {!! $aboutUs->overview !!}
                                 </div>
+
+                                <p dir="ltr">
+                                    #Iam_missplatinum
+                                </p>
                             </div>
                         </div>
                     </div>
