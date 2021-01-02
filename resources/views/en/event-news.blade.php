@@ -34,9 +34,9 @@
                                                                     href="#">{{ $new->user->name ?? 'User' }}</a></span>
                                                         </h6>
                                                     </div>
-                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <h5><a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}">{{ $new->title }}</a></h5>
                                                     <p>{{ substr($new->short_description,0, 50) }}...</p>
-                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                    <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                                 <div class="blog-img">
                                                     <img src="{{ asset($new->banner_path) }}" alt="">
@@ -56,9 +56,9 @@
                                                                 href="#">{{ $new->created_at->format('d M,Y') }}</a><a
                                                                 href="#">{{ $new->user->name ?? 'User' }}</a></h6>
                                                     </div>
-                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <h5><a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}">{{ $new->title }}</a></h5>
                                                     <p>{{ substr($new->short_description,0, 50) }}...</p>
-                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                    <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,9 +76,9 @@
                                                                 href="#">{{ $new->created_at->format('d M,Y') }}</a><a
                                                                 href="#">{{ $new->user->name ?? 'User' }}</a></h6>
                                                     </div>
-                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <h5><a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}">{{ $new->title }}</a></h5>
                                                     <p>{{ substr($new->short_description,0, 50) }}...</p>
-                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                    <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,9 +94,9 @@
                                                                     href="#">{{ $new->user->name ?? 'User' }}</a></span>
                                                         </h6>
                                                     </div>
-                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <h5><a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}">{{ $new->title }}</a></h5>
                                                     <p>{{ substr($new->short_description,0, 50) }}...</p>
-                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                    <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                                 <div class="blog-img">
                                                     <img src="{{ asset($new->banner_path) }}" alt="">
@@ -116,9 +116,9 @@
                                                                     href="#">{{ $new->user->name ?? 'User' }}</a></span>
                                                         </h6>
                                                     </div>
-                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <h5><a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}">{{ $new->title }}</a></h5>
                                                     <p>{{ substr($new->short_description,0, 50) }}...</p>
-                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                    <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                                 <div class="blog-img">
                                                     <img src="{{ asset($new->banner_path) }}" alt="">
@@ -139,9 +139,9 @@
                                                                 href="#">{{ $new->created_at->format('d M,Y') }}</a><a
                                                                 href="#">{{ $new->user->name ?? 'User' }}</a></h6>
                                                     </div>
-                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <h5><a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}">{{ $new->title }}</a></h5>
                                                     <p>{{ substr($new->short_description,0, 50) }}...</p>
-                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                    <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -189,7 +189,8 @@
                             @foreach($news as $new)
                                 <div class="share-img-item">
                                     <div class="img-part">
-                                        <a href="blog-details.html"><img src="{{ asset($new->banner_path) }}"
+                                        <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}"><img
+                                                src="{{ asset($new->banner_path) }}"
                                                                          alt=""></a>
                                     </div>
                                     <div class="content-part">
