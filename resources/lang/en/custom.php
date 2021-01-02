@@ -77,6 +77,10 @@ return [
         'contact' => 'Contact Us'
     ],
 
+    'banner' => [
+        'branch' => 'Branch'
+    ],
+
     'home' => [
         'services_we_provide' => 'Services We Provide',
         'services' => 'Our Services'

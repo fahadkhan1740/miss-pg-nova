@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BranchController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -19,5 +20,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('set.locale')->group(static function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('about-us', [AboutController::class, 'index'])->name('about');
+    Route::get('branches/{id}', [BranchController::class, 'show'])->name('branch.show');
     Route::get('contact-us', [ContactController::class, 'contact'])->name('contact');
 });

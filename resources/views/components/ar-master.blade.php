@@ -76,6 +76,20 @@
                 <ul class="navbar-nav menu-open">
                     <li><a href="{{ route('home', ['locale' => 'ar']) }}">{{ __('custom.links.home') }}</a></li>
                     <li><a href="{{ route('about', ['locale' => 'ar']) }}">{{ __('custom.links.about') }}</a></li>
+                    @if(getBranches()->count() > 0)
+                        <li class="menu-item-has-children">
+                            <a href="#">{{ __('custom.links.branches') }}</a>
+                            <ul class="sub-menu">
+                                @foreach(getBranches() as $branch)
+                                    <li>
+                                        <a href="{{ route('branch.show', ['locale' => 'ar', 'id' => $branch->id]) }}">
+                                            {{ $branch->name }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </li>
+                    @endif
                     <li><a href="{{ route('contact', ['locale' => 'ar']) }}">{{ __('custom.links.contact') }}</a></li>
                     <li><a href="{{ route('home', ['locale' => 'en']) }}">English</a></li>
                 </ul>

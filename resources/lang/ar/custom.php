@@ -77,6 +77,10 @@ return [
         'contact' => 'اتصل بنا'
     ],
 
+    'banner' => [
+        'branch' => 'فرع شجرة'
+    ],
+
     'home' => [
         'services_we_provide' => 'الخدمات التي نقدمها',
         'services' => 'خدماتنا'
