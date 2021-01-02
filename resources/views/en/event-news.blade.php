@@ -3,10 +3,11 @@
     <div class="breadcrumb-style-1 blog-breadcrumb-overlay"
          style="background-image:url(/img/blog/bg.png);">
         <div class="breadcrumb-inner">
-            <h1 class="page-title">Latest News</h1>
+            <h1 class="page-title">{{ __('custom.links.news_events') }}</h1>
             <ul class="page-list margin-bottom-10">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('eventNews') }}">Events & News</a></li>
+                <li><a href="{{ route('home', ['locale' => 'en']) }}">{{ __('custom.links.home') }}</a></li>
+                <li><a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -21,113 +22,130 @@
                         <div class="col-lg-12">
                             <div class="blog-single-item">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="blog-item-inner">
-                                            <div class="blog-detail">
-                                                <div class="blog-meta">
-                                                    <h6><a href="#">Dec 7, 2019</a><span class="float-right text-right"><a
-                                                                href="#">Admin</a></span></h6>
+
+                                    @foreach($news->take(1) as $new)
+                                        <div class="col-lg-4">
+                                            <div class="blog-item-inner">
+                                                <div class="blog-detail">
+                                                    <div class="blog-meta">
+                                                        <h6><a href="#">{{ $new->created_at->format('d M,Y') }}</a>
+                                                            <span
+                                                                class="float-right text-right"><a
+                                                                    href="#">{{ $new->user->name ?? 'User' }}</a></span>
+                                                        </h6>
+                                                    </div>
+                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <p>{{ substr($new->short_description,0, 50) }}...</p>
+                                                    <a href="blog-details.html" class="blog-more">Read More</a>
                                                 </div>
-                                                <h5><a href="blog-details.html">Best Cardio Gym</a></h5>
-                                                <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done
-                                                    a HIIT workout before you would agree.</p>
-                                                <a href="blog-details.html" class="blog-more">Read More</a>
-                                            </div>
-                                            <div class="blog-img">
-                                                <img src="{{ asset('img/blog/blog-sm-item.png') }}" alt="">
+                                                <div class="blog-img">
+                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="blog-item-inner">
-                                            <div class="blog-img">
-                                                <img src="{{ asset('img/blog/blog-lg-item.png') }}" alt="">
-                                            </div>
-                                            <div class="blog-detail">
-                                                <div class="blog-meta">
-                                                    <h6 class="d-flex"><a href="#">Oct 7, 2019</a><a
-                                                            href="#">Admin</a><a href="#">3 Comments</a></h6>
+                                    @endforeach
+                                    @foreach($news->skip(1)->take(1) as $new)
+                                        <div class="col-lg-8">
+                                            <div class="blog-item-inner">
+                                                <div class="blog-img">
+                                                    <img src="{{ asset($new->banner_path) }}" alt="">
                                                 </div>
-                                                <h5><a href="blog-details.html">Best Cardio Exercises</a></h5>
-                                                <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done
-                                                    a HIIT workout before you would agree. Prepared do an dissuade
-                                                    be.</p>
-                                                <a href="blog-details.html" class="blog-more">Read More</a>
+                                                <div class="blog-detail">
+                                                    <div class="blog-meta">
+                                                        <h6 class="d-flex"><a
+                                                                href="#">{{ $new->created_at->format('d M,Y') }}</a><a
+                                                                href="#">{{ $new->user->name ?? 'User' }}</a></h6>
+                                                    </div>
+                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <p>{{ substr($new->short_description,0, 50) }}...</p>
+                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="blog-item-inner">
-                                            <div class="blog-img">
-                                                <img src="{{ asset('img/blog/blog-lg-item.png') }}" alt="">
-                                            </div>
-                                            <div class="blog-detail">
-                                                <div class="blog-meta">
-                                                    <h6 class="d-flex"><a href="#">Oct 09, 2019</a><a href="#">Admin</a><a
-                                                            href="#">3 Comments</a></h6>
+                                    @endforeach
+
+                                    @foreach($news->skip(2)->take(1) as $new)
+                                        <div class="col-lg-8">
+                                            <div class="blog-item-inner">
+                                                <div class="blog-img">
+                                                    <img src="{{ asset($new->banner_path) }}" alt="">
                                                 </div>
-                                                <h5><a href="blog-details.html">Best Cardio Exercises</a></h5>
-                                                <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done
-                                                    a HIIT workout before you would agree. Prepared do an dissuade
-                                                    be.</p>
-                                                <a href="blog-details.html" class="blog-more">Read More</a>
+                                                <div class="blog-detail">
+                                                    <div class="blog-meta">
+                                                        <h6 class="d-flex"><a
+                                                                href="#">{{ $new->created_at->format('d M,Y') }}</a><a
+                                                                href="#">{{ $new->user->name ?? 'User' }}</a></h6>
+                                                    </div>
+                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <p>{{ substr($new->short_description,0, 50) }}...</p>
+                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="blog-item-inner">
-                                            <div class="blog-detail">
-                                                <div class="blog-meta">
-                                                    <h6><a href="#">Sept 07, 2019</a><span
-                                                            class="float-right text-right"><a
-                                                                href="#">Admin</a></span></h6>
+                                    @endforeach
+                                    @foreach($news->skip(3)->take(1) as $new)
+                                        <div class="col-lg-4">
+                                            <div class="blog-item-inner">
+                                                <div class="blog-detail">
+                                                    <div class="blog-meta">
+                                                        <h6><a href="#">{{ $new->created_at->format('d M,Y') }}</a>
+                                                            <span
+                                                                class="float-right text-right"><a
+                                                                    href="#">{{ $new->user->name ?? 'User' }}</a></span>
+                                                        </h6>
+                                                    </div>
+                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <p>{{ substr($new->short_description,0, 50) }}...</p>
+                                                    <a href="blog-details.html" class="blog-more">Read More</a>
                                                 </div>
-                                                <h5><a href="blog-details.html">Something new</a></h5>
-                                                <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done
-                                                    a HIIT workout before you would agree.</p>
-                                                <a href="blog-details.html" class="blog-more">Read More</a>
-                                            </div>
-                                            <div class="blog-img">
-                                                <img src="{{ asset('img/blog/blog-sm-item.png') }}" alt="">
+                                                <div class="blog-img">
+                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="blog-item-inner">
-                                            <div class="blog-detail">
-                                                <div class="blog-meta">
-                                                    <h6><a href="#">Oct 07, 2019</a><span
-                                                            class="float-right text-right"><a
-                                                                href="#">Admin</a></span></h6>
+                                    @endforeach
+
+                                    @foreach($news->skip(4)->take(1) as $new)
+                                        <div class="col-lg-4">
+                                            <div class="blog-item-inner">
+                                                <div class="blog-detail">
+                                                    <div class="blog-meta">
+                                                        <h6><a href="#">{{ $new->created_at->format('d M,Y') }}</a>
+                                                            <span
+                                                                class="float-right text-right"><a
+                                                                    href="#">{{ $new->user->name ?? 'User' }}</a></span>
+                                                        </h6>
+                                                    </div>
+                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <p>{{ substr($new->short_description,0, 50) }}...</p>
+                                                    <a href="blog-details.html" class="blog-more">Read More</a>
                                                 </div>
-                                                <h5><a href="blog-details.html">Make healthy life</a></h5>
-                                                <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done
-                                                    a HIIT workout before you would agree.</p>
-                                                <a href="blog-details.html" class="blog-more">Read More</a>
-                                            </div>
-                                            <div class="blog-img">
-                                                <img src="{{ asset('img/blog/blog-sm-item.png') }}" alt="">
+                                                <div class="blog-img">
+                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="blog-item-inner">
-                                            <div class="blog-img">
-                                                <img src="{{ asset('img/blog/blog-lg-item.png') }}" alt="">
-                                            </div>
-                                            <div class="blog-detail">
-                                                <div class="blog-meta">
-                                                    <h6 class="d-flex"><a href="#">Oct 7, 2019</a><a
-                                                            href="#">Admin</a><a href="#">3 Comments</a></h6>
+                                    @endforeach
+
+                                    @foreach($news->skip(5)->take(1) as $new)
+                                        <div class="col-lg-8">
+                                            <div class="blog-item-inner">
+                                                <div class="blog-img">
+                                                    <img src="{{ asset($new->banner_path) }}" alt="">
                                                 </div>
-                                                <h5><a href="blog-details.html">Best Cardio Exercises</a></h5>
-                                                <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done
-                                                    a HIIT workout before you would agree. Prepared do an dissuade
-                                                    be.</p>
-                                                <a href="blog-details.html" class="blog-more">Read More</a>
+                                                <div class="blog-detail">
+                                                    <div class="blog-meta">
+                                                        <h6 class="d-flex"><a
+                                                                href="#">{{ $new->created_at->format('d M,Y') }}</a><a
+                                                                href="#">{{ $new->user->name ?? 'User' }}</a></h6>
+                                                    </div>
+                                                    <h5><a href="blog-details.html">{{ $new->title }}</a></h5>
+                                                    <p>{{ substr($new->short_description,0, 50) }}...</p>
+                                                    <a href="blog-details.html" class="blog-more">Read More</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -168,71 +186,20 @@
                             <div class="eidget-title">
                                 <h1>Latest posts</h1>
                             </div>
-                            <div class="share-img-item">
-                                <div class="img-part">
-                                    <a href="blog-details.html"><img src="{{ asset('img/blog/latest-post.png') }}"
-                                                                     alt=""></a>
+                            @foreach($news as $new)
+                                <div class="share-img-item">
+                                    <div class="img-part">
+                                        <a href="blog-details.html"><img src="{{ asset($new->banner_path) }}"
+                                                                         alt=""></a>
+                                    </div>
+                                    <div class="content-part">
+                                        <h4>{{ $new->title }}</h4>
+                                        <span class="text">{{ substr($new->short_description,0, 50) }}...</span>
+                                    </div>
                                 </div>
-                                <div class="content-part">
-                                    <h4>People new gym center</h4>
-                                    <span class="text">There are many variations of passages of Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div class="share-img-item">
-                                <div class="img-part">
-                                    <a href="blog-details.html"><img src="{{ asset('img/blog/post2.png') }}" alt=""></a>
-                                </div>
-                                <div class="content-part">
-                                    <h4>Just like a stability ball</h4>
-                                    <span class="text">There are many variations of passages of Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div class="share-img-item">
-                                <div class="img-part">
-                                    <a href="blog-details.html"><img src="{{ asset('img/blog/post3.png') }}" alt=""></a>
-                                </div>
-                                <div class="content-part">
-                                    <h4>Cable Pulley Machines</h4>
-                                    <span class="text">There are many variations of passages of Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div class="share-img-item">
-                                <div class="img-part">
-                                    <a href="blog-details.html"><img src="{{ asset('img/blog/post4.png') }}" alt=""></a>
-                                </div>
-                                <div class="content-part">
-                                    <h4>Train different parts</h4>
-                                    <span class="text">There are many variations of passages of Lorem Ipsum</span>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
-                        <div class="widget">
-                            <div class="thumb only-thumb">
-                                <img src="{{ asset('img/blog/big-thumb.png') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="widget widget_tag_cloud">
-                            <h5 class="widget-title margin-top-50">Popular Tags</h5>
-                            <ul class="tagcloud">
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Travel</a></li>
-                                <li><a href="#">Music</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Travel</a></li>
-                                <li><a href="#">Music</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Travel</a></li>
-                                <li><a href="#">Music</a></li>
-                                <li><a href="#">Music</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Travel</a></li>
-                                <li><a href="#">Music</a></li>
-                                <li><a href="#">Music</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Travel</a></li>
-                                <li><a href="#">Music</a></li>
-                            </ul>
-                        </div>
+
                         <div class="widget widget_categories">
                             <h5 class="widget-title">Categories</h5>
                             <ul class="cat-menu">

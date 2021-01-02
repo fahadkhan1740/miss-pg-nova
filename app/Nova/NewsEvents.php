@@ -120,11 +120,6 @@ class NewsEvents extends Resource
         return 'News & Events';
     }
 
-    public static function authorizedToCreate(Request $request): bool
-    {
-        return !(\App\Models\NewsEvents::query()->count() > 1);
-    }
-
     public function authorizedToDelete(Request $request): bool
     {
         return false;
