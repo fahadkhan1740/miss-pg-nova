@@ -59,11 +59,6 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <div class="widget">
-                                <div class="thumb only-thumb">
-                                    <img src="assets/img/blog/big-thumb.png" alt="">
-                                </div>
-                            </div>
                             <div class="widget widget_categories">
                                 <h5 class="widget-title">{{ __('custom.categories') }}</h5>
                                 <ul class="cat-menu">
