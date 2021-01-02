@@ -68,6 +68,15 @@ return [
     'gold' => 'Gold',
     'platinum' => 'Platinum',
 
+    'links' => [
+        'home' => 'Home',
+        'about' => 'About Us',
+        'branches' => 'Branches',
+        'memberships_packages' => 'Membership & Packages',
+        'news_events' => 'News & Events',
+        'contact' => 'Contact Us'
+    ],
+
     'home' => [
         'services_we_provide' => 'Services We Provide',
         'services' => 'Our Services'

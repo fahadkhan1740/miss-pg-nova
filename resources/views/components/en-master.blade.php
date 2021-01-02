@@ -74,8 +74,9 @@
             </div>
             <div class="collapse navbar-collapse" id="billatrail_main_menu">
                 <ul class="navbar-nav menu-open">
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('contact', ['locale' => 'en']) }}">Contact Us</a></li>
+                    <li><a href="{{ route('home') }}">{{ __('custom.links.home') }}</a></li>
+                    <li><a href="{{ route('about', ['locale' => 'en']) }}">{{ __('custom.links.about') }}</a></li>
+                    <li><a href="{{ route('contact', ['locale' => 'en']) }}">{{ __('custom.links.contact') }}</a></li>
                     <li><a href="{{ route('home', ['locale' => 'ar']) }}">العربي</a></li>
                 </ul>
             </div>

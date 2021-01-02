@@ -68,6 +68,15 @@ return [
     'gold' => 'ذهب',
     'platinum' => 'البلاتين',
 
+    'links' => [
+        'home' => 'الصفحة الرئيسية',
+        'about' => 'معلومات عنا',
+        'branches' => 'الفروع',
+        'memberships_packages' => 'العضوية والحزم',
+        'news_events' => 'الأخبار و الأحداث',
+        'contact' => 'اتصل بنا'
+    ],
+
     'home' => [
         'services_we_provide' => 'الخدمات التي نقدمها',
         'services' => 'خدماتنا'
