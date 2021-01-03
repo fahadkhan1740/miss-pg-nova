@@ -41,27 +41,14 @@
 
         <!-- social icon -->
         <ul class="social-icon">
-            <li class="icon-list">
-                <a href="https://twitter.com/codingeeknet%20" target="_blank" class="icon-text">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-            <li class="icon-list">
-                <a href="https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Miss-Platinum-998615896964320/"
-                   target="_blank" class="icon-text">
-                    <i class="fa fa-facebook-f"></i>
-                </a>
-            </li>
-            <li class="icon-list">
-                <a href="https://www.instagram.com/missplatinumkw/" target="_blank" class="icon-text">
-                    <i class="fa fa-instagram"></i>
-                </a>
-            </li>
-            <li class="icon-list">
-                <a href="https://www.youtube.com/channel/UCz1tS-oRzKeElBOd6pIjgLQ" target="_blank" class="icon-text">
-                    <i class="fa fa-youtube"></i>
-                </a>
-            </li>
+            @foreach($socialMediaLinks as $link)
+                <li class="icon-list">
+                    <a href="{{ $link->link }}"
+                       target="_blank" class="icon-text">
+                        <i class="{{ $link->icon }}"></i>
+                    </a>
+                </li>
+            @endforeach
         </ul>
 
         <!-- scroll down -->

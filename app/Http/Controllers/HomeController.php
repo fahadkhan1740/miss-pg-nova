@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AboutUs;
 use App\Models\HomeBanner;
 use App\Models\Service;
+use App\Models\SocialMediaLink;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,9 +18,12 @@ class HomeController extends Controller
 
         $services = Service::locale(app()->getLocale())->active()->take(6)->get();
 
+        $socialMediaLinks = SocialMediaLink::all();
+
         return view(app()->getLocale().'.index')
             ->with('banners', $homeBanners)
             ->with('aboutUs', $aboutUs)
-            ->with('services', $services);
+            ->with('services', $services)
+            ->with('socialMediaLinks', $socialMediaLinks);
     }
 }
