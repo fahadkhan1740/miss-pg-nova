@@ -20,8 +20,8 @@
                     <div class="contact-top">
                         <div class="col-lg-12">
                             <div class="contact-title text-center">
-                                <h2 class="title">Drop us a line</h2>
-                                <p class="subtitle">If you got any questions, or you just want to say hello to us. feel free to send us a message</p>
+                                <h2 class="title">{{ __('custom.contact_us.drop_us_a_line') }}</h2>
+                                <p class="subtitle">{{ __('custom.contact_us.any_questions') }}</p>
                             </div>
                         </div>
                         <div class="col-lg-10 offset-lg-1">
@@ -43,7 +43,9 @@
                                     </div>
                                 </div>
                                 <div class="btn-wrapper desktop-center margin-bottom-10">
-                                    <button type="submit" class="btn btn-element btn-normal-size btn-main-color">Submit Message</button>
+                                    <button type="submit" class="btn btn-element btn-normal-size btn-main-color">
+                                        {{ __('custom.contact_us.submit_message') }}
+                                    </button>
                                 </div>
                             </form>
                         </div>

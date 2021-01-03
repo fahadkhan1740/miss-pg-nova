@@ -11,8 +11,6 @@ class ContactController extends Controller
     {
         $contact = Contact::locale(app()->getLocale())->first();
 
-//        return $contact;
-
         return view(app()->getLocale(). '.contact')
             ->with('contact', $contact);
     }

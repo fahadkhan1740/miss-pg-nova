@@ -117,7 +117,8 @@
                                     <i class="flaticon-phone-call"></i>
                                 </div>
                                 <div class="details">
-                                    +965 2292 2570
+                                    {{ getContactDetails()->phone_1 }} <br>
+                                    {{ getContactDetails()->phone_2 }}
                                 </div>
                             </li>
                             <li class="single-info-item">
@@ -125,10 +126,7 @@
                                     <i class="flaticon-placeholder"></i>
                                 </div>
                                 <div class="details">
-                                    Miss Platinum, <br>
-                                    Sabah Al Salem, Block-1, <br>
-                                    Opposite Al Jamera Beach Hotel <br>
-                                    Free parking available
+                                    {!! getContactDetails()->address !!}
                                 </div>
                             </li>
                             <li class="single-info-item">
@@ -136,7 +134,7 @@
                                     <i class="flaticon-email"></i>
                                 </div>
                                 <div class="details">
-                                    missplatinum@alnawadiolding.com
+                                    {!! getContactDetails()->email !!}
                                 </div>
                             </li>
                         </ul>

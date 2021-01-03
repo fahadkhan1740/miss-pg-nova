@@ -116,8 +116,9 @@
                                 <div class="icon">
                                     <i class="flaticon-phone-call"></i>
                                 </div>
-                                <div class="details">
-                                    1900-45-20
+                                <div class="details" style="direction: ltr">
+                                    {{ getContactDetails()->phone_1 }} <br>
+                                    {{ getContactDetails()->phone_2 }}
                                 </div>
                             </li>
                             <li class="single-info-item">
@@ -125,7 +126,7 @@
                                     <i class="flaticon-placeholder"></i>
                                 </div>
                                 <div class="details">
-                                    152/02 William Streat, NYE
+                                    {!! getContactDetails()->address !!}
                                 </div>
                             </li>
                             <li class="single-info-item">
@@ -133,7 +134,7 @@
                                     <i class="flaticon-email"></i>
                                 </div>
                                 <div class="details">
-                                    Zarxiofitness@info.com
+                                    {!! getContactDetails()->email !!}
                                 </div>
                             </li>
                         </ul>
