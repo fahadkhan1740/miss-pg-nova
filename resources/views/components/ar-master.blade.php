@@ -70,7 +70,7 @@
                 </button>
             </div>
             <div class="logo">
-                <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset(getLogo()) }}" alt="logo"></a>
+                <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset('storage/'.getLogo()) }}" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="billatrail_main_menu">
                 <ul class="navbar-nav menu-open">
@@ -109,7 +109,7 @@
                 <div class="col-lg-4 col-xl-4 col-md-6">
                     <div class="footer-widget widget">
                         <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="footer-logo">
-                            <img src="{{ asset(getLogo()) }}" alt="footer logo">
+                            <img src="{{ asset('storage/'.getLogo()) }}" alt="footer logo">
                         </a>
                         <ul class="contact_info_list">
                             <li class="single-info-item">
