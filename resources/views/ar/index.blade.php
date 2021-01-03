@@ -19,70 +19,24 @@
         <div class="border4"></div>
 
         <div class="banner-slider banner-slide1">
-            <div class="banner-bg-style-one">
-                <div class="container">
-                    <div class="row h-100vh">
-                        <div class="col-lg-6">
-                            <div class="banner-inner-style-one">
-                                <p data-animation-in="fadeInLeft">FUEL YOUR</p>
-                                <h1 class="title1" data-animation-in="fadeInDown"><span class="color-main">BODY</span>
-                                    FITNESS</h1>
-                                <div class="btn-wrapper" data-animation-in="fadeInUp">
-                                    <a href="#" class="btn btn-slider">Be one of us</a>
+            @foreach($banners as $banner)
+                <div class="banner-bg-style-one">
+                    <div class="container">
+                        <div class="row h-100vh">
+                            <div class="col-lg-6">
+                                <div class="banner-inner-style-one">
+                                    <p data-animation-in="fadeInLeft">{{ $banner->first_title }}</p>
+                                    <h1 class="title1" data-animation-in="fadeInDown"><span class="color-main">{{ $banner->second_title_word }}</span>
+                                        {{ $banner->second_title }}</h1>
+                                    <div class="btn-wrapper" data-animation-in="fadeInUp">
+                                        <a href="#" class="btn btn-slider">Be one of us</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="banner-bg-style-one">
-                <div class="container">
-                    <div class="row h-100vh">
-                        <div class="col-lg-6">
-                            <div class="banner-inner-style-one">
-                                <p data-animation-in="fadeInLeft">Improve</p>
-                                <h1 class="title1" data-animation-in="fadeInDown"><span class="color-main">Your</span>
-                                    Health</h1>
-                                <div class="btn-wrapper" data-animation-in="fadeInUp">
-                                    <a href="#" class="btn btn-slider">Be one of us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="banner-bg-style-one">
-                <div class="container">
-                    <div class="row h-100vh">
-                        <div class="col-lg-6">
-                            <div class="banner-inner-style-one">
-                                <p data-animation-in="fadeInLeft">Let's Change</p>
-                                <h1 class="title1" data-animation-in="fadeInDown"><span class="color-main">Life</span>
-                                    Style</h1>
-                                <div class="btn-wrapper" data-animation-in="fadeInUp">
-                                    <a href="#" class="btn btn-slider">Be one of us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="banner-bg-style-one">
-                <div class="container">
-                    <div class="row h-100vh">
-                        <div class="col-lg-6">
-                            <div class="banner-inner-style-one">
-                                <p data-animation-in="fadeInLeft">Start YOUR</p>
-                                <h1 class="title1" data-animation-in="fadeInDown"><span class="color-main">Gym</span>
-                                    Classes</h1>
-                                <div class="btn-wrapper" data-animation-in="fadeInUp">
-                                    <a href="#" class="btn btn-slider">Be one of us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
 
         <!-- social icon -->

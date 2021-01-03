@@ -8,6 +8,7 @@ use Laravel\Nova\Fields\File;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class HomeBanner extends Resource
@@ -52,6 +53,13 @@ class HomeBanner extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
+            Select::make('Language', 'locale')->options([
+                'en' => 'English',
+                'ar' => 'Arabic',
+            ])->rules('required'),
+            Text::make('First Title')->rules('required'),
+            Text::make('Second Title Word')->rules('required'),
+            Text::make('Second Title')->rules('required'),
             Image::make('Banner', 'path')->disk('public'),
             Boolean::make('Active', 'status')->default(true)
         ];
@@ -103,7 +111,7 @@ class HomeBanner extends Resource
 
     public static function authorizedToCreate(Request $request): bool
     {
-        return !(\App\Models\HomeBanner::query()->count() > 3);
+        return !(\App\Models\HomeBanner::query()->count() > 7);
     }
 
     public function authorizedToDelete(Request $request): bool

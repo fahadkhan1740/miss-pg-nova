@@ -15,6 +15,10 @@ class CreateHomeBannersTable extends Migration
     {
         Schema::create('home_banners', function (Blueprint $table) {
             $table->id();
+            $table->enum('locale', ['en', 'ar']);
+            $table->string('first_title');
+            $table->string('second_title_word');
+            $table->string('second_title');
             $table->string('path');
             $table->boolean('status')->default(1);
             $table->timestamps();
