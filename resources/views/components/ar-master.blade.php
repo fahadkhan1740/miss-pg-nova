@@ -70,7 +70,7 @@
                 </button>
             </div>
             <div class="logo">
-                <a href="index.html"> <img src="{{ asset('img/logo.png') }}" alt="logo"></a>
+                <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset(getLogo()) }}" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="billatrail_main_menu">
                 <ul class="navbar-nav menu-open">

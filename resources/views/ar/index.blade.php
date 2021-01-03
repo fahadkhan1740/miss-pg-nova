@@ -11,7 +11,7 @@
     <!-- preloader area end -->
 
     <!-- banner start -->
-    <div class="banner-area banner-style-one" style="background-image:url(/img/bg/1.png);">
+    <div class="banner-area banner-style-one" style="background-image:url({{ asset(getHomeBackground()) }}">
 
         <div class="border1"></div>
         <div class="border2"></div>
