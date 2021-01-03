@@ -2,7 +2,7 @@
 
     <!-- breadcrumb area -->
     <div class="breadcrumb-style-1 about-breadcrumb-overlay"
-         style="background-image:url({{ $branch->banner_path }});">
+         style="background-image:url({{ 'storage/'.$branch->banner_path }});">
         <div class="breadcrumb-inner">
             <h1 class="page-title">{{ __('custom.banner.branch') }}</h1>
             <ul class="page-list">
