@@ -70,7 +70,7 @@
         <div class="banner-small-slider">
             <div class="small-slider">
                 @foreach($banners as $banner)
-                    <div class="slider-image1"><img src="{{ asset($banner->path) }}" alt=""></div>
+                    <div class="slider-image1"><img src="{{ asset('storage/'.$banner->path) }}" alt=""></div>
                 @endforeach
             </div>
             <div class="controler-wrapper d-none d-lg-block">
@@ -108,8 +108,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-xl-5">
                             <div class="left-content-area" id="twentytwenty-container">
-                                <img src="{{ asset($aboutUs->before_image_path) }}" alt="editing company image">
-                                <img src="{{ asset($aboutUs->after_image_path) }}" alt="editing company image">
+                                <img src="{{ asset('storage/'.$aboutUs->before_image_path) }}" alt="editing company image">
+                                <img src="{{ asset('storage/'.$aboutUs->after_image_path) }}" alt="editing company image">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-7">

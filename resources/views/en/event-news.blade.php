@@ -39,7 +39,7 @@
                                                     <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                                 <div class="blog-img">
-                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                    <img src="{{ asset('storage/'.$new->banner_path) }}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -48,7 +48,7 @@
                                         <div class="col-lg-8">
                                             <div class="blog-item-inner">
                                                 <div class="blog-img">
-                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                    <img src="{{ asset('storage/'.$new->banner_path) }}" alt="">
                                                 </div>
                                                 <div class="blog-detail">
                                                     <div class="blog-meta">
@@ -68,7 +68,7 @@
                                         <div class="col-lg-8">
                                             <div class="blog-item-inner">
                                                 <div class="blog-img">
-                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                    <img src="{{ asset('storage/'.$new->banner_path) }}" alt="">
                                                 </div>
                                                 <div class="blog-detail">
                                                     <div class="blog-meta">
@@ -99,7 +99,7 @@
                                                     <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                                 <div class="blog-img">
-                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                    <img src="{{ asset('storage/'.$new->banner_path) }}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@
                                                     <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}" class="blog-more">Read More</a>
                                                 </div>
                                                 <div class="blog-img">
-                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                    <img src="{{ asset('storage/'.$new->banner_path) }}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -131,7 +131,7 @@
                                         <div class="col-lg-8">
                                             <div class="blog-item-inner">
                                                 <div class="blog-img">
-                                                    <img src="{{ asset($new->banner_path) }}" alt="">
+                                                    <img src="{{ asset('storage/'.$new->banner_path) }}" alt="">
                                                 </div>
                                                 <div class="blog-detail">
                                                     <div class="blog-meta">
@@ -190,7 +190,7 @@
                                 <div class="share-img-item">
                                     <div class="img-part">
                                         <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}"><img
-                                                src="{{ asset($new->banner_path) }}"
+                                                src="{{ asset('storage/'.$new->banner_path) }}"
                                                                          alt=""></a>
                                     </div>
                                     <div class="content-part">
