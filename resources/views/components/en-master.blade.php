@@ -108,8 +108,8 @@
             <div class="row">
                 <div class="col-lg-4 col-xl-4 col-md-6">
                     <div class="footer-widget widget">
-                        <a href="index.html" class="footer-logo">
-                            <img src="{{ asset('img/footer-logo.png') }}" alt="footer logo">
+                        <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="footer-logo">
+                            <img src="{{ asset(getLogo()) }}" alt="footer logo">
                         </a>
                         <ul class="contact_info_list">
                             <li class="single-info-item">
