@@ -401,47 +401,20 @@
     </div>
     <!-- pricing end -->
 
-
-    <!-- brand-area start -->
-    <div class="brand-area margin-top-80">
+    <!-- map-area start -->
+    <div class="service-area m-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="brand-slider">
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand1.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand2.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand3.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand4.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand5.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand1.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand2.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand3.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand4.png') }}" alt="brand">
-                        </div>
-                        <div class="brant-item">
-                            <img src="{{ asset('img/brand/brand5.png') }}" alt="brand">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13922.563150286602!2d48.0851024!3d29.2635096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1eb3e25c0af647c!2sMiss%20Platinum%20Health%20Club!5e0!3m2!1sen!2skw!4v1604780698705!5m2!1sen!2skw" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">elementor review</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- brand-area end -->
+    <!-- map-area end -->
 </x-en-master>
