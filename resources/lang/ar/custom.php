@@ -87,6 +87,10 @@ return [
         'services' => 'خدماتنا'
     ],
 
+    'kids_club' => [
+        'services_facilities' => 'الخدمات والمرافق',
+    ],
+
     'news_events' => [
         'latest_posts' => 'آخر المشاركات'
     ],

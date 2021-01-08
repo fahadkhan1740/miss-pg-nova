@@ -87,6 +87,10 @@ return [
         'services' => 'Our Services'
     ],
 
+    'kids_club' => [
+        'services_facilities' => 'Services & Facilities',
+    ],
+
     'news_events' => [
         'latest_posts' => 'Latest Posts'
     ],
