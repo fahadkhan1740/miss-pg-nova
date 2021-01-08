@@ -90,6 +90,7 @@
                             </ul>
                         </li>
                     @endif
+                    <li><a href="{{ route('kids-club', ['locale' => 'ar']) }}">{{ __('custom.links.kids_club') }}</a></li>
                     <li><a href="{{ route('news-events', ['locale' => 'ar']) }}">{{ __('custom.links.news_events') }}</a></li>
                     <li><a href="{{ route('contact', ['locale' => 'ar']) }}">{{ __('custom.links.contact') }}</a></li>
                     <li><a href="{{ route('home', ['locale' => 'en']) }}">English</a></li>

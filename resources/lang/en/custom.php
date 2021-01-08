@@ -73,6 +73,7 @@ return [
         'about' => 'About Us',
         'branches' => 'Branches',
         'memberships_packages' => 'Membership & Packages',
+        'kids_club' => 'Kids Club',
         'news_events' => 'News & Events',
         'contact' => 'Contact Us'
     ],

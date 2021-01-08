@@ -73,6 +73,7 @@ return [
         'about' => 'معلومات عنا',
         'branches' => 'الفروع',
         'memberships_packages' => 'العضوية والحزم',
+        'kids_club' => 'نادي الطفال',
         'news_events' => 'الأخبار و الأحداث',
         'contact' => 'اتصل بنا'
     ],
