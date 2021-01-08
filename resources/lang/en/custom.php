@@ -73,6 +73,7 @@ return [
         'about' => 'About Us',
         'branches' => 'Branches',
         'memberships_packages' => 'Membership & Packages',
+        'personal_training' => 'Personal Training',
         'kids_club' => 'Kids Club',
         'news_events' => 'News & Events',
         'contact' => 'Contact Us'
@@ -85,6 +86,10 @@ return [
     'home' => [
         'services_we_provide' => 'Services We Provide',
         'services' => 'Our Services'
+    ],
+
+    'personal_training' => [
+        'sessions' => 'Sessions'
     ],
 
     'kids_club' => [

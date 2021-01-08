@@ -73,6 +73,7 @@ return [
         'about' => 'معلومات عنا',
         'branches' => 'الفروع',
         'memberships_packages' => 'العضوية والحزم',
+        'personal_training' => 'التدريب الشخصي',
         'kids_club' => 'نادي الطفال',
         'news_events' => 'الأخبار و الأحداث',
         'contact' => 'اتصل بنا'
@@ -85,6 +86,10 @@ return [
     'home' => [
         'services_we_provide' => 'الخدمات التي نقدمها',
         'services' => 'خدماتنا'
+    ],
+
+    'personal_training' => [
+        'sessions' => 'الحصص'
     ],
 
     'kids_club' => [
