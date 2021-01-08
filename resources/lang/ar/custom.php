@@ -72,7 +72,7 @@ return [
         'home' => 'الصفحة الرئيسية',
         'about' => 'معلومات عنا',
         'branches' => 'الفروع',
-        'memberships_packages' => 'العضوية والحزم',
+        'memberships_packages' => 'العضوية',
         'personal_training' => 'التدريب الشخصي',
         'kids_club' => 'نادي الطفال',
         'news_events' => 'الأخبار و الأحداث',

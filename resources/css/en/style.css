@@ -544,6 +544,9 @@ code {
 .padding-bottom-135 {
   padding-bottom: 135px; }
 
+.padding-bottom-200 {
+  padding-bottom: 200px; }
+
 .padding-120 {
   padding-top: 120px;
   padding-bottom: 120px; }
@@ -2221,7 +2224,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         .navbar-area .nav-container .navbar-collapse .navbar-nav li:hover a {
           color: #88C13E; }
         .navbar-area .nav-container .navbar-collapse .navbar-nav li + li {
-          margin-left: 20px; }
+          margin-left: 10px; }
         .navbar-area .nav-container .navbar-collapse .navbar-nav li.current-menu-item {
           color: var(--main-color) !important; }
           .navbar-area .nav-container .navbar-collapse .navbar-nav li.current-menu-item > a {
@@ -2327,7 +2330,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
                 .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu .menu-item-has-children:hover > .sub-menu li:hover:before {
                   color: #fff; }
       .navbar-area .nav-container .navbar-collapse .navbar-nav > li {
-        padding-right: 15px; }
+        padding-right: 10px; }
         .navbar-area .nav-container .navbar-collapse .navbar-nav > li:hover {
           color: var(--main-color) !important; }
           .navbar-area .nav-container .navbar-collapse .navbar-nav > li:hover > a {

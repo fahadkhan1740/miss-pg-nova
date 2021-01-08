@@ -1,6 +1,8 @@
 <x-ar-master>
     <!-- breadcrumb area -->
-    <div class="breadcrumb-style-1 contact-breadcrumb-overlay" style="background-image:url(/img/bg/contact.png);">
+    <div class="breadcrumb-style-1 contact-breadcrumb-overlay"
+         style="background-image:url(/img/bg/contact.png);"
+    >
         <div class="breadcrumb-inner">
             <h1 class="page-title">{{ __('custom.links.contact') }}</h1>
             <ul class="page-list">
