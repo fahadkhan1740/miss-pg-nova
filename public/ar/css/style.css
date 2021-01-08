@@ -2824,7 +2824,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .navbar-area .nav-container .navbar-collapse .navbar-nav li {
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 90px;
     text-transform: capitalize;
@@ -3460,7 +3460,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .banner-style-one .banner-bg-style-one .banner-inner-style-one p {
-    font-size: 48px;
+    font-size: 40px;
     font-family: var(--body-font);
     font-weight: 600;
     text-transform: uppercase;
