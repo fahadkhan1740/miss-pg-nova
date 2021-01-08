@@ -6,24 +6,25 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class KidsClub extends Resource
+class PersonalTraining extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Models\KidsClub::class;
+    public static $model = \App\Models\PersonalTraining::class;
 
     /**
      * Custom priority level of the resource.
      *
      * @var int
      */
-    public static $priority = 7;
+    public static $priority = 6;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -38,7 +39,7 @@ class KidsClub extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'overview'
+        'id', 'title'
     ];
 
     /**
@@ -56,9 +57,10 @@ class KidsClub extends Resource
                 'ar' => 'Arabic',
             ])->rules('required'),
             Image::make('Banner', 'banner_path')->disk('public'),
-            Trix::make('Overview')->alwaysShow(),
-            Trix::make('Services & Facilities', 'services_facilities')->alwaysShow(),
-            Trix::make('Membership & Packages', 'memberships')->alwaysShow()
+            Image::make('Image', 'image_path')->disk('public'),
+            Text::make('Title')->required(true),
+            Trix::make('Description')->alwaysShow(),
+            Trix::make('Sessions')->alwaysShow()
         ];
     }
 
@@ -106,9 +108,19 @@ class KidsClub extends Resource
         return [];
     }
 
+    public static function label(): string
+    {
+        return 'Personal Training';
+    }
+
+    public static function singularLabel()
+    {
+        return 'Personal Training';
+    }
+
     public static function authorizedToCreate(Request $request): bool
     {
-        return !(\App\Models\KidsClub::query()->count() > 2);
+        return !(\App\Models\PersonalTraining::query()->count() > 2);
     }
 
     public function authorizedToDelete(Request $request): bool
