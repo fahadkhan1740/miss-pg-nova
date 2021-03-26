@@ -76,20 +76,6 @@
                 <ul class="navbar-nav menu-open">
                     <li><a href="{{ route('home') }}">{{ __('custom.links.home') }}</a></li>
                     <li><a href="{{ route('about', ['locale' => 'en']) }}">{{ __('custom.links.about') }}</a></li>
-                    @if(getBranches()->count() > 0)
-                        <li class="menu-item-has-children">
-                            <a href="#">{{ __('custom.links.branches') }}</a>
-                            <ul class="sub-menu">
-                                @foreach(getBranches() as $branch)
-                                    <li>
-                                        <a href="{{ route('branch.show', ['locale' => 'en', 'id' => $branch->id]) }}">
-                                            {{ $branch->name }}
-                                        </a>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </li>
-                    @endif
                     <li><a href="{{ route('memberships', ['locale' => 'en']) }}">{{ __('custom.links.memberships_packages') }}</a></li>
                     <li><a href="{{ route('personal-training', ['locale' => 'en']) }}">{{ __('custom.links.personal_training') }}</a></li>
                     <li><a href="{{ route('kids-club', ['locale' => 'en']) }}">{{ __('custom.links.kids_club') }}</a></li>
