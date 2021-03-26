@@ -85,7 +85,8 @@ return [
 
     'home' => [
         'services_we_provide' => 'Services We Provide',
-        'services' => 'Our Services'
+        'services' => 'Our Services',
+        'be_one_of_us' => 'Be one of us'
     ],
 
     'personal_training' => [
@@ -107,5 +108,8 @@ return [
         'office_address' => 'Office Address',
         'email' => 'Email',
         'phone' => 'Phone'
-    ]
+    ],
+
+    'explore_life_fitness' => 'Explore life fitness',
+    'join_with_us' => 'Join with us'
 ];

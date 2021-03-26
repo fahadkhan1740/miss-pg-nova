@@ -29,7 +29,7 @@
                                     <h1 class="title1" data-animation-in="fadeInDown"><span class="color-main">{{ $banner->second_title_word }}</span>
                                         {{ $banner->second_title }}</h1>
                                     <div class="btn-wrapper" data-animation-in="fadeInUp">
-                                        <a href="#" class="btn btn-slider">Be one of us</a>
+                                        <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="btn btn-slider">{{ __('custom.home.be_one_of_us') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -216,10 +216,10 @@
                 <div class="col-lg-12">
                     <div class="explore-title">
                         <div class="title">
-                            <h2>Explore life fitness</h2>
+                            <h2>{{ __('custom.explore_life_fitness') }}</h2>
                         </div>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn btn-element btn-lg btn-main">Join with us</a>
+                            <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="btn btn-element btn-lg btn-main">{{ __('custom.join_with_us') }}</a>
                         </div>
                     </div>
                 </div>

@@ -85,7 +85,8 @@ return [
 
     'home' => [
         'services_we_provide' => 'الخدمات التي نقدمها',
-        'services' => 'خدماتنا'
+        'services' => 'خدماتنا',
+        'be_one_of_us' => 'كن واحداً منا'
     ],
 
     'personal_training' => [
@@ -107,6 +108,8 @@ return [
         'office_address' => 'عنوان المكتب',
         'email' => 'البريد الإلكتروني',
         'phone' => 'رقم الهاتف'
-    ]
+    ],
 
+    'explore_life_fitness' => 'Explore life fitness',
+    'join_with_us' => 'انضم إلينا'
 ];

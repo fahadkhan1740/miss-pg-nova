@@ -81,7 +81,7 @@
                     <li><a href="{{ route('kids-club', ['locale' => 'en']) }}">{{ __('custom.links.kids_club') }}</a></li>
                     <li><a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a></li>
                     <li><a href="{{ route('contact', ['locale' => 'en']) }}">{{ __('custom.links.contact') }}</a></li>
-                    <li><a href="{{ route('home', ['locale' => 'ar']) }}">العربي</a></li>
+                    <li><a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}">العربي</a></li>
                 </ul>
             </div>
         </div>

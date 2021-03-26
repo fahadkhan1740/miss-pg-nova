@@ -114,9 +114,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="explore-title">
-                        <h2>Explore life fitness</h2>
+                        <h2>{{ __('custom.explore_life_fitness') }}</h2>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn btn-element btn-lg btn-main">Join with us</a>
+                            <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="btn btn-element btn-lg btn-main">{{ __('custom.join_with_us') }}</a>
                         </div>
                     </div>
                 </div>
