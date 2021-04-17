@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1662c7fd10cf42ea39eb41734eef4234",
+    "content-hash": "3627727572986fb9693be2991e68b88b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -233,6 +233,59 @@
                 "source": "https://github.com/cakephp/chronos"
             },
             "time": "2020-08-22T02:42:12+00:00"
+        },
+        {
+            "name": "digital-creative/collapsible-resource-manager",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dcasia/collapsible-resource-manager.git",
+                "reference": "6a59183b0e214f8d80b0392e88d1c31d4a621ac5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dcasia/collapsible-resource-manager/zipball/6a59183b0e214f8d80b0392e88d1c31d4a621ac5",
+                "reference": "6a59183b0e214f8d80b0392e88d1c31d4a621ac5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DigitalCreative\\CollapsibleResourceManager\\CollapsibleResourceManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DigitalCreative\\CollapsibleResourceManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Milewski"
+                }
+            ],
+            "description": "A custom sidebar menu with collapsible groups",
+            "keywords": [
+                "collapse",
+                "collapsible",
+                "laravel",
+                "nova",
+                "sidebar"
+            ],
+            "support": {
+                "issues": "https://github.com/dcasia/collapsible-resource-manager/issues",
+                "source": "https://github.com/dcasia/collapsible-resource-manager/tree/v1.3.1"
+            },
+            "time": "2021-03-05T03:46:45+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

@@ -4,7 +4,13 @@ namespace App\Providers;
 
 use App\Nova\AboutUs;
 use App\Nova\HomeBanner;
+use App\Nova\KidsClub;
+use App\Nova\Membership;
+use App\Nova\NewsEvents;
+use App\Nova\Service;
 use App\Nova\User;
+use DigitalCreative\CollapsibleResourceManager\CollapsibleResourceManager;
+use DigitalCreative\CollapsibleResourceManager\Resources\TopLevelResource;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Cards\Help;
 use Laravel\Nova\Nova;
@@ -80,9 +86,43 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     public function tools()
     {
-        return [];
+        return [
+            new CollapsibleResourceManager([
+                'navigation' => [
+                    TopLevelResource::make([
+                        'label' => 'Home',
+                        'resources' => [
+                            AboutUs::class,
+                        ]
+                    ]),
+                    TopLevelResource::make([
+                        'label' => 'Services',
+                        'resources' => [
+                            Service::class,
+                        ]
+                    ]),
+                    TopLevelResource::make([
+                        'label' => 'Memberships',
+                        'resources' => [
+                            Membership::class,
+                        ]
+                    ]),
+                    TopLevelResource::make([
+                        'label' => 'Kids Club',
+                        'resources' => [
+                            KidsClub::class,
+                        ]
+                    ]),
+                    TopLevelResource::make([
+                        'label' => 'News & Events',
+                        'resources' => [
+                            NewsEvents::class,
+                        ]
+                    ]),
+                ]
+            ])
+        ];
     }
-
     /**
      * Register any application services.
      *
