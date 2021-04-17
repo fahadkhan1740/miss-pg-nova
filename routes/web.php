@@ -8,6 +8,7 @@ use App\Http\Controllers\KidsClubController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\NewsAndEventController;
 use App\Http\Controllers\PersonalTrainingController;
+use App\Http\Controllers\TrainerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,7 @@ Route::middleware('set.locale')->group(static function () {
     Route::get('about-us', [AboutController::class, 'index'])->name('about');
     Route::get('branches/{id}', [BranchController::class, 'show'])->name('branch.show');
     Route::get('memberships', [MembershipController::class, 'index'])->name('memberships');
+    Route::get('trainers', [TrainerController::class, 'index'])->name('trainer');
     Route::get('personal-training', [PersonalTrainingController::class, 'index'])->name('personal-training');
     Route::get('kids-club', [KidsClubController::class, 'index'])->name('kids-club');
     Route::get('news-events', [NewsAndEventController::class, 'index'])->name('news-events');
