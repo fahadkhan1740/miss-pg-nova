@@ -9639,3 +9639,9 @@ iframe {
 }
 
 /* about us page ends */
+/* membership area */
+.memberships-area {
+  background:#000000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgba(50, 50, 50, 1) 100%);
+}
+/* membership area end */
