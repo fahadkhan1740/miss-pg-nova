@@ -85,6 +85,32 @@
                 </ul>
             </div>
         </div>
+    </nav> --}}
+    <nav class="container">
+        <!-- Nav tabs -->
+        <ul class="nav  justify-content-end" id="main-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Membership</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Training</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Kids Club</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">News n Events</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                        id="language-icon">
+                </a>
+            </li>
+        </ul>        
     </nav>
 </div>
 <!-- navbar end -->
