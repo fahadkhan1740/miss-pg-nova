@@ -376,7 +376,7 @@
             left: 2px;
 
             .badge {
-                background: #88C13E;
+                background: #BBC246;
                 border-radius: 50%;
                 top: -15px;
                 left: 10px;
@@ -649,7 +649,7 @@
             left: 4px;
 
             .badge {
-                background: #88C13E;
+                background: #BBC246;
                 border-radius: 50%;
                 top: -9px;
                 left: 10px;
@@ -706,7 +706,7 @@
             left: -7px;
 
             .badge {
-                background: #88C13E;
+                background: #BBC246;
                 border-radius: 50%;
                 top: -9px;
                 left: 10px;
@@ -749,7 +749,7 @@
                 width: 2px;
                 height: 2px;
                 position: absolute;
-                background: #88C13E;
+                background: #BBC246;
                 border-radius: 50%;
                 top: 25px;
                 left: -1px;
@@ -758,13 +758,13 @@
 
         @keyframes pulsebtn {
             0% {
-                box-shadow: 0 0 0 0 #88C13E;
+                box-shadow: 0 0 0 0 #BBC246;
             }
             70% {
-                box-shadow: 0 0 0 2px #88C13E;
+                box-shadow: 0 0 0 2px #BBC246;
             }
             100% {
-                box-shadow: 0 0 0 0 #88C13E;
+                box-shadow: 0 0 0 0 #BBC246;
             }
         }
     }

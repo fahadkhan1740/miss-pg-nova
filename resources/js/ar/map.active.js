@@ -35,7 +35,7 @@ function initMap() {
                 featureType: 'road',
                 elementType: 'geometry',
                 stylers: [{
-                    color: '#88C13E'
+                    color: '#BBC246'
                 }]
             },
             {
@@ -70,7 +70,7 @@ function initMap() {
                 featureType: 'water',
                 elementType: 'labels.text.fill',
                 stylers: [{
-                    color: '#88C13E'
+                    color: '#BBC246'
                 }]
             },
             {

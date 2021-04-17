@@ -1,11 +1,11 @@
 :root {
-    --main-color: #88C13E;
+    --main-color: #BBC246;
     --heading-color: #161616;
     --paragraph-color: #515151;
     --body-font: 'Poppins', sans-serif;
     --secondary-font: 'Oswald', sans-serif;
     --rubik-font: 'Rubik', sans-serif;
-    --barlow-font: 'Barlow', sans-serif; 
+    --barlow-font: 'Barlow', sans-serif;
 }
 
 html {
@@ -40,7 +40,7 @@ body {
         background: #fff;
         padding-bottom: 80px
     }
-    
+
     .footer-parallax {
         position: fixed;
         width: 100%;
@@ -380,7 +380,7 @@ code {
     background-color: #f8f8f8;
 }
 
-//== padding classes 
+//== padding classes
 .padding-top-3 {
     padding-top: 3px;
 }
@@ -659,7 +659,7 @@ code {
     padding-right: 50px;
 }
 
-//== margin classes 
+//== margin classes
 .margin-top-3 {
     margin-top: 3px;
 }

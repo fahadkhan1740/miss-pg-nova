@@ -18,14 +18,14 @@
 .wickedpicker__title {
     background-image: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
     position: relative;
-    background: #88C13E;
+    background: #BBC246;
     margin: 0 auto;
-    border-bottom: 1px solid #88C13E;
+    border-bottom: 1px solid #BBC246;
     padding: 0 15px 0 15px;
     color: #fff;
     display:none;
     font-size: 29px
-    
+
 }
 
 .wickedpicker__close {
@@ -37,7 +37,7 @@
     position: absolute;
     top: 33%;
     right: 10px;
-    color: #88C13E;
+    color: #BBC246;
     cursor: pointer;
     font-size: 18px;
     padding: 0 10px;
@@ -66,11 +66,11 @@
 }
 
 .wickedpicker__controls__control-up {
-    border-bottom: 2px solid #88C13E
+    border-bottom: 2px solid #BBC246
 }
 
 .wickedpicker__controls__control-down {
-    border-top: 2px solid #88C13E
+    border-top: 2px solid #BBC246
 }
 
 .wickedpicker__controls__control-down,
@@ -107,7 +107,7 @@
 }
 
 .hover-state {
-    color: #88C13E
+    color: #BBC246
 }
 
 @font-face {

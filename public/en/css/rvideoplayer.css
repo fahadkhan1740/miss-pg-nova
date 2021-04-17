@@ -33,7 +33,7 @@
     bottom: 0px;
     width: 0%;
     height: 6px;
-    background-color: #88C13E;
+    background-color: #BBC246;
     border-radius: 4px;
     -webkit-transition: all 100ms;
     -o-transition: all 100ms;
@@ -108,7 +108,7 @@
 .rVideo__player .rvideo_player_btn.rvideo_play {
     display: inline-block;
     border-top: 8px solid transparent;
-    border-left: 10px solid #88C13E;
+    border-left: 10px solid #BBC246;
     border-bottom: 8px solid transparent;
     cursor: pointer;
     height: 16px;
@@ -130,7 +130,7 @@
     top: 0;
     width: 3px;
     height: 10px;
-    background-color: #88C13E;
+    background-color: #BBC246;
     content: "";
 }
 
@@ -140,7 +140,7 @@
     top: 0;
     width: 3px;
     height: 10px;
-    background-color: #88C13E;
+    background-color: #BBC246;
     content: "";
 }
 
@@ -162,7 +162,7 @@
     appearance: none;
     width: 15px;
     height: 15px;
-    background: #88C13E;
+    background: #BBC246;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -170,7 +170,7 @@
 .rVideo__player .rvideo_player_volume_range::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background: #88C13E;
+    background: #BBC246;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -230,7 +230,7 @@
 .rVideo__player .rplayer__thumb__btn {
     display: inline-block;
     border-top: 20px solid transparent;
-    border-left: 30px solid #88C13E;
+    border-left: 30px solid #BBC246;
     border-bottom: 20px solid transparent;
     cursor: pointer;
 }

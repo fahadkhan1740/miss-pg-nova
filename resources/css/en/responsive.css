@@ -15,7 +15,7 @@
         right: -13px;
         width: 5px;
         height: 5px;
-        background: #88C13E;
+        background: #BBC246;
         border-radius: 50%;
     }
     .about-content {
@@ -260,7 +260,7 @@
     .delivery-area .invoice .invoice-top h5 {
         font-size: 22px;
     }
-    
+
     /* coming soon page */
     .coming-soon-area .content h1 {
         font-size: 80px;
@@ -311,7 +311,7 @@
     .banner-style-two .absolute-btn-1 {
         top: 14%;
         left: 43%;
-    }    
+    }
 
     .banner-style-two .banner-bg-style-two {
         background-size: 430px;
@@ -367,7 +367,7 @@
         left: -10px;
         top: -10px;
         transform: scale(.7);
-    }    
+    }
     .nav-right-part ul li.search {
         top: 0px;
     }
@@ -419,7 +419,7 @@
     .banner-style-four .banner-bg-style-one {
         background-image: none !important;
     }
-    
+
     .banner-style-four .rotate-text a {
         color: #515151;
     }
@@ -501,7 +501,7 @@
         }
     }
 
-    
+
     .banner-style-two .absolute-btn {
         display: none !important;
     }
@@ -518,10 +518,10 @@
         height: 100%;
         background: rgba(0,0,0,0.5);
     }
-    
+
     .banner-style-three .banner-bg-style-three .banner-inner-style-three {
         bottom: 20%;
-    } 
+    }
     .footer-logo img {
         max-width: 160px;
     }
@@ -732,7 +732,7 @@
         right: 45%;
         top: 40%;
     }
-    
+
     .service-area.service-bg-2:after, .service-area.service-bg:after {
         display: none !important;
     }
@@ -772,7 +772,7 @@
     }
 }
 
-@media only screen and (max-width:991px) { 
+@media only screen and (max-width:991px) {
     .coming-soon-area {
         background: none;
         background-color: #000;
@@ -866,7 +866,7 @@
     .banner-style-three .banner-bg-style-three .banner-inner-style-three .bannar-lg-text {
         font-size: 50px;
     }
-    
+
     .pricing-area .single-pricing-style-01 {
         margin-bottom: 20px;
     }
@@ -902,12 +902,12 @@
         padding: 7px 30px !important;
         background: #fff !important;
         font-size: 14px;
-        text-transform: uppercase;    
+        text-transform: uppercase;
     }
 
     .mega-menu li a:hover {
         color: #fff !important;
-        background: #88C13E !important;
+        background: #BBC246 !important;
     }
 
     .banner-style-two .absolute-btn, .banner-style-two .slick-prev, .banner-style-two .slick-next {
@@ -1127,7 +1127,7 @@
     .breadcrumb-style-1 {
         min-height: 300px !important;
     }
-    
+
     .breadcrumb-inner h1 {
         font-size: 45px !important;
     }
@@ -1350,7 +1350,7 @@
     }
     .explore-area .explore-title h1 {
         font-size: 24px;
-    }    
+    }
     .popcontent {
         top: -20% !important;
     }
@@ -1407,18 +1407,18 @@
     .center-image img {
         display: none !important;
     }
-    
+
     .logo-wrapper.mobile-logo {
         display: block;
         width: 100%;
     }
-    
+
     .responsive-mobile-menu {
         display: block;
         width: 100%;
         position: relative;
     }
-    
+
     .responsive-mobile-menu .navbar-toggler {
         position: absolute;
         right: 0;
@@ -1486,7 +1486,7 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    
+
     .comment-form {
         margin: 30px 20px;
     }
@@ -1716,7 +1716,7 @@
     }
     .about-breadcrumb-overlay:before {
         transform: rotate(24deg);
-        left: 38%;    
+        left: 38%;
     }
     .trainer-area.bg-none .content {
         padding: 20px 0px;
@@ -1732,7 +1732,7 @@
 
     .table-responsive {
         display: block !important;
-    } 
+    }
     .home-about .circle5 {
         right: 26%;
         top: 27%;
@@ -1867,7 +1867,7 @@
     }
     .banner-style-three .banner-bg-style-three .banner-inner-style-three {
         bottom: 35px;
-    }    
+    }
     .banner-style-three .bmi-wrapper {
         top: 50%;
         width: 100%;
@@ -1946,7 +1946,7 @@
         width: 120%;
         left: 22%;
     }
-    
+
     .class-details-breadcrumb-overlay:before {
         width: 100%;
         left: 15%;
@@ -1958,7 +1958,7 @@
     .nav-style-03 .nav-right-part ul li.search {
         top: 8px;
     }
-    .alert-area .form-control { 
+    .alert-area .form-control {
         font-size: 12px;
     }
     .alert-area.padding-bottom-70 {
@@ -1978,7 +1978,7 @@
     .element-modal-content .message-popup2-content__title {
         font-size: 24px;
     }
-    
+
     /* typography-area */
     .typography-area .typography-heading h1:before {
         top: 7px;
@@ -2165,7 +2165,7 @@
     .navbar-area .nav-container{
         margin: 0px 0px;
     }
-    
+
     .navbar-area .nav-container {
         max-width: 98%;
     }
@@ -2320,7 +2320,7 @@
         padding: 30px;
         margin-bottom: 100px;
     }
-    
+
     .delivery-area .delivery-content .delivery-tab .nav-pills li a {
         font-size: 12px;
     }
@@ -2608,7 +2608,7 @@
     .message-popup .btn-wrapper {
         margin-top: 20px !important;
     }
-    
+
     .delivery-area .delivery-content .delivery-tab .nav-pills li a span {
         font-size: 12px;
     }
@@ -2753,7 +2753,7 @@
     .banner-style-one .banner-bg-style-one .banner-inner-style-one p {
         margin-bottom: 15px;
     }
-    
+
     .message-popup-content__img, .location-popup #map, .info-popup-content__img {
         height: 140px;
     }

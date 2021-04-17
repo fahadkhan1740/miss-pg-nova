@@ -79,7 +79,7 @@ Version: 1.0.0
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 
 :root {
-    --main-color: #88C13E;
+    --main-color: #BBC246;
     --heading-color: #161616;
     --paragraph-color: #515151;
     --body-font: 'Poppins', sans-serif;
@@ -1132,7 +1132,7 @@ code {
 
 .pagination-area ul li span.current,
 .pagination-area ul li span:hover {
-    background-color: #88C13E;
+    background-color: #BBC246;
     color: #fff;
 }
 
@@ -1668,12 +1668,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .about-page-top .about-content i {
-    color: #88C13E;
+    color: #BBC246;
     margin-left: 15px;
 }
 
 .about-page-top .about-content .btn {
-    color: #88C13E;
+    color: #BBC246;
     padding: 0px;
     font-size: 18px;
 }
@@ -2087,7 +2087,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .contact-form .form-group .input-form:focus,
 .contact-form .form-group textarea:focus {
-    border: 1px solid #88C13E;
+    border: 1px solid #BBC246;
 }
 
 .contact-form .form-group textarea {
@@ -2108,7 +2108,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .contact-box .contact-icon i:before {
-    color: #88C13E;
+    color: #BBC246;
     font-size: 60px;
 }
 
@@ -2196,7 +2196,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .form-result {
-    color: #88C13E;
+    color: #BBC246;
     text-align: center;
 }
 
@@ -2262,7 +2262,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .widget.footer-widget .subscribe-form .input-group .form-control:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .widget.footer-widget .subscribe-form .submit-btn:hover {
@@ -2272,7 +2272,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .widget.footer-widget .subscribe-form.subscribe-form-style2 .form-control {
     background: transparent;
-    border-color: #88C13E;
+    border-color: #BBC246;
     padding: 20px 20px;
     border-radius: 0px 20px 20px 0px;
 }
@@ -2705,7 +2705,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .widget .input-group .btn {
-    background: #88C13E;
+    background: #BBC246;
     text-transform: uppercase;
     color: #fff;
     margin-right: -2px;
@@ -2715,7 +2715,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .widget .input-group .btn:hover {
     background: #515151 !important;
-    color: #88C13E !important;
+    color: #BBC246 !important;
     -webkit-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
@@ -2842,7 +2842,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .navbar-area .nav-container .navbar-collapse .navbar-nav li:hover a {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .navbar-area .nav-container .navbar-collapse .navbar-nav li+li {
@@ -3301,7 +3301,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .mega-menu li a:hover {
-    color: #88C13E !important;
+    color: #BBC246 !important;
 }
 
 .banner-slider {
@@ -3614,7 +3614,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     height: 30px;
     -webkit-animation: scroll1 6s ease-out infinite;
     animation: scroll1 6s ease-out infinite;
-    background: #88C13E;
+    background: #BBC246;
 }
 
 @-webkit-keyframes scroll1 {
@@ -3667,7 +3667,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     height: 30px;
     -webkit-animation: scroll2 6s ease-out infinite;
     animation: scroll2 6s ease-out infinite;
-    background: #88C13E;
+    background: #BBC246;
     overflow: hidden;
 }
 
@@ -3729,7 +3729,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     height: 4px;
     -webkit-animation: scroll3 7s ease-out infinite;
     animation: scroll3 7s ease-out infinite;
-    background: #88C13E;
+    background: #BBC246;
 }
 
 @-webkit-keyframes scroll3 {
@@ -3790,7 +3790,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .banner-style-one .cart-btn a .badge {
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     top: -15px;
     left: 10px;
@@ -3883,7 +3883,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .banner-style-one .slick-prev:hover,
 .banner-style-one .slick-next:hover {
     background: var(--main-color);
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .banner-style-one .slick-prev:hover:before,
@@ -4117,7 +4117,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .banner-style-two .video-btn-style-2 a .badge {
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     top: -9px;
     left: 10px;
@@ -4182,7 +4182,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .banner-style-two .cart-btn-style-2 a .badge {
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     top: -9px;
     left: 10px;
@@ -4218,7 +4218,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     z-index: 1;
     top: -19px;
     left: 0px;
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .banner-style-two .absolute-btn a span {
@@ -4227,7 +4227,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     width: 2px;
     height: 2px;
     position: absolute;
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     top: 25px;
     left: -1px;
@@ -4235,35 +4235,35 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 @-webkit-keyframes pulsebtn {
     0% {
-        -webkit-box-shadow: 0 0 0 0 #88C13E;
-        box-shadow: 0 0 0 0 #88C13E;
+        -webkit-box-shadow: 0 0 0 0 #BBC246;
+        box-shadow: 0 0 0 0 #BBC246;
     }
 
     70% {
-        -webkit-box-shadow: 0 0 0 2px #88C13E;
-        box-shadow: 0 0 0 2px #88C13E;
+        -webkit-box-shadow: 0 0 0 2px #BBC246;
+        box-shadow: 0 0 0 2px #BBC246;
     }
 
     100% {
-        -webkit-box-shadow: 0 0 0 0 #88C13E;
-        box-shadow: 0 0 0 0 #88C13E;
+        -webkit-box-shadow: 0 0 0 0 #BBC246;
+        box-shadow: 0 0 0 0 #BBC246;
     }
 }
 
 @keyframes pulsebtn {
     0% {
-        -webkit-box-shadow: 0 0 0 0 #88C13E;
-        box-shadow: 0 0 0 0 #88C13E;
+        -webkit-box-shadow: 0 0 0 0 #BBC246;
+        box-shadow: 0 0 0 0 #BBC246;
     }
 
     70% {
-        -webkit-box-shadow: 0 0 0 2px #88C13E;
-        box-shadow: 0 0 0 2px #88C13E;
+        -webkit-box-shadow: 0 0 0 2px #BBC246;
+        box-shadow: 0 0 0 2px #BBC246;
     }
 
     100% {
-        -webkit-box-shadow: 0 0 0 0 #88C13E;
-        box-shadow: 0 0 0 0 #88C13E;
+        -webkit-box-shadow: 0 0 0 0 #BBC246;
+        box-shadow: 0 0 0 0 #BBC246;
     }
 }
 
@@ -4314,7 +4314,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .banner-style-two .slick-prev:hover:before,
 .banner-style-two .slick-next:hover:before {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .banner-style-two .slick-prev::before,
@@ -4406,7 +4406,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .banner-style-three .bmi-wrapper .form-field input:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .banner-style-three .bmi-wrapper .nice-select {
@@ -4433,7 +4433,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .banner-style-three .bmi-wrapper .nice-select:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .banner-style-three .bmi-wrapper ::-webkit-input-placeholder {
@@ -4482,7 +4482,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .banner-style-three .banner-bg-style-three .banner-inner-style-three .bannar-lg-text {
-    color: #88C13E;
+    color: #BBC246;
     text-transform: uppercase;
     font-size: 155px;
     font-weight: 700;
@@ -4640,7 +4640,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    color: #88C13E;
+    color: #BBC246;
     position: relative;
     z-index: 99;
 }
@@ -4732,7 +4732,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .banner-style-four .banner-slider4 .slick-dots li.slick-active button {
     color: var(--main-color);
     font-size: 76px;
-    border-bottom: 1px solid #88C13E;
+    border-bottom: 1px solid #BBC246;
 }
 
 .banner-style-four .banner-slider4 .slick-dots li.slick-active button:after {
@@ -4772,7 +4772,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .banner-style-four .social-icon .icon-text:hover {
     color: var(--main-color);
-    border-right: 2px solid #88C13E;
+    border-right: 2px solid #BBC246;
 }
 
 .banner-style-four .rotate-text {
@@ -4861,7 +4861,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     content: '';
     top: 5px;
@@ -4884,7 +4884,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     content: '';
     top: 25px;
@@ -4911,7 +4911,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     content: '';
     top: 12px;
@@ -4938,7 +4938,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     content: '';
     top: 3px;
@@ -4965,7 +4965,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #88C13E;
+    background: #BBC246;
     border-radius: 50%;
     content: '';
     top: 3px;
@@ -5005,7 +5005,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .typography-inline-element .inline-content .p1 span {
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
     padding: 0px 03px 3px 3px;
 }
@@ -5056,7 +5056,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .typography-block-quote .typo-quote-title h1 {
-    color: #88C13E;
+    color: #BBC246;
     font-size: 24px;
     letter-spacing: 0.6px;
     font-weight: 600;
@@ -5194,9 +5194,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .trainer-area .content .btn-normal-size:hover {
-    background: #88C13E !important;
+    background: #BBC246 !important;
     color: #fff;
-    border-color: #88C13E;
+    border-color: #BBC246;
     -webkit-box-shadow: 0px 0px 20px rgba(22, 22, 22, 0.2);
     box-shadow: 0px 0px 20px rgba(22, 22, 22, 0.2);
 }
@@ -5223,7 +5223,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .trainer-area .content .social li:hover {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .trainer-area .border-custom {
@@ -5254,7 +5254,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .trainer-area .slick-dots li.slick-active button:before {
-    color: #88C13E !important;
+    color: #BBC246 !important;
 }
 
 .class-slider-style-2 .slick-dots {
@@ -5306,7 +5306,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .class-slider-style-2 .slick-prev:hover:before,
 .class-slider-style-2 .slick-next:hover:before {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .class-slider-style-2 .slick-prev::before,
@@ -5356,7 +5356,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .biography-area .biography-content .nav a.active {
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
 }
 
@@ -5465,7 +5465,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .error-area .content h1 {
-    color: #88C13E;
+    color: #BBC246;
     font-size: 280px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -5548,7 +5548,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .class-schedule .schedule-bottom input:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .class-schedule .schedule-bottom input::-webkit-input-placeholder {
@@ -5619,7 +5619,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .schedule-item-style-01 .content .btn {
     padding: 3px 10px;
-    background: #88C13E;
+    background: #BBC246;
     font-size: 12px;
     border-radius: 0px;
     margin-top: 15px;
@@ -5638,7 +5638,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .partner-area {
-    background: #88C13E;
+    background: #BBC246;
 }
 
 .partner-area p {
@@ -5699,7 +5699,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .shaper-area .shaper-left a {
     font-size: 18px;
     letter-spacing: 0.9px;
-    color: #88C13E;
+    color: #BBC246;
     text-decoration: underline;
     -webkit-transition: all .4s linear;
     -o-transition: all .4s linear;
@@ -5728,7 +5728,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .shaper-area .shaper-right a {
     font-size: 18px;
     letter-spacing: 0.9px;
-    color: #88C13E;
+    color: #BBC246;
     text-decoration: underline;
     -webkit-transition: all .4s linear;
     -o-transition: all .4s linear;
@@ -5758,7 +5758,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .news-slider .slick-dots li.slick-active button:before {
-    color: #88C13E !important;
+    color: #BBC246 !important;
 }
 
 .news-slider .slick-prev {
@@ -5795,7 +5795,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .news-slider .slick-prev:hover,
 .news-slider .slick-next:hover {
-    background: #88C13E !important;
+    background: #BBC246 !important;
 }
 
 .news-slider .slick-prev:hover:before,
@@ -5807,7 +5807,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .news-slider .slick-next:before {
     font-size: 25px;
     opacity: 1;
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .news-slider .slick-slide {
@@ -5844,7 +5844,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .news-item-style-01 .content .blog-meta h6 a:hover {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .news-item-style-01 .content h3 {
@@ -5954,7 +5954,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .item.quote-style-1 .center .content h1 {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .quote-style-02 .item {
@@ -6162,7 +6162,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .all-classes-area .slick-dots li {
-    background: #88C13E;
+    background: #BBC246;
 }
 
 .all-classes-area .all-class-slider .slick-dots {
@@ -6214,7 +6214,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .all-classes-area .all-class-slider .slick-prev:hover:before,
 .all-classes-area .all-class-slider .slick-next:hover:before {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .all-classes-area .all-class-slider .slick-prev::before,
@@ -6291,7 +6291,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .single-class-item .bottom-content h4:hover {
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
 }
 
@@ -6364,7 +6364,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .class-categories h5 {
-    background: #88C13E;
+    background: #BBC246;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 0.6px;
@@ -6424,7 +6424,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .class-details-area .class-list ul li i {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .class-details-area h1 {
@@ -6453,7 +6453,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .class-routine .single-routine h3 {
-    color: #88C13E;
+    color: #BBC246;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 0.6px;
@@ -6762,7 +6762,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .shop-single-item .top-content .hover-content .btn {
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
 }
 
@@ -6786,7 +6786,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .shop-single-item .bottom-content .price ins {
     font-size: 18px;
-    color: #88C13E;
+    color: #BBC246;
     text-decoration: none;
 }
 
@@ -6974,11 +6974,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .single-pricing-style-01.active .plan-title h3 {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .single-pricing-style-01.active a i::before {
-    color: #88C13E !important;
+    color: #BBC246 !important;
 }
 
 .single-pricing-style-01.active ul li {
@@ -6997,7 +6997,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .single-pricing-style-01 .pricing-icon a i:before {
     margin-left: 0px;
     font-size: 80px;
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .single-pricing-style-01 .plan-title h3 {
@@ -7282,11 +7282,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .service-box-style-02:hover {
-    border: 1px solid #88C13E;
+    border: 1px solid #BBC246;
 }
 
 .service-box-style-02:hover .sb-icon {
-    color: #88C13E !important;
+    color: #BBC246 !important;
 }
 
 .service-box-style-02 .sb-icon {
@@ -7387,8 +7387,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .coming-service-area .coming-content .btn:hover {
-    background: #88C13E;
-    border-color: #88C13E;
+    background: #BBC246;
+    border-color: #BBC246;
 }
 
 .overlay-section {
@@ -7410,7 +7410,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .explore-area {
     margin-top: 127px;
-    background: #88C13E;
+    background: #BBC246;
 }
 
 .explore-area.explore-bg {
@@ -7453,8 +7453,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-weight: 700;
     font-family: var(--rubik-font);
     letter-spacing: 0.45px;
-    border: 1px solid #88C13E;
-    background: #88C13E;
+    border: 1px solid #BBC246;
+    background: #BBC246;
     font-size: 14px;
     border-radius: 0px;
     padding: 12px 32px;
@@ -7467,7 +7467,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .explore-area .explore-title a:hover {
     background: #fff;
-    color: #88C13E;
+    color: #BBC246;
     border-color: #fff;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -7479,7 +7479,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .explore-area.explore-style-2 .btn-main:hover {
     background: #fff;
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .explore-area.explore-style-2 .explore-title {
@@ -7540,7 +7540,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .popular-slider .slick-prev:hover,
 .popular-slider .slick-next:hover {
     background: var(--main-color);
-    border: 1px solid #88C13E;
+    border: 1px solid #BBC246;
 }
 
 .popular-slider .slick-prev:hover:before,
@@ -7694,7 +7694,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .popular-item-style-01 .hover-element .btn {
-    background: #88C13E;
+    background: #BBC246;
     padding: 4px 15px;
     margin-top: 15px;
 }
@@ -7749,7 +7749,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .blog-item-inner .blog-meta a:hover {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .blog-item-inner .blog-img {
@@ -7789,7 +7789,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .blog-item-inner .blog-detail h5 a:hover {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .blog-item-inner .blog-detail p {
@@ -7823,7 +7823,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .blog-item-inner .blog-detail .blog-more:hover {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .yoga-video {
@@ -7948,7 +7948,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .widget_search .form-control:focus {
-    border: 1px solid #88C13E;
+    border: 1px solid #BBC246;
 }
 
 .widget_search .submit-btn {
@@ -8054,13 +8054,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .comment-respond .form-control:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 
 .comment-respond #submit {
-    background: #88C13E;
+    background: #BBC246;
     font-size: 15px;
     letter-spacing: 0.38px;
     color: #fff;
@@ -8364,7 +8364,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     left: 0;
     width: 100%;
     z-index: -1;
-    border: 1px solid #88C13E;
+    border: 1px solid #BBC246;
     padding: 68px 50px;
 }
 
@@ -8431,7 +8431,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .delivery-area .delivery-content .delivery-tab .form-group .form-field .input-form:focus,
 .delivery-area .delivery-content .delivery-tab .form-group .form-field textarea:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .delivery-area .delivery-content .delivery-tab .form-group .form-field textarea {
@@ -8451,7 +8451,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .delivery-area .delivery-content .delivery-tab .form-group .form-field .select-form:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .delivery-area .delivery-content .delivery-tab .form-group .form-field .nice-select {
@@ -8507,7 +8507,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-family: var(--barlow-font);
     font-size: 15px;
     letter-spacing: 0.15px;
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .delivery-area .invoice .invoice-top p {
@@ -8709,12 +8709,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .single-cart-list .apply-coupon-form .form-control {
     padding: 18px 20px;
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .single-cart-list .apply-coupon-form .submit-btn {
     padding: 19px 30px;
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
     margin-right: -2px;
     font-size: 15px;
@@ -8741,7 +8741,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     color: #161616;
     text-align: center;
     padding: 30px 0px;
-    border-bottom: 1px solid #88C13E;
+    border-bottom: 1px solid #BBC246;
     text-transform: capitalize;
     margin-bottom: 0px;
 }
@@ -8760,7 +8760,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .cart-total-list .cart-price p .float-right {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .cart-total-list .cart-price-total {
@@ -8776,7 +8776,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .cart-total-list .cart-price-total p .float-right {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .cart-total-list .btn-wrapper {
@@ -8912,7 +8912,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .payment-area .payment-content .payment-tab .tab-content .card-option .form-group .form-control:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .payment-area .payment-content .payment-tab .tab-content .card-option .form-group .input-form {
@@ -8979,7 +8979,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-family: var(--barlow-font);
     font-size: 15px;
     letter-spacing: 0.15px;
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .payment-area .invoice .invoice-top p {
@@ -9175,7 +9175,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .coming-soon-area .content .input-group input:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .coming-soon-area .content .input-group .btn {
@@ -9314,7 +9314,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: relative;
     float: left;
     text-align: left;
-    color: #88C13E;
+    color: #BBC246;
     font-size: 24px;
 }
 
@@ -9323,7 +9323,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .sign-area .sign-content .form-group .form-control:focus {
-    border-color: #88C13E !important;
+    border-color: #BBC246 !important;
 }
 
 .sign-area .sign-content .form-group .password-alert {
@@ -9331,12 +9331,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .sign-area .sign-content .btn-success {
-    background: #88C13E;
+    background: #BBC246;
     margin: 40px 0px;
     font-size: 18px;
     letter-spacing: 0.45px;
     padding: 10px;
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .sign-area .sign-content .btn-success:focus {
@@ -9740,7 +9740,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .btn-active {
     background: transparent;
-    border: 1px solid #88C13E;
+    border: 1px solid #BBC246;
     color: #161616;
 }
 
@@ -9796,7 +9796,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .btn-slider {
-    background: #88C13E;
+    background: #BBC246;
     font-size: 26px;
     padding: 8px 55px;
     color: #161616;
@@ -10234,12 +10234,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .faq-banner .search-form .form-control:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .faq-banner .search-form .submit-btn {
     padding: 15px 53px;
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
     margin-right: -2px;
     font-size: 15px;
@@ -10268,7 +10268,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .icon-area .icon-bg .icon-area-top .icon-top-part li a {
     font-size: 24px;
     margin-left: 20px;
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .icon-area .icon-bg .icon-area-top .icon-bottom-part {
@@ -10282,7 +10282,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .icon-area .icon-bg .icon-area-top .icon-bottom-part li a {
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .icon-area .icon-bg .icon-area-top .icon-bottom-part li a i:before {
@@ -10292,7 +10292,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .icon-area .icon-style-one {
-    background: #88C13E;
+    background: #BBC246;
 }
 
 .icon-area .icon-style-one li a {
@@ -10322,7 +10322,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .search-banner .nice-select:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .search-banner .nice-select:after {
@@ -10362,8 +10362,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .search-menu ul li a:hover,
 .search-menu ul li a.active {
-    color: #88C13E;
-    border-bottom: 1px solid #88C13E;
+    color: #BBC246;
+    border-bottom: 1px solid #BBC246;
 }
 
 .element-footer {
@@ -10391,7 +10391,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-weight: 600;
     font-size: 15px;
     color: #fff;
-    background: #88C13E;
+    background: #BBC246;
     padding: 1px 8px;
     border-radius: 20px;
 }
@@ -10400,7 +10400,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: absolute;
     content: '';
     bottom: -3px;
-    border-top: 6px solid #88C13E;
+    border-top: 6px solid #BBC246;
     width: 6px;
     height: 6px;
     -webkit-transform: rotate(45deg);
@@ -10753,7 +10753,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .form-area .form-group .form-field .has-search .form-control:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .form-area .form-group .form-field .has-search .form-control-feedback {
@@ -10793,7 +10793,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .form-area .form-group .form-field .input-form:focus,
 .form-area .form-group .form-field textarea:focus {
-    border: 2px solid #88C13E;
+    border: 2px solid #BBC246;
 }
 
 .form-area .form-group .form-field .form-control {
@@ -10838,7 +10838,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .form-area .form-group .form-field .nice-select:focus {
-    border-color: #88C13E;
+    border-color: #BBC246;
 }
 
 .form-area .form-group .form-field .nice-select .list {
@@ -11003,7 +11003,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     left: 30px;
     margin-top: 0;
     height: auto;
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
     text-align: center;
     line-height: 34px;
@@ -11064,7 +11064,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .alert-area .basic-alert-icon {
     border: none;
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
     padding-right: 65px;
 }
@@ -11794,7 +11794,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .element-card-area .card-item1 .slick-dots li.slick-active button:before {
-    color: #88C13E !important;
+    color: #BBC246 !important;
 }
 
 .element-card-area .card-item1 .slick-prev {
@@ -11832,7 +11832,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .element-card-area .card-item1 .slick-prev:hover,
 .element-card-area .card-item1 .slick-next:hover {
-    background: #88C13E !important;
+    background: #BBC246 !important;
 }
 
 .element-card-area .card-item1 .slick-prev:hover:before,
@@ -11844,7 +11844,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .element-card-area .card-item1 .slick-next:before {
     font-size: 25px;
     opacity: 1;
-    color: #88C13E;
+    color: #BBC246;
 }
 
 .element-card-area .card-item1 .slick-slide {
@@ -11884,7 +11884,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .element-card-area .card-item2 .classes-items .single-class-item .bottom-content h3 {
-    color: #88C13E;
+    color: #BBC246;
     font-size: 24px;
     letter-spacing: 0.6px;
     font-weight: 600;
@@ -11899,7 +11899,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .element-card-area .card-item2 .classes-items .single-class-item .bottom-content h4 {
-    background: #88C13E;
+    background: #BBC246;
     font-size: 24px;
     letter-spacing: 0.6px;
     font-weight: 600;
@@ -11952,7 +11952,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .element-card-area .card-item2 .slick-dots li {
-    background: #88C13E;
+    background: #BBC246;
 }
 
 .element-card-area .card-item3 {
@@ -11992,7 +11992,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .element-card-area .card-item3 .shop-single-item .top-content .hover-content .btn {
-    background: #88C13E;
+    background: #BBC246;
     color: #fff;
 }
 
@@ -12017,7 +12017,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .element-card-area .card-item3 .shop-single-item .bottom-content a {
     font-size: 15px;
-    color: #88C13E;
+    color: #BBC246;
     letter-spacing: 0.8px;
 }
 

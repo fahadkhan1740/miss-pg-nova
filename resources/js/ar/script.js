@@ -59,7 +59,7 @@
         }
 
         /*-----------------------------
-                    twentytwenty 
+                    twentytwenty
         ------------------------------*/
 
 
@@ -740,7 +740,7 @@
         })
 
         /*-------------------------------
-            Portfolio filter 
+            Portfolio filter
         ---------------------------------*/
         var $Container = $('.portfolio-masonry');
         if ($Container.length > 0) {
@@ -821,7 +821,7 @@
         $('.html').rProgressbar({
             percentage: 80,
             height: 10,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: true,
             borderRadius: '20px',
             AbsolutePercentCount: true
@@ -830,7 +830,7 @@
         $('.css').rProgressbar({
             percentage: 90,
             height: 10,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: true,
             borderRadius: '20px',
             AbsolutePercentCount: true
@@ -839,7 +839,7 @@
         $('.php').rProgressbar({
             percentage: 75,
             height: 10,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: true,
             borderRadius: '20px',
             AbsolutePercentCount: true
@@ -848,7 +848,7 @@
         $('.javascript').rProgressbar({
             percentage: 65,
             height: 10,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: true,
             borderRadius: '20px',
             AbsolutePercentCount: true
@@ -859,13 +859,13 @@
         $('.html1').rProgressbar({
             percentage: 80,
             height: 3,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: false,
         });
         $('.css1').rProgressbar({
             percentage: 90,
             height: 3,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: false
         });
 
@@ -874,7 +874,7 @@
         $('.php1').rProgressbar({
             percentage: 75,
             height: 3,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: false
         });
 
@@ -883,7 +883,7 @@
         $('.javascript1').rProgressbar({
             percentage: 65,
             height: 3,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: false
         });
 
@@ -892,7 +892,7 @@
         $('.jquery1').rProgressbar({
             percentage: 95,
             height: 3,
-            fillBackgroundColor: '#88C13E',
+            fillBackgroundColor: '#BBC246',
             ShowProgressCount: false
         });
 
