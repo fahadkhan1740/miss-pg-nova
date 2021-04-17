@@ -8,6 +8,7 @@ use App\Nova\KidsClub;
 use App\Nova\Membership;
 use App\Nova\NewsEvents;
 use App\Nova\Service;
+use App\Nova\Trainer;
 use App\Nova\User;
 use DigitalCreative\CollapsibleResourceManager\CollapsibleResourceManager;
 use DigitalCreative\CollapsibleResourceManager\Resources\TopLevelResource;
@@ -105,6 +106,12 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         'label' => 'Memberships',
                         'resources' => [
                             Membership::class,
+                        ]
+                    ]),
+                    TopLevelResource::make([
+                        'label' => 'Trainers',
+                        'resources' => [
+                            Trainer::class,
                         ]
                     ]),
                     TopLevelResource::make([
