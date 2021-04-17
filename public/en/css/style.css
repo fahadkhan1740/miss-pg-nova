@@ -9645,3 +9645,35 @@ iframe {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgba(50, 50, 50, 1) 100%);
 }
 /* membership area end */
+/* news-events start */
+.blog-details-area .card {
+  background:#000000;
+
+}
+.blog-details-area .card .btn-success{
+  border:1px #ffffff solid;
+  color: #27f059;
+  background-color: #000;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 200;
+}
+.blog-details-area .card .card-body .card-subtitle{
+font-size:10px
+}
+.blog-details-area .card .card-body .card-title{
+  font-size:12px
+}
+.blog-details-area .card .card-body .card-text{
+  font-size:10px
+}
+.blog-details-area .card .btn-success:hover {  
+  box-shadow: 0 0px 15px rgba(39, 240, 89,0.5)
+}
+.blog-details-area .container-fluid{
+border-top: 2px solid #ffffff
+}
+.blog-details-area .pagination .page-item{
+  margin:10px;
+}
+/* news-events end */
