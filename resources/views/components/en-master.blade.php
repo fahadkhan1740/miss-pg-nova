@@ -58,7 +58,7 @@
 
 <!-- navbar start -->
 <div class="zarxio-navbar">
-    <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
+    {{-- <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
         <div class="container nav-container">
             <div class="responsive-mobile-menu">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu"
@@ -117,7 +117,7 @@
 
 {{ $slot }}
 
-<footer class="footer-area footer-style-1 black-bg padding-top-160">
+{{-- <footer class="footer-area footer-style-1 black-bg padding-top-160">
     <div class="footer-top padding-top-30 padding-bottom-0">
         <div class="container">
             <div class="row">
@@ -202,6 +202,56 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</footer>  --}}
+<footer>
+    <div class="container">        
+            <div class="row ">
+                <div class="col-lg-4">
+                    {{-- links --}}
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <ul>
+                                <li><a href="#" >Home</a></li>
+                                <li><a href="#" >Branches</a></li>
+                                <li><a href="#" >Memberships</a></li>
+                                <li><a href="#" >About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-7">
+                            <ul>
+                                <li><a href="#"> Training</a></li>
+                                <li><a href="#"> News &amp; Events</a></li>
+                                <li><a href="#"> Terms &amp; Conditions</a></li>
+                                <li><a href="#"> Kids club</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="input-group mb-3">                                
+                                <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <a class="input-group-text" id="basic-addon1" href="#"><i class="fa fa-send"></i></a>
+                                    </div>
+                                    <label for="">Stay in touch for the freshest products!</label>
+                            </div>                            
+                        </div>
+                    </div>
+                {{-- subscribe/news letter --}}
+                </div>
+                <div class="col-lg-4" style="text-align:center">
+                {{-- Social Icons --}}
+                <span class="social-icons"><i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                </span>
+                </div>                            
         </div>
     </div>
 </footer>
