@@ -9693,3 +9693,17 @@ border-top: 2px solid #ffffff
     bottom: 1rem
 }
 /* kids end */
+/* trainer page */
+.trainiers {
+  background:#000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(50, 50, 50, 1) 100%);
+}
+.trainiers #pills-tab{
+  font-weight:bolder;
+ color: rgb(128, 128, 128); 
+}
+.trainiers #pills-tab .active,
+.trainiers .card-title {
+  color:#27f059
+}
+/* trainer page end */
