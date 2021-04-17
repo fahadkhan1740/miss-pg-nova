@@ -2657,7 +2657,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .banner-style-one {
   background-size: cover;
-  min-height: 400px;
+  min-height: 100vh;
   position: relative;
   background-position: center center; }
   .banner-style-one .banner-bg-style-one {
@@ -9421,3 +9421,176 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .flaticon-delivery:before {
   content: "\f11c"; }
+/* Custom CSS by rishabh */
+body{
+  background-color: black;
+}
+#main-nav li a {
+    color: #27f059;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding:1.5rem;
+
+}
+
+#language-icon {
+    height: auto;
+    width: 2rem;
+}
+.banner-message{
+  position: absolute;
+  color:#ffffff;
+  text-align: center ;
+  padding:6rem;
+  bottom:0;
+  left:0;
+}
+.display-6{
+  color:#ffffff;
+}
+.btn-success{
+  background-color: #72e868  
+}
+.box-underline{
+  width: 15rem;
+  margin: 0 auto;
+  border-bottom:10px solid #27f059;
+  text-align: center;
+  margin-bottom:2rem
+}
+.home-about p {
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 18px
+}
+
+.home-about {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(50, 50, 50, 1) 100%);
+    margin-top: 50px;
+    padding: 5% 20px;
+    /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+
+.home-about .container {
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+
+.home-services{
+  /* height:100vh;
+  padding-top:10rem */
+}
+.home-explore {
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0)  0%, rgba(50, 50, 50, 1) 100%);
+    margin-top: 50px;
+    padding: 5% 20px;
+    /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);    
+}
+
+.home-explore .container {
+  /* margin-top:10rem; */
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+footer{
+  background: #ffffff;
+  color:#000000;
+  padding:2rem 15rem;
+  font-size:12px;  
+}
+footer ul{
+  list-style: none;
+}
+footer ul li {
+  margin-bottom:5px
+}
+footer label{  
+  margin-top:1rem
+}
+#email{
+  border-right:none;
+} 
+#basic-addon1{
+  background:#ffffff;
+  border-left:none;
+}
+.social-icons i{
+  font-size:1rem;
+  padding:0.5rem;
+  
+}
+.home-services .card{
+  text-align: center;
+  border-radius:1rem;
+  min-height:25rem;
+  width:20rem;
+  background:#000000;
+  box-shadow: 15px 20px 12px 5px #333333;
+  -webkit-box-shadow: 15px 20px 12px 5px #333333;
+  -moz-box-shadow: 15px 20px 12px 5px #333333;
+  margin-bottom:5rem  
+}
+.card hr{
+  border-top: 1px solid #ffffff;
+}
+.card-title{
+  color:#ffffff;
+  margin-bottom: 2rem;
+}
+.card-text{
+  font-weight:normal;
+  font-size:13px;
+  line-height:1.5rem;
+}
+.card-footer{
+  text-align:right;
+  padding-right: 4rem;
+}
+.card-body .fa{
+  font-size:5rem;
+  margin-bottom: 2rem;
+  color: #27f059;
+}
+.home-explore .card{
+  background:#000000;
+  text-align:center;
+  padding:1rem;
+  margin-top:2rem;
+}
+.btn-custom{
+background-color: #27f059;
+color:#ffffff;
+margin-top:5rem
+}
+.clock-holder{
+  position:absolute;
+  left: 41%;
+  top: -12%;
+}
+.clock-holder .fa {
+    /* position: absolute;     */
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 100%;
+    color: #007bff;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;     
+}
