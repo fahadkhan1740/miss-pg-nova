@@ -13,50 +13,57 @@
     </div>
     <!-- breadcrumb area end -->
 
-    <!-- overview start -->
-    <div class="about-page-top">
-        <div class="container section-padding" style="padding-bottom: 0;">
+    <!-- about start -->
+    <div class="trainiers">
+        <div class="container section-padding padding-bottom-90">
             <div class="row">
-                <div class="col-lg-6 col-xl-6 d-flex">
-                    <div class="about-content align-self-center">
-                        <h3 class="about-title">{{ $personalTraining->title }}</h3>
-                        <div style="color: black !important;">
-                            {!! $personalTraining->description !!}
-                        </div>
-                    </div>
+                <div class="col-lg-12 col-xl-12 ">
+                    <ul class="nav  justify-content-center mb-5 " id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Show All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">Trainer CAT1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                role="tab" aria-controls="pills-contact" aria-selected="false">Trainer CAT2</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-6 col-xl-6">
-                    <div class="about-left">
-                        <div class="thumb">
-                            <img src="{{ asset('img/bg/about-right') }}.png" alt="About">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- overview end -->
-
-    <!-- services-facilities start -->
-    <div class="mission-area my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mission-content">
-                        <h3 class="serial">01</h3>
-                        <div class="title">
-                            <h1>{{ __('custom.personal_training.sessions') }}</h1>
-                        </div>
-                        <div class="mission-content">
-                            <div style="color: black;">
-                                {!! $personalTraining->sessions !!}
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="row mb-5">
+                                @foreach ($trainers as $trainer)
+                                <div class="col-lg-4">
+                                    <div class="card" style="background:transparent;border:0">
+                                        <img class="card-img-top" src="{{ $trainer->image }}" alt="Card image cap">
+                                        <div class="card-body pl-0">
+                                            <h5 class="card-title mb-3">{{ $trainer->name_ar }}</h5>
+                                            <p class="card-text">
+                                                {!! $trainer->description_ar !!}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">...
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- services-facilities end -->
+    <!-- about end -->
 
 </x-ar-master>
