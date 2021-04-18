@@ -32,14 +32,13 @@
         <div class="container">
             <div class="row row-eq-height">
                 <div class="col-lg-6 px-md-5">
+                    <img src="{{ $aboutUs->before_image_path }}" alt="">
+                </div>
+                <div class="col-lg-6 px-md-5">
                     <h2 class="display-6 box-underline">Who we are?</h2>
                     <h4 class="display-6">Welcome to Miss Platinum Health</h4>
                     {!! $aboutUs->overview !!}
-                </div>
-                <div class="col-lg-6 px-md-5">
-                    <img src="{{ $aboutUs->before_image_path }}" alt="">
                 </div>                
-
             </div>
         </div>
     </div>
@@ -52,17 +51,18 @@
             <div class="row">
                 @foreach($services as $service)
                 <div class="col-lg-4">
-                    <div class="card">
+                    <div class="card" style="height: 90%">
                         <div class="card-body">
                             <i class="fa fa-asl-interpreting"></i>
                             <h5 class="card-title">{{ $service->title }}</h5>
                             <p class="card-text">
                                 {!! $service->short_description !!}
+                                {{-- {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,100).'..' : $service->short_description }} --}}
                             </p>
                         </div>
                         <div class="card-footer">
-                            <p class="card-text">
-                                <a href="#">
+                            <p class="card-text"style="text-align: left">
+                                <a href="#" >
                                     Read More
                                 </a>
                             </p>

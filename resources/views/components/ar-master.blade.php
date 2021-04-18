@@ -41,7 +41,7 @@
 <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="{{ asset('ar/css/responsive.css') }}">
 
-    <link rel="stylesheet" href="{{ mix('en/css/style.css') }}">
+    <link rel="stylesheet" href="{{ mix('ar/css/style.css') }}">
 </head>
 <body>
 
@@ -94,6 +94,29 @@
     <nav class="container">
         <!-- Nav tabs -->
         <ul class="nav " id="main-nav">
+            <li class="nav-item logo">
+                <div>
+                    <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset('storage/'.getLogo()) }}"
+                            alt="logo"></a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('about', ['locale' => 'ar']) }}" class="nav-link active">{{ __('custom.links.about') }}</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('memberships', ['locale' => 'ar']) }}"
+                    class="nav-link">{{ __('custom.links.memberships_packages') }}</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('personal-training', ['locale' => 'ar']) }}"
+                    class="nav-link">{{ __('custom.links.personal_training') }}</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('kids-club', ['locale' => 'ar']) }}" class="nav-link">{{ __('custom.links.kids_club') }}</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('news-events', ['locale' => 'ar']) }}" class="nav-link">{{ __('custom.links.news_events') }}</a>
+            </li>
             <li class="nav-item">
                 @if(request()->route()->getName() === 'news-events.show')
                 <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}" class="nav-link">
@@ -106,23 +129,6 @@
                 </a>
                 @endif
             </li>
-            <li class="nav-item">
-                <a href="{{ route('news-events', ['locale' => 'ar']) }}" class="nav-link">{{ __('custom.links.news_events') }}</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('kids-club', ['locale' => 'ar']) }}" class="nav-link">{{ __('custom.links.kids_club') }}</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('personal-training', ['locale' => 'ar']) }}"
-                    class="nav-link">{{ __('custom.links.personal_training') }}</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('memberships', ['locale' => 'ar']) }}"
-                    class="nav-link">{{ __('custom.links.memberships_packages') }}</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('about', ['locale' => 'ar']) }}" class="nav-link active">{{ __('custom.links.about') }}</a>
-            </li>            
         </ul>
     </nav>
 </div>

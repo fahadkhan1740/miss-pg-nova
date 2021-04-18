@@ -12612,3 +12612,345 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .nice-select .option {
   text-align: right;
 }
+/* Custom CSS by rishabh */
+body {
+    background-color: black;
+}
+
+#main-nav li a {
+    color: #27f059;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1.5rem;
+
+}
+
+#language-icon {
+    height: auto;
+    width: 2rem;
+}
+
+.banner-message {
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem;
+    bottom: 0;
+    left: 0;
+}
+
+.display-6 {
+    color: #ffffff;
+}
+
+.btn-success {
+    background-color: #72e868
+}
+
+.box-underline {
+    width: 15rem;
+    margin: 0 auto;
+    border-bottom: 5px solid #27f059;
+    text-align: center;
+    margin-bottom: 2rem
+}
+
+.home-about p {
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 18px
+}
+
+.home-about {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(50, 50, 50, 1) 100%);
+    margin-top: 50px;
+    padding: 5% 20px;
+    /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+
+.home-about .container {
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+
+.home-services {
+    /* height:100vh;
+  padding-top:10rem */
+}
+
+.home-explore {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(50, 50, 50, 1) 100%);
+    margin-top: 50px;
+    padding: 5% 20px;
+    /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+
+.home-explore .container {
+    /* margin-top:10rem; */
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+
+footer {
+    background: #ffffff;
+    color: #000000;
+    padding: 2rem 15rem;
+    font-size: 12px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px
+}
+
+footer label {
+    margin-top: 1rem
+}
+
+#email {
+    border-right: none;
+}
+
+#basic-addon1 {
+    background: #ffffff;
+    border-left: none;
+}
+
+.social-icons i {
+    font-size: 1rem;
+    padding: 0.5rem;
+
+}
+
+.home-services .card,
+.kids-services .card {
+    text-align: center;
+    border-radius: 1rem;
+    min-height: 25rem;
+    width: 20rem;
+    background: #000000;
+    box-shadow: 15px 20px 12px 5px #333333;
+    -webkit-box-shadow: 15px 20px 12px 5px #333333;
+    -moz-box-shadow: 15px 20px 12px 5px #333333;
+    margin-bottom: 5rem
+}
+
+.card hr {
+    border-top: 1px solid #ffffff;
+}
+
+.card-title {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.card-text {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+.card-footer {
+    text-align: right;
+    padding-right: 4rem;
+}
+
+.card-body .fa {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: #27f059;
+}
+
+.home-explore .card {
+    background: #000000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    min-height: 100%;
+}
+
+.btn-custom {
+    background-color: #27f059;
+    color: #ffffff;
+    margin-top: 5rem
+}
+
+.clock-holder {
+    position: absolute;
+    left: 41%;
+    top: -12%;
+}
+
+.clock-holder .fa {
+    /* position: absolute;     */
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 100%;
+    color: #007bff;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+/* about us page */
+.about-box-underline {
+    /* margin: 0 auto; */
+    border-bottom: 5px solid #27f059;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    width: 25rem
+}
+
+.core-values {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 65%, rgba(50, 50, 50, 1) 100%);
+    border-bottom: 2px solid rgba(50, 50, 50, 1);
+}
+
+.text-center {
+    color: #ffffff;
+}
+
+.contact-details .box-underline {
+    width: 20rem;
+}
+
+.contact-cards {
+    border-right: 2px solid #ffffff;
+    padding: 0.5rem
+}
+
+.contact-cards:first-child {
+    border: none;
+}
+
+.contact-cards .fa {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #27f059;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 10+ */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(99%);
+    /* Chrome 19+ & Safari 6+ */
+    -webkit-backface-visibility: hidden;
+    /* Fix for transition flickering */
+}
+
+/* about us page ends */
+/* membership area */
+.memberships-area {
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgba(50, 50, 50, 1) 100%);
+}
+
+/* membership area end */
+/* news-events start */
+.blog-details-area .card {
+    background: #000000;
+
+}
+
+.blog-details-area .card .btn-success {
+    border: 1px #ffffff solid;
+    color: #27f059;
+    background-color: #000;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: 200;
+}
+
+.blog-details-area .card .card-body .card-subtitle {
+    font-size: 10px
+}
+
+.blog-details-area .card .card-body .card-title {
+    font-size: 12px
+}
+
+.blog-details-area .card .card-body .card-text {
+    font-size: 10px
+}
+
+.blog-details-area .card .btn-success:hover {
+    box-shadow: 0 0px 15px rgba(39, 240, 89, 0.5)
+}
+
+.blog-details-area .container-fluid {
+    border-top: 2px solid #ffffff
+}
+
+.blog-details-area .pagination .page-item {
+    margin: 10px;
+}
+
+/* news-events end */
+/* kids */
+.kids-services .card-title {
+    color: #ffffff;
+    position: relative;
+    font-size: 4rem;
+    margin-bottom: 0rem;
+    color: rgba(128, 128, 128, 0.3);
+    font-weight: bolder
+}
+
+.kids-services .card-subtitle {
+    color: #ffffff;
+    position: relative;
+    bottom: 1rem
+}
+
+/* kids end */
+/* trainer page */
+.trainiers {
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(50, 50, 50, 1) 100%);
+}
+
+.trainiers #pills-tab {
+    font-weight: bolder;
+    color: rgb(128, 128, 128);
+}
+
+.trainiers #pills-tab .active,
+.trainiers .card-title {
+    color: #27f059
+}
+
+/* trainer page end */
+/* responsiveness and fixes */
+.logo a img {
+    height: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 15rem
+}
+
+/* responsiveness and fixes end */
