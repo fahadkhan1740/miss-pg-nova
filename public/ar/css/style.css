@@ -12950,7 +12950,106 @@ iframe {
     height: 5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-left: 15rem
+    margin-right: 15rem    
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .about-box-underline,
+    .box-underline,
+    .contact-details .box-underline {
+        width: auto;
+    }
+
+    .home-explore .card {
+        background: #000000;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        min-height: auto;
+    }
+
+    .banner-message {
+        position: absolute;
+        color: #ffffff;
+        text-align: center;
+        padding:0rem;
+        bottom: 0rem;
+        left: 0rem;
+    }
+
+    footer {
+        padding: 2rem;
+        margin-top: 5rem
+    }
+
+    .home-services .card,
+    .kids-services .card {
+        text-align: center;
+        border-radius: 1rem;
+        min-height: auto;
+        width: 100%;
+        background: #000000;
+        box-shadow: 0rem 1rem 1rem 5px #333333;
+        -webkit-box-shadow: 0rem 1rem 1rem 5px #333333;
+        -moz-box-shadow: 0rem 1rem 1rem 5px #333333;
+        margin-bottom: 5rem
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .about-box-underline,
+    .box-underline,
+    .contact-details .box-underline {
+        width: auto;
+    }
+
+    .home-explore .card {
+        background: #000000;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        min-height: auto;
+    }
+
+    .banner-message {
+        position: absolute;
+        color: #ffffff;
+        text-align: center;
+        padding:0rem;
+        bottom: 0rem;
+        left: 0rem;
+    }
+
+    footer {
+        padding: 2rem;
+        margin-top: 5rem
+    }
+
+    .home-services .card,
+    .kids-services .card {
+        text-align: center;
+        border-radius: 1rem;
+        min-height: auto;
+        width: 100%;
+        background: #000000;
+        box-shadow: 0rem 1rem 1rem 5px #333333;
+        -webkit-box-shadow: 0rem 1rem 1rem 5px #333333;
+        -moz-box-shadow: 0rem 1rem 1rem 5px #333333;
+        margin-bottom: 5rem
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
 
 /* responsiveness and fixes end */

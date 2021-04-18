@@ -44,25 +44,13 @@
     <link rel="stylesheet" href="{{ mix('ar/css/style.css') }}">
 </head>
 <body>
-
-<!-- preloader area start -->
-{{--<div class="preloader" id="preloader">--}}
-{{--    <div class="preloader-inner">--}}
-{{--        <div class="spinner">--}}
-{{--            <div class="dot1"></div>--}}
-{{--            <div class="dot2"></div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-<!-- preloader area end -->
-
 <!-- navbar start -->
 <div class="zarxio-navbar">
-    {{-- <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
+    <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
         <div class="container nav-container">
             <div class="responsive-mobile-menu">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <span class="bar1"></span>
                     <span class="bar2"></span>
@@ -71,160 +59,48 @@
             </div>
             <div class="logo">
                 <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img
- src="{{ asset('storage/'.getLogo()) }}" alt="logo"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="billatrail_main_menu">
-        <ul class="navbar-nav menu-open">
-            <li><a href="{{ route('home') }}">{{ __('custom.links.home') }}</a></li>
-            <li><a href="{{ route('about', ['locale' => 'ar']) }}">{{ __('custom.links.about') }}</a></li>
-            <li><a
-                    href="{{ route('memberships', ['locale' => 'ar']) }}">{{ __('custom.links.memberships_packages') }}</a>
-            </li>
-            <li><a
-                    href="{{ route('personal-training', ['locale' => 'ar']) }}">{{ __('custom.links.personal_training') }}</a>
-            </li>
-            <li><a href="{{ route('kids-club', ['locale' => 'ar']) }}">{{ __('custom.links.kids_club') }}</a></li>
-            <li><a href="{{ route('news-events', ['locale' => 'ar']) }}">{{ __('custom.links.news_events') }}</a></li>
-            <li><a href="{{ route('contact', ['locale' => 'ar']) }}">{{ __('custom.links.contact') }}</a></li>
-            <li><a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}">العربي</a></li>
-        </ul>
-    </div>
-    </div>
-    </nav> --}}
-    <nav class="container">
-        <!-- Nav tabs -->
-        <ul class="nav " id="main-nav">
-            <li class="nav-item logo">
-                <div>
-                    <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset('storage/'.getLogo()) }}"
-                            alt="logo"></a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('about', ['locale' => 'ar']) }}" class="nav-link active">{{ __('custom.links.about') }}</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('memberships', ['locale' => 'ar']) }}"
-                    class="nav-link">{{ __('custom.links.memberships_packages') }}</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('personal-training', ['locale' => 'ar']) }}"
-                    class="nav-link">{{ __('custom.links.personal_training') }}</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('kids-club', ['locale' => 'ar']) }}" class="nav-link">{{ __('custom.links.kids_club') }}</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('news-events', ['locale' => 'ar']) }}" class="nav-link">{{ __('custom.links.news_events') }}</a>
-            </li>
-            <li class="nav-item">
-                @if(request()->route()->getName() === 'news-events.show')
-                <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}" class="nav-link">
-                    <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png" id="language-icon">
-                </a>
-                @else
-                <a href="{{ route(request()->route()->getName(), ['locale' => 'en']) }}" class="nav-link">
-                    <img src="http://icons.iconarchive.com/icons/wikipedia/flags/1024/GB-United-Kingdom-Flag-icon.png"
-                        id="language-icon">
-                </a>
-                @endif
-            </li>
-        </ul>
+                        src="{{ asset('storage/'.getLogo()) }}" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="billatrail_main_menu">
+                <ul class="nav menu-open" id="main-nav">
+                    <li class="nav-item">
+                        <a href="{{ route('about', ['locale' =>'ar']) }}" class="nav-link active">{{ __('custom.links.about') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('memberships', ['locale' =>'ar']) }}" class="nav-link">{{ __('custom.links.memberships_packages') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('personal-training', ['locale' =>'ar']) }}" class="nav-link">{{ __('custom.links.personal_training') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('kids-club', ['locale' =>'ar']) }}" class="nav-link">{{ __('custom.links.kids_club') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('news-events', ['locale' => 'en']) }}" class="nav-link">">{{ __('custom.links.news_events') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        @if(request()->route()->getName() === 'news-events.show')
+                        <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}"
+                            class="nav-link">
+                            <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                                id="language-icon">
+                        </a>
+                        @else
+                        <a href="{{ route(request()->route()->getName(), ['locale' => 'en']) }}" class="nav-link">
+                            <img src="http://icons.iconarchive.com/icons/wikipedia/flags/1024/GB-United-Kingdom-Flag-icon.png"
+                                id="language-icon">
+                        </a>
+                        @endif
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </div>
 <!-- navbar end -->
 
 {{ $slot }}
 
-{{-- <footer class="footer-area footer-style-1 black-bg padding-top-160">
-    <div class="footer-top padding-top-30 padding-bottom-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-xl-4 col-md-6">
-                    <div class="footer-widget widget">
-                        <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="footer-logo">
-    <img src="{{ asset('storage/'.getLogo()) }}" alt="footer logo">
-    </a>
-    <ul class="contact_info_list">
-        <li class="single-info-item">
-            <div class="icon">
-                <i class="flaticon-phone-call"></i>
-            </div>
-            <div class="details">
-                {{ getContactDetails()->phone_1 }} <br>
-                {{ getContactDetails()->phone_2 }}
-            </div>
-        </li>
-        <li class="single-info-item">
-            <div class="icon">
-                <i class="flaticon-placeholder"></i>
-            </div>
-            <div class="details">
-                {!! getContactDetails()->address !!}
-            </div>
-        </li>
-        <li class="single-info-item">
-            <div class="icon">
-                <i class="flaticon-email"></i>
-            </div>
-            <div class="details">
-                {!! getContactDetails()->email !!}
-            </div>
-        </li>
-    </ul>
-    </div>
-    </div>
-    <div class="col-lg-4 col-xl-3 col-md-6">
-        <div class="footer-widget widget">
-            <h4 class="widget-title">Recent Post</h4>
-            <ul class="recent_post_item">
-                <li class="single-recent-post-item">
-                    <div class="thumb">
-                        <img src="{{ asset('img/post/1.png') }}" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="title">New gym center</p>
-                        <p class="desc">There are many variations of passages</p>
-                    </div>
-                </li>
-                <li class="single-recent-post-item">
-                    <div class="thumb">
-                        <img src="{{ asset('img/post/2.png') }}" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="title">Improve fitness</p>
-                        <p class="desc">There are many variations of passages</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-lg-4 col-xl-4 col-md-12 offset-xl-1">
-        <div class="footer-widget widget">
-            <h4 class="widget-title">Stay in Touch</h4>
-            <p class="description">Praesent a diam at velit finibus vehicula sit amet eu dui. Vestibulum rutrum
-dignissim arcu, vitae convallis</p>
-            <div class="subscribe-form">
-                <div class="input-group margin-top-30">
-                    <input type="text" class="form-control" placeholder="Enter your email address">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default submit-btn" type="button">Subscribe</button>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="copyright-area-inner copyright-sm margin-top-30">
-© Miss Platinum {{ now()->year }} All rights reserved.
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </footer> --}}
     <footer>
         <div class="container">
             <div class="row ">
