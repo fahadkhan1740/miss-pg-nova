@@ -20,10 +20,12 @@
                     <div class="col-lg-8">
                         <article class="blog-details">
                             <div class="blog-img">
-                                <img src="{{ asset('storage/'.$new->banner_path) }}" class="attachment-siiimple_full size-siiimple_full wp-post-image" alt="">
+                                <img src="{{ asset('storage/'.$new->banner_path) }}"
+                                     class="attachment-siiimple_full size-siiimple_full wp-post-image" alt="">
                             </div>
                             <div class="blog-details-content">
-                                <h6><a href="#">{{ $new->created_at->format('d M,Y') }}</a> <a href="#"><span>{{ $new->user->name ?? 'User' }}</span></a></h6>
+                                <h6><a href="#">{{ $new->created_at->format('d M,Y') }}</a> <a
+                                        href="#"><span>{{ $new->user->name ?? 'User' }}</span></a></h6>
                                 <h2>{{ $new->title }}</h2>
                                 <div style="color: black">
                                     {!! $new->long_description !!}
@@ -48,7 +50,7 @@
                                 @foreach($latestNews as $new)
                                     <div class="share-img-item">
                                         <div class="img-part">
-                                            <a href="blog-details.html"><img src="{{ asset('storage/).$new->banner_path }}"
+                                            <a href="blog-details.html"><img src="{{ $new->banner_path }}"
                                                                              alt=""></a>
                                         </div>
                                         <div class="content-part">
