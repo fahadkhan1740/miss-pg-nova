@@ -58,7 +58,7 @@
 
 <!-- navbar start -->
 <div class="zarxio-navbar">
-    {{-- <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
+    <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
         <div class="container nav-container">
             <div class="responsive-mobile-menu">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu"
@@ -73,58 +73,38 @@
                 <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset('storage/'.getLogo()) }}" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="billatrail_main_menu">
-                <ul class="navbar-nav menu-open">
-                    <li><a href="{{ route('home') }}">{{ __('custom.links.home') }}</a></li>
-                    <li><a href="{{ route('about', ['locale' => 'en']) }}">{{ __('custom.links.about') }}</a></li>
-                    <li><a href="{{ route('memberships', ['locale' => 'en']) }}">{{ __('custom.links.memberships_packages') }}</a></li>
-                    <li><a href="{{ route('personal-training', ['locale' => 'en']) }}">{{ __('custom.links.personal_training') }}</a></li>
-                    <li><a href="{{ route('kids-club', ['locale' => 'en']) }}">{{ __('custom.links.kids_club') }}</a></li>
-                    <li><a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a></li>
-                    <li><a href="{{ route('contact', ['locale' => 'en']) }}">{{ __('custom.links.contact') }}</a></li>
-                    <li><a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}">العربي</a></li>
+                <ul class="nav menu-open" id="main-nav">                   
+                    <li class="nav-item">
+                        <a href="{{ route('about', ['locale' => 'en']) }}" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('memberships', ['locale' => 'en']) }}" class="nav-link">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('personal-training', ['locale' => 'en']) }}" class="nav-link">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('kids-club', ['locale' => 'en']) }}" class="nav-link">Kids Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('news-events', ['locale' => 'en']) }}" class="nav-link">News n Events</a>
+                    </li>
+                    <li class="nav-item">
+                        @if(request()->route()->getName() === 'news-events.show')
+                        <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}" class="nav-link">
+                            <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                                id="language-icon">
+                        </a>
+                        @else
+                        <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link">
+                            <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                                id="language-icon">
+                        </a>
+                        @endif
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav> --}}
-    <nav class="container">
-        <!-- Nav tabs -->
-        <ul class="nav  justify-content-end" id="main-nav">
-            <li class="nav-item logo">
-                <div >
-                    <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset('storage/'.getLogo()) }}"
-                            alt="logo"></a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('about', ['locale' => 'en']) }}" class="nav-link active">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('memberships', ['locale' => 'en']) }}" class="nav-link">Membership</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('personal-training', ['locale' => 'en']) }}" class="nav-link">Training</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('kids-club', ['locale' => 'en']) }}" class="nav-link">Kids Club</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('news-events', ['locale' => 'en']) }}" class="nav-link">News n Events</a>
-            </li>
-            <li class="nav-item">
-                @if(request()->route()->getName() === 'news-events.show')
-                    <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}"
-                       class="nav-link">
-                        <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
-                             id="language-icon">
-                    </a>
-                @else
-                    <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link">
-                        <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
-                             id="language-icon">
-                    </a>
-                @endif
-            </li>
-        </ul>
     </nav>
 </div>
 <!-- navbar end -->

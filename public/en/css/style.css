@@ -9442,9 +9442,9 @@ body{
   position: absolute;
   color:#ffffff;
   text-align: center ;
-  padding:6rem;
-  bottom:0;
-  left:0;
+  /* padding:6rem; */
+  bottom:5rem;
+  left:5rem;
 }
 .display-6{
   color:#ffffff;
@@ -9540,7 +9540,7 @@ footer label{
   text-align: center;
   border-radius:1rem;
   min-height:25rem;
-  width:20rem;
+  /* width:20rem; */
   background:#000000;
   box-shadow: 15px 20px 12px 5px #333333;
   -webkit-box-shadow: 15px 20px 12px 5px #333333;
@@ -9715,4 +9715,46 @@ border-top: 2px solid #ffffff
   padding-bottom:1rem;
   margin-right:15rem
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about-box-underline,
+  .box-underline,
+  .contact-details .box-underline {
+    width: auto;
+}
+  .home-explore .card {
+    background: #000000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    min-height: auto;
+}
+ .banner-message{
+  position: absolute;
+  color:#ffffff;
+  text-align: center ;
+  /* padding:6rem; */
+  bottom:0rem;
+  left:0rem;
+}
+footer{
+  padding:2rem ;
+  margin-top:5rem
+}
+.home-services .card,.kids-services .card{
+  text-align: center;
+  border-radius:1rem;
+  min-height:auto;
+  width:100%;
+  background:#000000;
+  box-shadow: 0rem 1rem 1rem 5px #333333;
+  -webkit-box-shadow: 0rem 1rem 1rem 5px #333333;
+  -moz-box-shadow: 0rem 1rem 1rem 5px #333333;
+  margin-bottom:5rem  
+}      
+}
 /* responsiveness and fixes end */
+*{
+  border:1px solid red;
+  /* overflow-x: hidden; */
+}
