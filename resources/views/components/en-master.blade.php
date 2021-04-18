@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{ asset('en/css/wickedpicker.min.css') }}">
     <!-- Main Stylesheet -->
 {{--    <link rel="stylesheet" href="{{ asset('en/css/style.css') }}">--}}
-    <!-- responsive Stylesheet -->
+<!-- responsive Stylesheet -->
     <link rel="stylesheet" href="{{ asset('en/css/responsive.css') }}">
 
     <link rel="stylesheet" href="{{ mix('en/css/style.css') }}">
@@ -90,27 +90,27 @@
         <!-- Nav tabs -->
         <ul class="nav  justify-content-end" id="main-nav">
             <li class="nav-item">
-                <a href="#" class="nav-link active">About</a>
+                <a href="{{ route('about', ['locale' => 'en']) }}" class="nav-link active">About</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Membership</a>
+                <a href="{{ route('memberships', ['locale' => 'en']) }}" class="nav-link">Membership</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Training</a>
+                <a href="{{ route('personal-training', ['locale' => 'en']) }}" class="nav-link">Training</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Kids Club</a>
+                <a href="{{ route('kids-club', ['locale' => 'en']) }}" class="nav-link">Kids Club</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">News n Events</a>
+                <a href="{{ route('news-events', ['locale' => 'en']) }}" class="nav-link">News n Events</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link">
                     <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
-                        id="language-icon">
+                         id="language-icon">
                 </a>
             </li>
-        </ul>        
+        </ul>
     </nav>
 </div>
 <!-- navbar end -->
@@ -206,52 +206,53 @@
     </div>
 </footer>  --}}
 <footer>
-    <div class="container">        
-            <div class="row ">
-                <div class="col-lg-4">
-                    {{-- links --}}
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <ul>
-                                <li><a href="#" >Home</a></li>
-                                <li><a href="#" >Branches</a></li>
-                                <li><a href="#" >Memberships</a></li>
-                                <li><a href="#" >About Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-7">
-                            <ul>
-                                <li><a href="#"> Training</a></li>
-                                <li><a href="#"> News &amp; Events</a></li>
-                                <li><a href="#"> Terms &amp; Conditions</a></li>
-                                <li><a href="#"> Kids club</a></li>
-                            </ul>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-4">
+                {{-- links --}}
+                <div class="row">
+                    <div class="col-lg-5">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Branches</a></li>
+                            <li><a href="#">Memberships</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="#"> Training</a></li>
+                            <li><a href="#"> News &amp; Events</a></li>
+                            <li><a href="#"> Terms &amp; Conditions</a></li>
+                            <li><a href="#"> Kids club</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="input-group mb-3">
+                            <input id="email" type="email" class="form-control" placeholder="Email"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1">
+                            <div class="input-group-append">
+                                <a class="input-group-text" id="basic-addon1" href="#"><i class="fa fa-send"></i></a>
+                            </div>
+                            <label for="">Stay in touch for the freshest products!</label>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="input-group mb-3">                                
-                                <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                                    <div class="input-group-append">
-                                        <a class="input-group-text" id="basic-addon1" href="#"><i class="fa fa-send"></i></a>
-                                    </div>
-                                    <label for="">Stay in touch for the freshest products!</label>
-                            </div>                            
-                        </div>
-                    </div>
                 {{-- subscribe/news letter --}}
-                </div>
-                <div class="col-lg-4" style="text-align:center">
+            </div>
+            <div class="col-lg-4" style="text-align:center">
                 {{-- Social Icons --}}
                 <span class="social-icons"><i class="fa fa-instagram" aria-hidden="true"></i>
                 <i class="fa fa-twitter" aria-hidden="true"></i>
                 <i class="fa fa-facebook" aria-hidden="true"></i>
                 <i class="fa fa-globe" aria-hidden="true"></i>
                 </span>
-                </div>                            
+            </div>
         </div>
     </div>
 </footer>
