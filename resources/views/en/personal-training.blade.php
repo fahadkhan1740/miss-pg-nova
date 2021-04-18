@@ -7,7 +7,9 @@
             <h1 class="page-title">{{ __('custom.links.personal_training') }}</h1>
             <ul class="page-list">
                 <li><a href="{{ route('home') }}">{{ __('custom.links.home') }}</a></li>
-                <li><a href="{{ route('personal-training', ['locale' => app()->getLocale()]) }}">{{ __('custom.links.personal_training') }}</a></li>
+                <li>
+                    <a href="{{ route('personal-training', ['locale' => app()->getLocale()]) }}">{{ __('custom.links.personal_training') }}</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -17,48 +19,59 @@
     <div class="trainiers">
         <div class="container section-padding padding-bottom-90">
             <div class="row">
-                <div class="col-lg-12 col-xl-12 ">                    
+                <div class="col-lg-12 col-xl-12 ">
                     <ul class="nav  justify-content-center mb-5 " id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                                aria-controls="pills-home" aria-selected="true">Show All</a>
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                               role="tab"
+                               aria-controls="pills-home" aria-selected="true">Show All</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                                aria-controls="pills-profile" aria-selected="false">Trainer CAT1</a>
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                               role="tab"
+                               aria-controls="pills-profile" aria-selected="false">Trainer CAT1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-                                aria-controls="pills-contact" aria-selected="false">Trainer CAT2</a>
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                               role="tab"
+                               aria-controls="pills-contact" aria-selected="false">Trainer CAT2</a>
                         </li>
-                    </ul>                    
+                    </ul>
                 </div>
                 <div class="col-lg-12 col-xl-12">
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">                            
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                             aria-labelledby="pills-home-tab">
                             <div class="row mb-5">
-                            @for ($j=1;$j<=9;$j++)
-                            <div class="col-lg-4">
-                                <div class="card" style="background:transparent;border:0">
-                                    <img class="card-img-top" src="https://dummyimage.com/370X370/eeeeee/aaaaaa.png" alt="Card image cap">
-                                    <div class="card-body pl-0">
-                                        <h5 class="card-title mb-3">Trainer {{$j}}</h5>
-                                        <p class="card-text">Brand, Identity
+                                @foreach ($trainers as $trainer)
+                                    <div class="col-lg-4">
+                                        <div class="card" style="background:transparent;border:0">
+                                            <img class="card-img-top" src="{{ $trainer->image }}" alt="Card image cap">
+                                            <div class="card-body pl-0">
+                                                <h5 class="card-title mb-3">{{ $trainer->name_en }}</h5>
+                                                <p class="card-text">
+                                                    {!! $trainer->description_en !!}
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                </div>
-                                @endfor
-                                </div>                                </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-                    </div>                    
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                             aria-labelledby="pills-profile-tab">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                             aria-labelledby="pills-contact-tab">...
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- about end -->
 
-    <!-- services-facilities start -->    
+    <!-- services-facilities start -->
     <!-- services-facilities end -->
 
 </x-en-master>

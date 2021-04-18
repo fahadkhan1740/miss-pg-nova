@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\PersonalTraining;
+use App\Models\Trainer;
 use Illuminate\Http\Request;
 
 class PersonalTrainingController extends Controller
@@ -11,7 +12,8 @@ class PersonalTrainingController extends Controller
     {
         $personalTraining = PersonalTraining::locale(app()->getLocale())->first();
 
-        return view(app()->getLocale().'.personal-training')
-            ->with('personalTraining', $personalTraining);
+        $trainers = Trainer::all();
+
+        return view(app()->getLocale().'.personal-training', compact('trainers', 'personalTraining'));
     }
 }
