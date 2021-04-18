@@ -105,10 +105,18 @@
                 <a href="{{ route('news-events', ['locale' => 'en']) }}" class="nav-link">News n Events</a>
             </li>
             <li class="nav-item">
-                <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link">
-                    <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
-                         id="language-icon">
-                </a>
+                @if(request()->route()->getName() === 'news-events.show')
+                    <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}"
+                       class="nav-link">
+                        <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                             id="language-icon">
+                    </a>
+                @else
+                    <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link">
+                        <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                             id="language-icon">
+                    </a>
+                @endif
             </li>
         </ul>
     </nav>

@@ -11,7 +11,6 @@ class AboutController extends Controller
     {
         $aboutUs = AboutUs::locale(app()->getLocale())->first();
 
-        return view(app()->getLocale().'.about')
-            ->with('aboutUs', $aboutUs);
+        return view(app()->getLocale().'.about', compact('aboutUs'));
     }
 }
