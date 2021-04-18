@@ -16,84 +16,38 @@ style="background-image:url(/img/bg/contact.png);"
     <!-- breadcrumb area end -->
 
     <!-- pricing start -->
-    <div class="pricing-area padding-top-90 padding-bottom-200">
+    <div class="memberships-area padding-top-90 padding-bottom-200">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title padding-bottom-65 text-center">
-                        <p class="subtitle">Become A Part of us</p>
-                        <h1 class="title">Our Membership</h1>
+            @for ($i=1;$i<=4;$i++)
+            @if ($i%2!=0)
+            <div class="row no-gutter">
+                    <div class="col-lg-6">
+                        <img src="https://dummyimage.com/585x410/bdb9bd/474747.png">
+                    </div>
+                    <div class="col-lg-6 pl-5 pt-3">
+                        <h4 class="text-success">Membership {{$i}}</h4>
+                        <p class="text-left">Aliqua eu officia enim minim. Anim consequat minim exercitation aute non non officia anim incididunt est aliqua eu ea. Reprehenderit esse ipsum quis ad irure mollit veniam occaecat do aliqua do enim id duis. Aute deserunt magna enim ipsum officia irure aute minim. Ex ullamco exercitation labore amet do est eiusmod qui sunt et aliquip fugiat nostrud Lorem. Pariatur nisi fugiat adipisicing incididunt proident. Excepteur cupidatat enim cillum quis deserunt voluptate cillum est ullamco voluptate aliqua aute enim.</p>
+                    </div>
+                </div>    
+            @else
+            <div class="row no-gutter">                    
+                    <div class="col-lg-6 pr-5 pt-3">
+                        <h4 class="text-success">Membership {{$i}}</h4>
+                        <p class="text-right">Officia enim laboris ea id labore exercitation id reprehenderit officia sit aute incididunt. Ipsum do officia officia veniam duis proident commodo et culpa veniam. Pariatur et ad ullamco laboris officia non do proident enim do id cillum id ut. Sint in excepteur fugiat sit nostrud occaecat sit voluptate fugiat eu. Ut mollit dolor consectetur quis amet ipsum amet incididunt. Duis dolore do pariatur esse sit est. Consequat exercitation sit proident magna mollit reprehenderit ut.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://dummyimage.com/585x410/bdb9bd/474747.png">
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-pricing-style-01 pricing-item-bg1">
-                        <h2 class="off-style-1">10% Off</h2>
-                        <div class="pricing-icon text-center">
-                            <a href="#"><i class="flaticon-weight" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="plan-title">
-                            <h3>Biginner plan</h3>
-                        </div>
-                        <ul>
-                            <li><span>$50</span></li>
-                            <li>24 Hours Support</li>
-                            <li> All Over the World</li>
-                            <li>Customer Managment</li>
-                            <li>Business & Financ Analysing</li>
-                            <li>Unlimited Tires</li>
-                        </ul>
-                        <div class="btn-wrapper desktop-center">
-                            <a href="#" class="btn btn-element btn-normal-size btn-transparent-color btn-rounded">Select Plan</a>
-                        </div>
-                    </div>
+            @endif                
+            @endfor
+            <div class="row padding-top-100">
+                <div class="col-lg-12 text-center">
+                    <button type="button" class="btn btn-default">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-pricing-style-01 active pricing-item-bg2">
-                        <h2 class="off-style-1">20% Off</h2>
-                        <div class="pricing-icon text-center">
-                            <a href="#"><i class="flaticon-weight-lifting" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="plan-title">
-                            <h3>Intermediate plan</h3>
-                        </div>
-                        <ul>
-                            <li><span>$70</span></li>
-                            <li>24 Hours Support</li>
-                            <li> All Over the World</li>
-                            <li>Customer Managment</li>
-                            <li>Business & Financ Analysing</li>
-                            <li>Unlimited Tires</li>
-                        </ul>
-                        <div class="btn-wrapper desktop-center">
-                            <a href="#" class="btn btn-element btn-normal-size btn-transparent-color btn-rounded">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-pricing-style-01 pricing-item-bg3">
-                        <h2 class="off-style-1">20% Off</h2>
-                        <div class="pricing-icon text-center">
-                            <a href="#"><i class="flaticon-woman" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="plan-title">
-                            <h3>Ultimate plan</h3>
-                        </div>
-                        <ul>
-                            <li><span>$90</span></li>
-                            <li>24 Hours Support</li>
-                            <li> All Over the World</li>
-                            <li>Customer Managment</li>
-                            <li>Business & Financ Analysing</li>
-                            <li>Unlimited Tires</li>
-                        </ul>
-                        <div class="btn-wrapper desktop-center">
-                            <a href="#" class="btn btn-element btn-normal-size btn-transparent-color btn-rounded">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>            
         </div>
     </div>
     <!-- pricing end -->

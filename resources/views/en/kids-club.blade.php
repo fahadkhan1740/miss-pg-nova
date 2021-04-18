@@ -14,73 +14,54 @@
     <!-- breadcrumb area end -->
 
     <!-- about start -->
-    <div class="about-page-top">
-        <div class="container section-padding" style="padding-bottom: 0;">
+    <div class="kids-services padding-top-100 padding-bottom-94">
+        <div class="container">
+            <h2 class="display-6 box-underline">Services</h2>
             <div class="row">
-                <div class="col-lg-6 col-xl-6 d-flex">
-                    <div class="about-content align-self-center">
-                        <h3 class="about-title">Kids' Club</h3>
-
-                        <div style="color: black !important;">
-                            {!! $kidsClub->overview !!}
-                        </div>
-
+                @for ($i=1;$i<=6;$i++) <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">{{"0"}}{{$i}}</h3>                            
+                            <h5 class="card-subtitle">Service {{$i}}</h5>                            
+                            <p class="card-text">The health club holds nine studios - yoga,
+                                power station, dance, boxing, spinning,
+                                pool, aerobic, strength and squash while
+                                offering a variety of group classes like
+                                Zumba, HIIT, Strength & conditioning,
+                                Pilates, Animal Flow, Steps, Aqua, Spinning,
+                                Squash and more!</p>
+                        </div>                        
                     </div>
-                </div>
-                <div class="col-lg-6 col-xl-6">
-                    <div class="about-left">
-                        <div class="thumb">
-                            <img src="{{ asset('img/bg/about-right') }}.png" alt="About">
-                        </div>
-                    </div>
-                </div>
             </div>
+            @endfor
         </div>
+    </div>
     </div>
     <!-- about end -->
 
     <!-- services-facilities start -->
-    <div class="mission-area my-5">
+    <div class="blog-details-area margin-bottom-100">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mission-content">
-                        <h3 class="serial">01</h3>
-                        <div class="title">
-                            <h1>{{ __('custom.kids_club.services_facilities') }}</h1>
-                        </div>
-                        <div class="mission-content">
-                            <div style="color: black;">
-                                {!! $kidsClub->services_facilities !!}
-                            </div>
+            <h2 class="display-6 box-underline mb-5">Features</h2>
+            @for ($i=1;$i<=1;$i++) <div class="row mb-5">
+                @for ($j=1;$j<=4;$j++) <div class="col-lg-3">
+                    <div class="card" >
+                        <img class="card-img-top" src="https://dummyimage.com/370X230/eeeeee/aaaaaa.png"
+                            alt="Card image cap">
+                        <div class="card-body pl-0">                            
+                            <h5 class="card-title">Feature {{$i}}</h5>
+                            <p class="card-text">Culpa enim tempor elit fugiat ex reprehenderit. Id excepteur laborum quis
+                                Lorem exercitation ut mollit dolor culpa dolore commodo. Sunt aliquip adipisicing cupidatat
+                                </p>                            
                         </div>
                     </div>
-                </div>
-            </div>
         </div>
+        @endfor
+    </div>
+    @endfor
+    </div>
+    
     </div>
     <!-- services-facilities end -->
-
-    <!-- membership-packages start -->
-    <div class="mission-area my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mission-content">
-                        <h3 class="serial">02</h3>
-                        <div class="title">
-                            <h1>{{ __('custom.links.memberships_packages') }}</h1>
-                        </div>
-                        <div class="mission-content">
-                            <div style="color: black;">
-                                {!! $kidsClub->memberships !!}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- membership-packages end -->
 
 </x-en-master>
