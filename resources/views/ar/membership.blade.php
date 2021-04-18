@@ -25,13 +25,13 @@ style="background-image:url(/img/bg/contact.png);"
                     <img src="https://dummyimage.com/585x410/bdb9bd/474747.png">
                 </div>
                 <div class="col-lg-6 pl-5 pt-3">
-                    <h4 class="text-success">{{ $membership->title_en }}</h4>
+                    <h4 class="text-success">{{ $membership->title_ar }}</h4>
                     <p class="text-left">
-                        {!! $membership->short_description_en !!}
+                        {!! $membership->short_description_ar !!}
                     </p>
                     <p class="text-left">
                         <ul>
-                            @foreach(explode(',',$membership->features_en) as $feature)
+                            @foreach(explode(',',$membership->features_ar) as $feature)
                             <li>
                                 {{ trim($feature) }}
                             </li>
@@ -42,12 +42,12 @@ style="background-image:url(/img/bg/contact.png);"
             @else
             <div class="row no-gutter">
                 <div class="col-lg-6 pr-5 pt-3">
-                    <h4 class="text-success">{{ $membership->title_en }}</h4>
+                    <h4 class="text-success">{{ $membership->title_ar }}</h4>
                     <p class="text-right">
-                        {!! $membership->short_description_en !!}
+                        {!! $membership->short_description_ar !!}
                     </p>
                     <ul>
-                        @foreach(explode(',',$membership->features_en) as $feature)
+                        @foreach(explode(',',$membership->features_ar) as $feature)
                         <li>
                             {{ trim($feature) }}
                         </li>
