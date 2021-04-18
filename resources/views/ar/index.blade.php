@@ -35,10 +35,10 @@
                     <img src="{{ $aboutUs->before_image_path }}" alt="">
                 </div>
                 <div class="col-lg-6 px-md-5">
-                    <h2 class="display-6 box-underline">Who we are?</h2>
-                    <h4 class="display-6">Welcome to Miss Platinum Health</h4>
+                    <h2 class="display-6 box-underline">من نحن؟</h2>
+                    <h4 class="display-6">مرحبًا بكم في مس بلاتينيوم هيلث</h4>
                     {!! $aboutUs->overview !!}
-                </div>                
+                </div>
             </div>
         </div>
     </div>
@@ -87,12 +87,12 @@
                             <div class="clock-holder">
                                 <i class="fa fa-clock-o"></i>
                             </div>
-                            <h5 class="card-title">{{ $membership->title_en }}</h5>
+                            <h5 class="card-title">{{ $membership->title_ar }}</h5>
                             <p class="card-text">
-                                {!! $membership->short_description_en !!}
+                                {!! $membership->short_description_ar !!}
                             </p>
                             <hr>
-                            @foreach(explode(',',$membership->features_en) as $item)
+                            @foreach(explode(',',$membership->features_ar) as $item)
                             <p class="card-text">
                                 <strong>
                                     {{ trim($item) }}
