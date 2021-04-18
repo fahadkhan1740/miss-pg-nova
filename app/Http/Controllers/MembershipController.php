@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Membership;
 use Illuminate\Http\Request;
 
 class MembershipController extends Controller
 {
     public function index()
     {
-        return view(app()->getLocale().'.membership');
+        $memberships = Membership::all();
+
+        return view(app()->getLocale().'.membership', compact('memberships'));
     }
 }
