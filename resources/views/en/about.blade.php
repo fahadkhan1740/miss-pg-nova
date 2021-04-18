@@ -25,9 +25,9 @@
                 <div class="col-lg-7 px-md-5">
                     <h2 class="display-6 about-box-underline">AI NAWADI HOLDING'S <br>HISTORY & VISION</h2>
                     <h4 class="display-6">Welcome to Miss Platinum Health</h4>
-                    <p>
+                    <div class="card-text">
                         {!! $aboutUs->overview !!}
-                    </p>
+                    </div>
                 </div>
 
             </div>
@@ -41,7 +41,7 @@
             <div class="row ">
                 <div class="col-lg-12">
                     <h2 class="display-6 box-underline">Our Mission</h2>
-                    <p class="text-center">{!! $aboutUs->mission_vision !!}</p>
+                    <div class="text-center">{!! $aboutUs->mission_vision !!}</div>
                 </div>
 
             </div>
@@ -54,36 +54,15 @@
         <div class="container">
             <div class="row ">
                 <div class="col-lg-12">
-                    <h2 class="display-6 box-underline">Our Core Values</h2>
-                    <p class="text-center">{!! $aboutUs->mission_vision !!}</p>
+                    <h2 class="display-6 box-underline" style="width:20rem">Our Core Values</h2>
+                    <div class="text-center">{!! $aboutUs->mission_vision !!}</div>
                 </div>
 
             </div>
         </div>
     </div>
     <!-- core values end -->
-
     <!-- mission-area start -->
-{{-- <div class="mission-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="mission-content">
-                    <h3 class="serial">01</h3>
-                    <div class="title">
-                        <h1>Our Mission & Vision</h1>
-                    </div>
-                    <div class="mission-content">
-                        <div style="color: black;">
-                            {!! $aboutUs->mission_vision !!}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-
 <!-- contact-details start -->
     <div class="container-fluid contact-details padding-top-50 padding-bottom-50">
         <div class="container">

@@ -2,7 +2,6 @@
 
     <!-- breadcrumb area -->
     <div class="breadcrumb-style-1 about-breadcrumb-overlay"
-         {{--         style="background-image:url({{ 'storage/'.$personalTraining->banner_path }});"--}}
          style="background-image:url(/img/bg/contact.png);"
     >
         <div class="breadcrumb-inner">
@@ -24,9 +23,9 @@
                 @if ($loop->iteration % 2 !== 0)
                     <div class="row no-gutter">
                         <div class="col-lg-6">
-                            <img src="https://dummyimage.com/585x410/bdb9bd/474747.png">
+                            <img src="https://dummyimage.com/585x410/bdb9bd/474747.png" style="width: inherit">
                         </div>
-                        <div class="col-lg-6 pl-5 pt-3">
+                        <div class="col-lg-6 pl-3 pt-3">
                             <h4 class="text-success">{{ $membership->title_en }}</h4>
                             <p class="text-left">
                                 {!! $membership->short_description_en !!}

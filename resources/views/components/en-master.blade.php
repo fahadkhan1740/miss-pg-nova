@@ -89,6 +89,12 @@
     <nav class="container">
         <!-- Nav tabs -->
         <ul class="nav  justify-content-end" id="main-nav">
+            <li class="nav-item logo">
+                <div >
+                    <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset('storage/'.getLogo()) }}"
+                            alt="logo"></a>
+                </div>
+            </li>
             <li class="nav-item">
                 <a href="{{ route('about', ['locale' => 'en']) }}" class="nav-link active">About</a>
             </li>

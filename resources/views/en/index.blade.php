@@ -38,7 +38,8 @@
                 <div class="col-lg-6 px-md-5">
                     <h2 class="display-6 box-underline">Who we are?</h2>
                     <h4 class="display-6">Welcome to Miss Platinum Health</h4>
-                    {!! $aboutUs->overview !!}
+                    <div class="card-text">{!! $aboutUs->overview !!}
+                        </div>
                 </div>
 
             </div>
@@ -57,9 +58,10 @@
                             <div class="card-body">
                                 <i class="fa fa-asl-interpreting"></i>
                                 <h5 class="card-title">{{ $service->title }}</h5>
-                                <p class="card-text">
-                                    {!! $service->short_description !!}
-                                </p>
+                                <div class="card-text overflow-card">
+                                    {{-- {!!strlen($service->short_description) > 50 ? substr($service->short_description,0,50).'..' : $service->short_description !!} --}}
+                                    {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,100).'..' : $service->short_description }}
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <p class="card-text">
@@ -93,12 +95,10 @@
                                     {!! $membership->short_description_en !!}
                                 </p>
                                 <hr>
-                                @foreach(explode(',',$membership->features_en) as $item)
-                                    <p class="card-text">
-                                        <strong>
+                                @foreach(explode(',',$membership->features_en) as $item)                                    
+                                        <p class="card-text">
                                             {{ trim($item) }}
-                                        </strong>
-                                    </p>
+                                        </p>                                    
                                 @endforeach
                                 <hr>
                             </div>
@@ -112,29 +112,4 @@
         </div>
     </div>
     <!-- home explore end -->
-
-    <!-- partner-area start -->
-
-    <!-- partner-area end -->
-
-    <!-- pricing start -->
-
-    <!-- pricing end -->
-
-    <!-- map-area start -->
-{{-- <div class="service-area m-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe width="100%" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13922.563150286602!2d48.0851024!3d29.2635096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1eb3e25c0af647c!2sMiss%20Platinum%20Health%20Club!5e0!3m2!1sen!2skw!4v1604780698705!5m2!1sen!2skw" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">elementor review</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-<!-- map-area end -->
 </x-en-master>

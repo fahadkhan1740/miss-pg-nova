@@ -9573,6 +9573,7 @@ footer label{
   text-align:center;
   padding:1rem;
   margin-top:2rem;
+  min-height: 100%;
 }
 .btn-custom{
 background-color: #27f059;
@@ -9707,3 +9708,11 @@ border-top: 2px solid #ffffff
   color:#27f059
 }
 /* trainer page end */
+/* responsiveness and fixes */
+.logo a img{
+  height:5rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  margin-right:15rem
+}
+/* responsiveness and fixes end */
