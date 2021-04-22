@@ -14,7 +14,7 @@
     {{-- <div class="banner-area banner-style-one" style="background-image:url({{ asset('storage/'.getHomeBackground()) }}">
     </div> --}}
     <div class="banner-area banner-style-one"
-         style="background-image:url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80)">
+         style="background-image:url({{ getHomeBackground() }})">
         <div class="banner-message">
             <h1 class="display-6">Start your Gym Classes</h1>
             <p class="lead">Excepteur sint occaecat cupidatat non
@@ -39,7 +39,7 @@
                     <h2 class="display-6 box-underline">Who we are?</h2>
                     <h4 class="display-6">Welcome to Miss Platinum Health</h4>
                     <div class="card-text">{!! $aboutUs->overview !!}
-                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -95,10 +95,10 @@
                                     {!! $membership->short_description_en !!}
                                 </p>
                                 <hr>
-                                @foreach(explode(',',$membership->features_en) as $item)                                    
-                                        <p class="card-text">
-                                            {{ trim($item) }}
-                                        </p>                                    
+                                @foreach(explode(',',$membership->features_en) as $item)
+                                    <p class="card-text">
+                                        {{ trim($item) }}
+                                    </p>
                                 @endforeach
                                 <hr>
                             </div>
