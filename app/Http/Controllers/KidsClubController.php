@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\KidsClub;
+use App\Models\KidsFeature;
+use App\Models\KidsService;
 use Illuminate\Http\Request;
 
 class KidsClubController extends Controller
@@ -11,7 +13,10 @@ class KidsClubController extends Controller
     {
         $kidsClub = KidsClub::locale(app()->getLocale())->first();
 
-        return view(app()->getLocale().'.kids-club')
-            ->with('kidsClub', $kidsClub);
+        $services = KidsService::locale(app()->getLocale())->active()->get();
+
+        $features = KidsFeature::locale(app()->getLocale())->active()->get();
+
+        return view(app()->getLocale().'.kids-club', compact('kidsClub', 'services', 'features'));
     }
 }

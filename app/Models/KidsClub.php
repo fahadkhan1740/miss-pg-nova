@@ -16,4 +16,10 @@ class KidsClub extends Model
     {
         return $query->where('locale', $locale);
     }
+
+    public function scopeActive($query)
+    {
+        return $query->where('status', 1);
+    }
+
 }
