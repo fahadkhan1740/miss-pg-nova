@@ -5,6 +5,8 @@ namespace App\Providers;
 use App\Nova\AboutUs;
 use App\Nova\HomeBanner;
 use App\Nova\KidsClub;
+use App\Nova\KidsFeature;
+use App\Nova\KidsService;
 use App\Nova\Membership;
 use App\Nova\NewsEvents;
 use App\Nova\Service;
@@ -118,6 +120,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         'label' => 'Kids Club',
                         'resources' => [
                             KidsClub::class,
+                            KidsService::class,
+                            KidsFeature::class
                         ]
                     ]),
                     TopLevelResource::make([
