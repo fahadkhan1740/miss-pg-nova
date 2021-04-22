@@ -14,7 +14,7 @@
     {{-- <div class="banner-area banner-style-one" style="background-image:url({{ asset('storage/'.getHomeBackground()) }}">
     </div> --}}
     <div class="banner-area banner-style-one"
-         style="background-image:url({{ getHomeBackground() }})">
+         style="background-image:url({{ 'storage/'.getHomeBackground() }})">
         <div class="banner-message">
             <h1 class="display-6">Start your Gym Classes</h1>
             <p class="lead">Excepteur sint occaecat cupidatat non
