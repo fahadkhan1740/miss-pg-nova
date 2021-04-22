@@ -113,40 +113,27 @@
                     </span>
                 </div>
                 <div class="col-lg-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="input-group mb-3">
-                                <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                                <div class="input-group-append">
-                                    <a class="input-group-text" id="basic-addon1" href="#"><i class="fa fa-send"></i></a>
-                                </div>
-                                <label for="">Stay in touch for the freshest products!</label>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- subscribe/news letter --}}
                 </div>
                 <div class="col-lg-4">
                     {{-- links --}}
                     <div class="row">
                         <div class="col-lg-7">
                             <ul>
-                                <li><a href="href="{{ route('personal-training', ['locale' => 'ar']) }}">{{ __('custom.links.personal_training') }}</a></li>
-                                <li><a href="href="{{ route('news-events', ['locale' => 'ar']) }}">{{ __('custom.links.news_events') }}</a></li>
-                                <li><a href="href="{{ route('home', ['locale' => 'ar']) }}"> Terms &amp; Conditions</a></li>
-                                <li><a href="href="="{{ route('kids-club', ['locale' => 'ar']) }}"> {{ __('custom.links.kids_club') }}</a></li>
+                                <li><a href="{{ route('personal-training', ['locale' => 'ar']) }}">{{ __('custom.links.personal_training') }}</a></li>
+                                <li><a href="{{ route('news-events', ['locale' => 'ar']) }}">{{ __('custom.links.news_events') }}</a></li>
+                                <li><a href="{{ route('home', ['locale' => 'ar']) }}"> Terms &amp; Conditions</a></li>
+                                <li><a href="{{ route('kids-club', ['locale' => 'ar']) }}"> {{ __('custom.links.kids_club') }}</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-5">
                             <ul>
-                                <li><a href="href="{{ route('home', ['locale' => 'ar']) }}">Home</a></li>
-                                <li><a href="href="{{ route('home', ['locale' => 'ar']) }}">Branches</a></li>
-                                <li><a href="href="{{ route('memberships', ['locale' => 'ar']) }}">{{ __('custom.links.memberships_packages') }}</a></li>
-                                <li><a href="href="{{ route('about', ['locale' => 'ar']) }}">{{ __('custom.links.about') }}</a></li>
+                                <li><a href="{{ route('home', ['locale' => 'ar']) }}">Home</a></li>
+                                <li><a href="{{ route('home', ['locale' => 'ar']) }}">Branches</a></li>
+                                <li><a href="{{ route('memberships', ['locale' => 'ar']) }}">{{ __('custom.links.memberships_packages') }}</a></li>
+                                <li><a href="{{ route('about', ['locale' => 'ar']) }}">{{ __('custom.links.about') }}</a></li>
                             </ul>
                         </div>
-                        
+
                 </div>
             </div>
         </div>

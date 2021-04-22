@@ -73,7 +73,7 @@
                 <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset('storage/'.getLogo()) }}" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="billatrail_main_menu">
-                <ul class="nav menu-open" id="main-nav">                   
+                <ul class="nav menu-open" id="main-nav">
                     <li class="nav-item">
                         <a href="{{ route('about', ['locale' => 'en']) }}" class="nav-link active">About</a>
                     </li>
@@ -207,37 +207,23 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Branches</a></li>
-                            <li><a href="#">Memberships</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="{{ route('personal-training', ['locale' => 'en']) }}">{{ __('custom.links.personal_training') }}</a></li>
+                            <li><a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a></li>
+                            <li><a href="{{ route('home', ['locale' => 'en']) }}"> Terms &amp; Conditions</a></li>
+                            <li><a href="{{ route('kids-club', ['locale' => 'en']) }}"> {{ __('custom.links.kids_club') }}</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-7">
                         <ul>
-                            <li><a href="#"> Training</a></li>
-                            <li><a href="#"> News &amp; Events</a></li>
-                            <li><a href="#"> Terms &amp; Conditions</a></li>
-                            <li><a href="#"> Kids club</a></li>
+                            <li><a href="{{ route('home', ['locale' => 'en']) }}">Home</a></li>
+                            <li><a href="{{ route('home', ['locale' => 'en']) }}">Branches</a></li>
+                            <li><a href="{{ route('memberships', ['locale' => 'en']) }}">{{ __('custom.links.memberships_packages') }}</a></li>
+                            <li><a href="{{ route('about', ['locale' => 'en']) }}">{{ __('custom.links.about') }}</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="input-group mb-3">
-                            <input id="email" type="email" class="form-control" placeholder="Email"
-                                   aria-label="Username"
-                                   aria-describedby="basic-addon1">
-                            <div class="input-group-append">
-                                <a class="input-group-text" id="basic-addon1" href="#"><i class="fa fa-send"></i></a>
-                            </div>
-                            <label for="">Stay in touch for the freshest products!</label>
-                        </div>
-                    </div>
-                </div>
-                {{-- subscribe/news letter --}}
             </div>
             <div class="col-lg-4" style="text-align:center">
                 {{-- Social Icons --}}
