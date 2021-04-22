@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3627727572986fb9693be2991e68b88b",
+    "content-hash": "fbad7d6915f23d70a575bf5657f12478",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1996,6 +1996,52 @@
                 }
             ],
             "time": "2020-10-18T11:50:25+00:00"
+        },
+        {
+            "name": "mdixon18/fontawesome",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mdixon18/fontawesome.git",
+                "reference": "9a6acd586abc38936ed20f1ba327e38488b7e203"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mdixon18/fontawesome/zipball/9a6acd586abc38936ed20f1ba327e38488b7e203",
+                "reference": "9a6acd586abc38936ed20f1ba327e38488b7e203",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mdixon18\\Fontawesome\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mdixon18\\Fontawesome\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A FontAwesome Nova field.",
+            "keywords": [
+                "FontAwesome",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/mdixon18/fontawesome/issues",
+                "source": "https://github.com/mdixon18/fontawesome/tree/v0.2.1"
+            },
+            "time": "2020-09-23T19:38:32+00:00"
         },
         {
             "name": "monolog/monolog",

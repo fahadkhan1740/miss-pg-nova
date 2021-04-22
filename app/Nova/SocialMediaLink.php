@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Mdixon18\Fontawesome\Fontawesome;
 
 class SocialMediaLink extends Resource
 {
@@ -50,7 +51,7 @@ class SocialMediaLink extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Title')->required(true),
-            Text::make('Icon')->required(true),
+            Fontawesome::make('Icon')->rules('required'),
             Text::make('Link')->rules('required', 'url'),
         ];
     }

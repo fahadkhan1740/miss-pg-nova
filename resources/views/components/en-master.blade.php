@@ -70,7 +70,8 @@
                 </button>
             </div>
             <div class="logo">
-                <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img src="{{ asset('storage/'.getLogo()) }}" alt="logo"></a>
+                <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"> <img
+                        src="{{ asset('storage/'.getLogo()) }}" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="billatrail_main_menu">
                 <ul class="nav menu-open" id="main-nav">
@@ -91,15 +92,18 @@
                     </li>
                     <li class="nav-item">
                         @if(request()->route()->getName() === 'news-events.show')
-                        <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}" class="nav-link">
-                            <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
-                                id="language-icon">
-                        </a>
+                            <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}"
+                               class="nav-link">
+                                <img
+                                    src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                                    id="language-icon">
+                            </a>
                         @else
-                        <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link">
-                            <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
-                                id="language-icon">
-                        </a>
+                            <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link">
+                                <img
+                                    src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                                    id="language-icon">
+                            </a>
                         @endif
                     </li>
                 </ul>
@@ -207,18 +211,27 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <ul>
-                            <li><a href="{{ route('personal-training', ['locale' => 'en']) }}">{{ __('custom.links.personal_training') }}</a></li>
-                            <li><a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a></li>
+                            <li>
+                                <a href="{{ route('personal-training', ['locale' => 'en']) }}">{{ __('custom.links.personal_training') }}</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a>
+                            </li>
                             <li><a href="{{ route('home', ['locale' => 'en']) }}"> Terms &amp; Conditions</a></li>
-                            <li><a href="{{ route('kids-club', ['locale' => 'en']) }}"> {{ __('custom.links.kids_club') }}</a></li>
+                            <li>
+                                <a href="{{ route('kids-club', ['locale' => 'en']) }}"> {{ __('custom.links.kids_club') }}</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-lg-7">
                         <ul>
                             <li><a href="{{ route('home', ['locale' => 'en']) }}">Home</a></li>
                             <li><a href="{{ route('home', ['locale' => 'en']) }}">Branches</a></li>
-                            <li><a href="{{ route('memberships', ['locale' => 'en']) }}">{{ __('custom.links.memberships_packages') }}</a></li>
-                            <li><a href="{{ route('about', ['locale' => 'en']) }}">{{ __('custom.links.about') }}</a></li>
+                            <li>
+                                <a href="{{ route('memberships', ['locale' => 'en']) }}">{{ __('custom.links.memberships_packages') }}</a>
+                            </li>
+                            <li><a href="{{ route('about', ['locale' => 'en']) }}">{{ __('custom.links.about') }}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -227,10 +240,10 @@
             </div>
             <div class="col-lg-4" style="text-align:center">
                 {{-- Social Icons --}}
-                <span class="social-icons"><i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-globe" aria-hidden="true"></i>
+                <span class="social-icons">
+                    @foreach(getSocialMediaLinks() as $link)
+                        <a href="{{ $link->link }}" target="_blank"><i class="{{ $link->icon }}" aria-hidden="true"></i></a>
+                    @endforeach
                 </span>
             </div>
         </div>

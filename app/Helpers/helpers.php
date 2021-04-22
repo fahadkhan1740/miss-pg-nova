@@ -3,6 +3,7 @@
 use App\Models\Branch;
 use App\Models\Contact;
 use App\Models\Setting;
+use App\Models\SocialMediaLink;
 use Illuminate\Support\Facades\Cache;
 
 function getBranches() {
@@ -15,6 +16,10 @@ function getLogo() {
 
 function getHomeBackground() {
     return Setting::first()->home_background;
+}
+
+function getSocialMediaLinks() {
+    return SocialMediaLink::all();
 }
 
 function getContactDetails() {
