@@ -10,6 +10,7 @@ use App\Nova\KidsService;
 use App\Nova\Membership;
 use App\Nova\NewsEvents;
 use App\Nova\Service;
+use App\Nova\Setting;
 use App\Nova\Trainer;
 use App\Nova\User;
 use DigitalCreative\CollapsibleResourceManager\CollapsibleResourceManager;
@@ -128,6 +129,12 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         'label' => 'News & Events',
                         'resources' => [
                             NewsEvents::class,
+                        ]
+                    ]),
+                    TopLevelResource::make([
+                        'label' => 'Settings',
+                        'resources' => [
+                            Setting::class,
                         ]
                     ]),
                 ]
