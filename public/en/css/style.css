@@ -9564,7 +9564,8 @@ footer label{
   padding-right: 4rem;
 }
 .card-body .fa,
-.card-body .fas {
+.card-body .fas,
+.card-body .fab {
     font-size: 5rem;
     margin-bottom: 2rem;
     color: #27f059;

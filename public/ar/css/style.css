@@ -12776,7 +12776,8 @@ footer label {
 }
 
 .card-body .fa,
-.card-body .fas {
+.card-body .fas,
+.card-body .fab {
     font-size: 5rem;
     margin-bottom: 2rem;
     color: #27f059;
@@ -12951,7 +12952,7 @@ iframe {
     height: 5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-left: 15rem    
+    margin-left: 15rem
 }
 
 /* Extra small devices (phones, 600px and down) */
