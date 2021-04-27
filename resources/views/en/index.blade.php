@@ -56,7 +56,7 @@
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <i class="fa fa-asl-interpreting"></i>
+                                <i class="{{ $service->icon }}"></i>
                                 <h5 class="card-title">{{ $service->title }}</h5>
                                 <div class="card-text overflow-card">
                                     {{-- {!!strlen($service->short_description) > 50 ? substr($service->short_description,0,50).'..' : $service->short_description !!} --}}

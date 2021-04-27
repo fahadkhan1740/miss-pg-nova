@@ -54,7 +54,7 @@
                     <div class="col-lg-4">
                         <div class="card" style="height: 90%">
                             <div class="card-body">
-                                <i class="fa fa-asl-interpreting"></i>
+                                <i class="{{ $service->icon }}"></i>
                                 <h5 class="card-title">{{ $service->title }}</h5>
                                 <p class="card-text">
                                     {!! $service->short_description !!}

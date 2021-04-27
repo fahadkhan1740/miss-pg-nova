@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Mdixon18\Fontawesome\Fontawesome;
 
 class Service extends Resource
 {
@@ -60,7 +61,7 @@ class Service extends Resource
             Text::make('Title')->required(true),
             Trix::make('Short Description')->required(true),
             Trix::make('Long Description')->required(true),
-            Text::make('Icon'),
+            Fontawesome::make('Icon')->rules('required'),
             Image::make('Banner', 'banner_path')->disk('public'),
             Image::make('Image', 'image_path')->disk('public'),
             Boolean::make('Status')->default(true)
