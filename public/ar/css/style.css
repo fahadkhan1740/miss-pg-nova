@@ -3445,7 +3445,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .banner-style-one {
     background-size: cover;
-    min-height: 400px;
+    min-height: 100vh;
     position: relative;
     background-position: center center;
     direction: ltr;
@@ -12635,9 +12635,9 @@ body {
     position: absolute;
     color: #ffffff;
     text-align: center;
-    padding: 6rem;
-    bottom: 0;
-    left: 0;
+    /* padding:6rem; */
+    bottom: 5rem;
+    right: 5rem;
 }
 
 .display-6 {
@@ -13013,15 +13013,6 @@ iframe {
         padding: 1rem;
         margin-top: 2rem;
         min-height: auto;
-    }
-
-    .banner-message {
-        position: absolute;
-        color: #ffffff;
-        text-align: center;
-        padding:0rem;
-        bottom: 0rem;
-        left: 0rem;
     }
 
     footer {
