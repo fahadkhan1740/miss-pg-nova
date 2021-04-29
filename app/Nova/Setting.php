@@ -42,8 +42,16 @@ class Setting extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Image::make('Logo')->disk('public'),
-            Image::make('Home Background')->disk('public'),
+
+            Image::make('Logo')
+                ->creationRules('required', 'mimes:png,jpg,jpeg')
+                ->rules('mimes:png,jpg,jpeg')
+                ->disk('public'),
+
+            Image::make('Home Background')
+                ->creationRules('required', 'mimes:png,jpg,jpeg')
+                ->rules('mimes:png,jpg,jpeg')
+                ->disk('public'),
         ];
     }
 
