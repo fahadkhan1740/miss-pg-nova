@@ -56,14 +56,26 @@ class NewsEvents extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
+
             Select::make('Language', 'locale')->options([
                 'en' => 'English',
                 'ar' => 'Arabic',
             ])->rules('required'),
-            Text::make('Title')->rules('required', 'string'),
-            Textarea::make('Short Description')->rules('required', 'string', 'max:255'),
-            Trix::make('Long Description')->rules('required'),
-            Image::make('Banner', 'banner_path')->disk('public'),
+
+            Text::make('Title')
+                ->rules('required', 'string', 'min:3', 'max:100'),
+
+            Textarea::make('Short Description')
+                ->rules('required', 'string', 'max:255'),
+
+            Trix::make('Long Description')
+                ->rules('required', 'string', 'min:10', 'max:2000'),
+
+            Image::make('Banner', 'banner_path')
+                ->creationRules('required', 'mimes:png,jpg,jpeg')
+                ->rules('mimes:png,jpg,jpeg')
+                ->disk('public'),
+
             Boolean::make('Is Published', 'status')->default(true),
         ];
     }
