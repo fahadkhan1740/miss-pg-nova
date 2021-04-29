@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Mdixon18\Fontawesome\Fontawesome;
 
 class KidsService extends Resource
 {
@@ -34,6 +35,8 @@ class KidsService extends Resource
      */
     public static $search = [
         'id',
+        'title',
+        'short_description'
     ];
 
     /**
@@ -46,17 +49,36 @@ class KidsService extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
+
             Select::make('Language', 'locale')->options([
                 'en' => 'English',
                 'ar' => 'Arabic',
             ])->rules('required'),
-            Text::make('Title')->required(true),
-            Trix::make('Short Description')->required(true),
-            Trix::make('Long Description')->required(true),
-            Text::make('Icon'),
-            Image::make('Banner', 'banner_path')->disk('public'),
-            Image::make('Image', 'image_path')->disk('public'),
-            Boolean::make('Status')->default(true)
+
+            Text::make('Title')
+                ->rules('required', 'string', 'min:3', 'max:100'),
+
+            Trix::make('Short Description')
+                ->rules('required', 'string', 'min:10', 'max:500'),
+
+            Trix::make('Long Description')
+                ->rules('required', 'string', 'min:10', 'max:2000'),
+
+            Fontawesome::make('Icon')
+                ->rules('required'),
+
+            Image::make('Banner', 'banner_path')
+                ->creationRules('required', 'mimes:png,jpg,jpeg')
+                ->rules('mimes:png,jpg,jpeg')
+                ->disk('public'),
+
+            Image::make('Image', 'image_path')
+                ->creationRules('required', 'mimes:png,jpg,jpeg')
+                ->rules('mimes:png,jpg,jpeg')
+                ->disk('public'),
+
+            Boolean::make('Status')
+                ->default(true)
         ];
     }
 
