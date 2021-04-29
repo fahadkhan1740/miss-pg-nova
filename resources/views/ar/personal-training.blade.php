@@ -41,7 +41,7 @@
                                 @foreach ($trainers as $trainer)
                                 <div class="col-lg-4">
                                     <div class="card" style="background:transparent;border:0">
-                                        <img class="card-img-top" src="{{ $trainer->image }}" alt="Card image cap">
+                                        <img class="card-img-top" src="{{ 'storage/'.$trainer->image }}" alt="Card image cap">
                                         <div class="card-body pl-0">
                                             <h5 class="card-title mb-3">{{ $trainer->name_ar }}</h5>
                                             <p class="card-text">
