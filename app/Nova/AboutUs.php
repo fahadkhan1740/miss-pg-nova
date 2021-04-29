@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -39,6 +40,11 @@ class AboutUs extends Resource
      */
     public static $search = [
         'id',
+        'title',
+        'sub_title',
+        'overview',
+        'mission',
+        'core_values'
     ];
 
     /**
@@ -55,10 +61,13 @@ class AboutUs extends Resource
                 'en' => 'English',
                 'ar' => 'Arabic',
             ])->rules('required'),
+            Text::make('Title')->rules('string'),
+            Text::make('Sub Title')->rules('string'),
             Image::make('Banner', 'banner_path')->disk('public'),
             Image::make('Image', 'image_path')->disk('public'),
             Trix::make('Overview')->alwaysShow(),
-            Trix::make('Mission & Vision', 'mission_vision')->alwaysShow(),
+            Trix::make('Mission', 'mission')->rules('min:5', 'max:500'),
+            Trix::make('Core Values', 'core_values')->rules('min:5', 'max:500'),
         ];
     }
 

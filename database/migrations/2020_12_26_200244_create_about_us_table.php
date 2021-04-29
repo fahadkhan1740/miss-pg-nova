@@ -16,10 +16,13 @@ class CreateAboutUsTable extends Migration
         Schema::create('about_us', function (Blueprint $table) {
             $table->id();
             $table->enum('locale', ['en', 'ar']);
+            $table->string('title');
+            $table->string('sub_title');
             $table->string('banner_path')->nullable();
             $table->string('image_path')->nullable();
             $table->text('overview')->nullable();
-            $table->text('mission_vision')->nullable();
+            $table->text('mission')->nullable();
+            $table->text('core_values')->nullable();
             $table->timestamps();
         });
     }
