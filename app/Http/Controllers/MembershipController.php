@@ -9,7 +9,7 @@ class MembershipController extends Controller
 {
     public function index()
     {
-        $memberships = Membership::all();
+        $memberships = Membership::active()->get();
 
         return view(app()->getLocale().'.membership', compact('memberships'));
     }
