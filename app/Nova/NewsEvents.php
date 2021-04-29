@@ -42,6 +42,8 @@ class NewsEvents extends Resource
      */
     public static $search = [
         'id',
+        'title',
+        'short_description'
     ];
 
     /**
