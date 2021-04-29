@@ -42,7 +42,7 @@
         <div class="container padding-top-165 padding-bottom-50">
             <div class="row ">
                 <div class="col-lg-12">
-                    <h2 class="display-6 box-underline">Our Mission</h2>
+                    <h2 class="display-6 box-underline">مهمتنا</h2>
                     <div class="text-center">{!! $aboutUs->mission !!}</div>
                 </div>
 
@@ -56,7 +56,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-lg-12">
-                    <h2 class="display-6 box-underline" style="width:20rem">Our Core Values</h2>
+                    <h2 class="display-6 box-underline" style="width:20rem">قيمنا الأساسية</h2>
                     <div class="text-center">{!! $aboutUs->core_values !!}</div>
                 </div>
 
