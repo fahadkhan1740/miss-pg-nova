@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row row-eq-height">
                 <div class="col-lg-6 px-md-5">
-                    <img src="{{ $aboutUs->before_image_path }}" alt="">
+                    <img src="{{ 'storage/'.$aboutUs->image_path }}" alt="">
                 </div>
                 <div class="col-lg-6 px-md-5">
                     <h2 class="display-6 box-underline">من نحن؟</h2>

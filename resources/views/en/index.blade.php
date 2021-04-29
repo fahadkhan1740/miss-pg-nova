@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row row-eq-height">
                 <div class="col-lg-6 px-md-5">
-                    <img src="{{ 'storage/'.$aboutUs->before_image_path }}"
+                    <img src="{{ 'storage/'.$aboutUs->image_path }}"
                          alt="">
                 </div>
                 <div class="col-lg-6 px-md-5">

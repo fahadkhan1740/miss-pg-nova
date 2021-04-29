@@ -56,8 +56,7 @@ class AboutUs extends Resource
                 'ar' => 'Arabic',
             ])->rules('required'),
             Image::make('Banner', 'banner_path')->disk('public'),
-            Image::make('Before Image', 'before_image_path')->disk('public'),
-            Image::make('After Image', 'after_image_path')->disk('public'),
+            Image::make('Image', 'image_path')->disk('public'),
             Trix::make('Overview')->alwaysShow(),
             Trix::make('Mission & Vision', 'mission_vision')->alwaysShow(),
         ];

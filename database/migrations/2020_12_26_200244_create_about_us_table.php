@@ -17,8 +17,7 @@ class CreateAboutUsTable extends Migration
             $table->id();
             $table->enum('locale', ['en', 'ar']);
             $table->string('banner_path')->nullable();
-            $table->string('before_image_path')->nullable();
-            $table->string('after_image_path')->nullable();
+            $table->string('image_path')->nullable();
             $table->text('overview')->nullable();
             $table->text('mission_vision')->nullable();
             $table->timestamps();
