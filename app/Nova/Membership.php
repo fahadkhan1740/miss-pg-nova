@@ -5,6 +5,7 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -45,13 +46,36 @@ class Membership extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make('English Title', 'title_en')->rules('required'),
-            Text::make('Arabic Title','title_ar')->rules('required'),
-            Trix::make('English Short Description','short_description_en')->rules('required'),
-            Trix::make('Arabic Short Description', 'short_description_ar')->rules('required'),
-            Text::make('English Features', 'features_en')->placeholder('Enter comma separated values')->rules('required'),
-            Text::make('Arabic Features', 'features_ar')->placeholder('Enter comma separated values')->rules('required'),
-            Boolean::make('Status')->rules('required')
+
+            Text::make('English Title', 'title_en')
+                ->rules('required'),
+
+            Text::make('Arabic Title', 'title_ar')
+                ->rules('required'),
+
+            Trix::make('English Short Description', 'short_description_en')
+                ->rules('required'),
+
+            Trix::make('Arabic Short Description', 'short_description_ar')
+                ->rules('required'),
+
+            Text::make('English Features', 'features_en')
+                ->placeholder('Enter comma separated values')
+                ->rules('required')
+                ->hideFromIndex(),
+
+            Text::make('Arabic Features', 'features_ar')
+                ->placeholder('Enter comma separated values')
+                ->rules('required')
+                ->hideFromIndex(),
+
+            Image::make('Image')
+                ->creationRules('required', 'mimes:png,jpg,jpeg')
+                ->rules('mimes:png,jpg,jpeg')
+                ->hideFromIndex(),
+
+            Boolean::make('Status')
+                ->rules('required')
         ];
     }
 

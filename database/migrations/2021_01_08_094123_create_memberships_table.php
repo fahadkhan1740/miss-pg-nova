@@ -21,6 +21,7 @@ class CreateMembershipsTable extends Migration
             $table->string('short_description_ar');
             $table->string('features_en');
             $table->string('features_ar');
+            $table->string('image')->nullable();
             $table->boolean('status')->default(true);
             $table->timestamps();
         });
