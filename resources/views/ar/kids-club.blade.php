@@ -27,7 +27,7 @@
                                 <h3 class="card-title">{{ $loop->iteration }}</h3>
                                 <h5 class="card-subtitle">{{ $service->title }}</h5>
                                 <p class="card-text">
-                                    {!! $service->short_description !!}
+                                    {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,500).'..' : $service->short_description }}
                                 </p>
                             </div>
                         </div>
