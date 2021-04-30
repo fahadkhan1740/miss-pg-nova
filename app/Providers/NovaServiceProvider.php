@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Nova\AboutUs;
+use App\Nova\Home;
 use App\Nova\HomeBanner;
 use App\Nova\KidsClub;
 use App\Nova\KidsFeature;
@@ -97,6 +98,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     TopLevelResource::make([
                         'label' => 'Home',
                         'resources' => [
+                            Home::class,
                             AboutUs::class,
                         ]
                     ]),

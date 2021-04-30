@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AboutUs;
+use App\Models\Home;
 use App\Models\HomeBanner;
 use App\Models\Membership;
 use App\Models\Service;
@@ -13,6 +14,8 @@ class HomeController extends Controller
 {
     public function index()
     {
+        $titles = Home::locale(app()->getLocale())->first();
+
         $homeBanners = HomeBanner::locale(app()->getLocale())->get();
 
         $aboutUs = AboutUs::locale(app()->getLocale())->first();
@@ -24,6 +27,7 @@ class HomeController extends Controller
         $memberships = Membership::take(4)->get();
 
         return view(app()->getLocale().'.index')
+            ->with('titles', $titles)
             ->with('banners', $homeBanners)
             ->with('aboutUs', $aboutUs)
             ->with('services', $services)

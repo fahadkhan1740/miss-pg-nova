@@ -16,13 +16,11 @@
     <div class="banner-area banner-style-one"
          style="background-image:url({{ 'storage/'.getHomeBackground() }})">
         <div class="banner-message">
-            <h1 class="display-6">Start your Gym Classes</h1>
-            <p class="lead">Excepteur sint occaecat cupidatat non
-                <br>proident, sunt in culpa qui officia<br>
-                deserunt</p>
+            <h1 class="display-6">{{ $titles->title }}</h1>
+            <p class="lead">{!! $titles->sub_title !!}</p>
             <p class="lead">
                 <button class="btn btn-success btn-md" href="Jumbo action link"
-                        role="button">{{ __('custom.join_with_us') }}</button>
+                        role="button">{{ $titles->button_text }}</button>
             </p>
         </div>
     </div>
