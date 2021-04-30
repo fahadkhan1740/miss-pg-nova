@@ -100,7 +100,7 @@
                                 <hr>
                             </div>
                             <p class="lead">
-                                <button class="btn btn-custom btn-sm" href="#" role="button">Let's Try</button>
+                                <button class="btn btn-custom btn-sm" href="#" role="button">لنحاول</button>
                             </p>
                         </div>
                     </div>
