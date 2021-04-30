@@ -58,7 +58,7 @@ class KidsService extends Resource
             Text::make('Title')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Trix::make('Short Description')
+            Text::make('Short Description')
                 ->rules('required', 'string', 'min:10', 'max:500'),
 
             Trix::make('Long Description')
