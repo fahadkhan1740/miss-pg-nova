@@ -62,7 +62,7 @@
                             <div class="card-footer">
                                 <p class="card-text" style="text-align: left">
                                     <a href="#">
-                                        Read More
+                                        اقرأ أكثر
                                     </a>
                                 </p>
                             </div>

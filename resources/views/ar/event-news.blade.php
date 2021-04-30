@@ -27,7 +27,7 @@
                             <h5 class="card-title text-right">{{ $new->title }}</h5>
                             <p class="card-text text-right">{!! $new->short_description !!}</p>
                             <a href="{{ route('news-events.show', ['id' => $new->id, 'locale' => app()->getLocale()]) }}"
-                                class="btn btn-sm btn-success pl-4 pr-4 pt-2 pb-2 mt-4 float-right">Read more</a>
+                                class="btn btn-sm btn-success pl-4 pr-4 pt-2 pb-2 mt-4 float-right">اقرأ أكثر</a>
                         </div>
                     </div>
                 </div>
