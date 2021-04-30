@@ -83,7 +83,7 @@
                            class="nav-link">{{ __('custom.links.kids_club') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('news-events', ['locale' => 'en']) }}"
+                        <a href="{{ route('news-events', ['locale' => 'ar']) }}"
                            class="nav-link">{{ __('custom.links.news_events') }}</a>
                     </li>
                     <li class="nav-item">
