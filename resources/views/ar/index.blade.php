@@ -55,8 +55,7 @@
                                 <i class="{{ $service->icon }}"></i>
                                 <h5 class="card-title">{{ $service->title }}</h5>
                                 <p class="card-text">
-                                    {!! $service->short_description !!}
-                                    {{-- {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,100).'..' : $service->short_description }} --}}
+                                     {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,500).'..' : $service->short_description }}
                                 </p>
                             </div>
                             <div class="card-footer">
