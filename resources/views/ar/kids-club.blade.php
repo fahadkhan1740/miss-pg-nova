@@ -18,7 +18,7 @@
     <!-- about start -->
     <div class="kids-services padding-top-100 padding-bottom-94">
         <div class="container">
-            <h2 class="display-6 box-underline">Services</h2>
+            <h2 class="display-6 box-underline">{{ __('custom.kids_club.services') }}</h2>
             <div class="row">
                 @foreach ($services as $service)
                     <div class="col-lg-4">
@@ -41,7 +41,7 @@
     <!-- services-facilities start -->
     <div class="blog-details-area margin-bottom-100">
         <div class="container">
-            <h2 class="display-6 box-underline mb-5">Features</h2>
+            <h2 class="display-6 box-underline mb-5">{{ __('custom.kids_club.features') }}</h2>
             <div class="row mb-5">
                 @foreach ($features as $feature)
                     <div class="col-lg-3">

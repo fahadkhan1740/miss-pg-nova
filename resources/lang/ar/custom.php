@@ -95,6 +95,8 @@ return [
 
     'kids_club' => [
         'services_facilities' => 'الخدمات والمرافق',
+        'services' => 'خدمات',
+        'features' => 'سمات'
     ],
 
     'news_events' => [

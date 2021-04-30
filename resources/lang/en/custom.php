@@ -95,6 +95,8 @@ return [
 
     'kids_club' => [
         'services_facilities' => 'Services & Facilities',
+        'services' => 'Services',
+        'features' => 'Features'
     ],
 
     'news_events' => [
