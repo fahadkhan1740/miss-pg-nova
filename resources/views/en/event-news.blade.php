@@ -23,8 +23,7 @@
                             <img class="card-img-top" src="{{ 'storage/'.$new->banner_path }}"
                                  alt="Card image cap">
                             <div class="card-body pl-0">
-                                <h6 class="card-subtitle text-white mb-2">{{ $new->created_at->format('d M, Y') }}
-                                    &#9679; in News</h6>
+                                <h6 class="card-subtitle text-white mb-2">{{ $new->created_at->format('d M, Y') }}</h6>
                                 <h5 class="card-title">{{ $new->title }}</h5>
                                 <p class="card-text">{!! $new->short_description !!}</p>
                                 <a href="{{ route('news-events.show', ['id' => $new->id, 'locale' => app()->getLocale()]) }}"
@@ -39,26 +38,11 @@
             <div class="container">
                 <div class="row pt-4">
                     <div class="col-lg-6 text-default">
-                        <span class="mr-5"> Showing</span>
-                        <span> post in 72 posts</span>
+                        <span>Showing {{ $news->count() }} posts in {{ $news->total() }} posts</span>
                     </div>
                     <div class="col-lg-6">
                         <nav class="nav  justify-content-end">
-                            <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1"><i class="fa fa-angle-left"
-                                                                                   aria-hidden="true"></i></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#"><i class="fa fa-angle-right"
-                                                                     aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
+                            {!! $news->links() !!}
                         </nav>
                     </div>
                 </div>
