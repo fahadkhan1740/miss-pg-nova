@@ -84,7 +84,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('news-events', ['locale' => 'en']) }}"
-                           class="nav-link">">{{ __('custom.links.news_events') }}</a>
+                           class="nav-link">{{ __('custom.links.news_events') }}</a>
                     </li>
                     <li class="nav-item">
                         @if(request()->route()->getName() === 'news-events.show')
