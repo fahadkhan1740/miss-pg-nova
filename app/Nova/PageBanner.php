@@ -53,7 +53,10 @@ class PageBanner extends Resource
                     'news-events' => 'News & Events'
                 ])
                 ->creationRules('required', 'unique:page_banners,page')
-                ->rules('required'),
+                ->rules('required')
+                ->readonly(function ($request) {
+                    return $request->isUpdateOrUpdateAttachedRequest();
+                }),
 
             Image::make('Banner', 'banner_image')
                 ->creationRules('required', 'mimes:jpg,png,gif,jpeg')
