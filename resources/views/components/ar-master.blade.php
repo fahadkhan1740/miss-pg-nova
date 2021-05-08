@@ -88,7 +88,14 @@
                     </li>
                     <li class="nav-item">
                         @if(request()->route()->getName() === 'news-events.show')
-                            <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'ar']) }}"
+                            <a href="{{ route('news-events.show', ['id' => request()->segment(2), 'locale' => 'en']) }}"
+                               class="nav-link">
+                                <img
+                                    src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
+                                    id="language-icon">
+                            </a>
+                        @elseif(request()->route()->getName() === 'terms')
+                            <a href="{{ route('terms', ['locale' => 'en']) }}"
                                class="nav-link">
                                 <img
                                     src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
@@ -135,7 +142,7 @@
                             <li>
                                 <a href="{{ route('news-events', ['locale' => 'ar']) }}">{{ __('custom.links.news_events') }}</a>
                             </li>
-                            <li><a href="{{ route('home', ['locale' => 'ar']) }}"> Terms &amp; Conditions</a></li>
+                            <li><a href="{{ route('terms', ['locale' => 'ar']) }}">{{ __('custom.links.terms_and_conditions') }}</a></li>
                             <li>
                                 <a href="{{ route('kids-club', ['locale' => 'ar']) }}"> {{ __('custom.links.kids_club') }}</a>
                             </li>
@@ -143,8 +150,7 @@
                     </div>
                     <div class="col-lg-5">
                         <ul>
-                            <li><a href="{{ route('home', ['locale' => 'ar']) }}">Home</a></li>
-                            <li><a href="{{ route('home', ['locale' => 'ar']) }}">Branches</a></li>
+                            <li><a href="{{ route('home', ['locale' => 'ar']) }}">{{ __('custom.links.home') }}</a></li>
                             <li>
                                 <a href="{{ route('memberships', ['locale' => 'ar']) }}">{{ __('custom.links.memberships_packages') }}</a>
                             </li>
