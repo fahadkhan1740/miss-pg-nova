@@ -21,6 +21,7 @@ class CreateAboutUsTable extends Migration
             $table->string('banner_path')->nullable();
             $table->string('image_path')->nullable();
             $table->text('overview')->nullable();
+            $table->text('history_vision')->nullable();
             $table->text('mission')->nullable();
             $table->text('core_values')->nullable();
             $table->timestamps();

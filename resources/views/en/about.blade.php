@@ -28,7 +28,7 @@
                         <br>{{ $aboutUs->sub_title }}
                     </h2>
                     <div class="card-text">
-                        {!! $aboutUs->overview !!}
+                        {!! $aboutUs->history_vision !!}
                     </div>
                 </div>
 
