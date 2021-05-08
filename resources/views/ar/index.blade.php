@@ -53,16 +53,9 @@
                         <div class="card" style="height: 90%">
                             <div class="card-body">
                                 <img src="{{ 'storage/'.$service->icon }}" alt="">
-                                <h5 class="card-title">{{ $service->title }}</h5>
+                                <h5 class="card-title">{{ $service->title_ar }}</h5>
                                 <p class="card-text">
-                                     {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,500).'..' : $service->short_description }}
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <p class="card-text" style="text-align: left">
-                                    <a href="#">
-                                        اقرأ أكثر
-                                    </a>
+                                     {{ strlen($service->description_ar) > 100 ? substr($service->description_ar,5,500).'..' : $service->description_ar }}
                                 </p>
                             </div>
                         </div>

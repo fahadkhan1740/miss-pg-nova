@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
-use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Trix;
+use Laravel\Nova\Fields\Textarea;
 
 class Service extends Resource
 {
@@ -20,18 +19,11 @@ class Service extends Resource
     public static $model = \App\Models\Service::class;
 
     /**
-     * Custom priority level of the resource.
-     *
-     * @var int
-     */
-    public static $priority = 4;
-
-    /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'title';
+    public static $title = 'id';
 
     /**
      * The columns that should be searched.
@@ -39,7 +31,9 @@ class Service extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'title'
+        'id',
+        'title_en',
+        'title_ar',
     ];
 
     /**
@@ -52,13 +46,13 @@ class Service extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
-            Text::make('Title')->required(true),
-            Trix::make('Short Description')->required(true),
-            Trix::make('Long Description')->required(true),
+
+            Text::make('Title in English', 'title_en')->required(true),
+            Text::make('Title in Arabic', 'title_ar')->required(true),
+
+            Textarea::make('Description in English', 'description_en')->required(true),
+            Textarea::make('Description in Arabic', 'description_ar')->required(true),
+
             Image::make('Icon')->disk('public'),
             Image::make('Banner', 'banner_path')->disk('public'),
             Image::make('Image', 'image_path')->disk('public'),

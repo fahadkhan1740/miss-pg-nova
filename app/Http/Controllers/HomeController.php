@@ -20,7 +20,7 @@ class HomeController extends Controller
 
         $aboutUs = AboutUs::first();
 
-        $services = Service::locale(app()->getLocale())->active()->take(6)->get();
+        $services = Service::active()->take(6)->get();
 
         $socialMediaLinks = SocialMediaLink::all();
 

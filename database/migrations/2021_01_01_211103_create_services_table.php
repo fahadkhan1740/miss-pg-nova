@@ -15,14 +15,18 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->enum('locale', ['en', 'ar']);
-            $table->string('title');
-            $table->text('short_description');
-            $table->text('long_description');
+
+            $table->string('title_en');
+            $table->text('description_en');
+
+            $table->string('title_ar');
+            $table->text('description_ar');
+
             $table->string('icon')->nullable();
             $table->string('image_path')->nullable();
             $table->string('banner_path')->nullable();
             $table->boolean('status')->default(true);
+
             $table->timestamps();
         });
     }

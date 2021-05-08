@@ -20,13 +20,6 @@ class AboutUs extends Resource
     public static $model = \App\Models\AboutUs::class;
 
     /**
-     * Custom priority level of the resource.
-     *
-     * @var int
-     */
-    public static $priority = 3;
-
-    /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
@@ -40,11 +33,16 @@ class AboutUs extends Resource
      */
     public static $search = [
         'id',
-        'title',
-        'sub_title',
-        'overview',
-        'mission',
-        'core_values'
+        'title_en',
+        'sub_title_en',
+        'overview_en',
+        'mission_en',
+        'core_values_en',
+        'title_ar',
+        'sub_title_ar',
+        'overview_ar',
+        'mission_ar',
+        'core_values_ar',
     ];
 
     /**
@@ -148,6 +146,5 @@ class AboutUs extends Resource
         return false;
     }
 
-    // TODO: Add HR above mission
     // TODO: Add black bar in navbar
 }

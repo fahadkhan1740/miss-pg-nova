@@ -56,17 +56,10 @@
                         <div class="card">
                             <div class="card-body">
                                 <img src="{{ 'storage/'.$service->icon }}" alt="">
-                                <h5 class="card-title">{{ $service->title }}</h5>
+                                <h5 class="card-title">{{ $service->title_en }}</h5>
                                 <div class="card-text overflow-card">
-                                    {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,500).'..' : $service->short_description }}
+                                    {{ strlen($service->description_en) > 100 ? substr($service->description_en,5,500).'..' : $service->description_en }}
                                 </div>
-                            </div>
-                            <div class="card-footer">
-                                <p class="card-text">
-                                    <a href="#">
-                                        Read More
-                                    </a>
-                                </p>
                             </div>
                         </div>
                     </div>

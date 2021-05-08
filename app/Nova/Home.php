@@ -32,8 +32,10 @@ class Home extends Resource
      */
     public static $search = [
         'id',
-        'title',
-        'sub_title'
+        'title_en',
+        'sub_title_en',
+        'title_ar',
+        'sub_title_ar',
     ];
 
     /**
