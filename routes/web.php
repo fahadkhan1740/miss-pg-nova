@@ -34,5 +34,5 @@ Route::middleware('set.locale')->group(static function () {
     Route::get('news-events', [NewsAndEventController::class, 'index'])->name('news-events');
     Route::get('news-events/{id}', [NewsAndEventController::class, 'show'])->name('news-events.show');
     Route::get('contact-us', [ContactController::class, 'index'])->name('contact');
-    Route::get('terms-and-conditions', [TermsAndConditionsController::class, 'index'])->name('terms');
+    Route::get('terms-and-conditions', [TermsAndConditionsController::class, 'index'])->name('terms-and-conditions');
 });

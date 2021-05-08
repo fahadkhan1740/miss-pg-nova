@@ -94,13 +94,6 @@
                                     src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
                                     id="language-icon">
                             </a>
-                        @elseif(request()->route()->getName() === 'terms')
-                            <a href="{{ route('terms', ['locale' => 'en']) }}"
-                               class="nav-link">
-                                <img
-                                    src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
-                                    id="language-icon">
-                            </a>
                         @else
                             <a href="{{ route(request()->route()->getName(), ['locale' => 'en']) }}" class="nav-link">
                                 <img
@@ -142,7 +135,7 @@
                             <li>
                                 <a href="{{ route('news-events', ['locale' => 'ar']) }}">{{ __('custom.links.news_events') }}</a>
                             </li>
-                            <li><a href="{{ route('terms', ['locale' => 'ar']) }}">{{ __('custom.links.terms_and_conditions') }}</a></li>
+                            <li><a href="{{ route('terms-and-conditions', ['locale' => 'ar']) }}">{{ __('custom.links.terms_and_conditions') }}</a></li>
                             <li>
                                 <a href="{{ route('kids-club', ['locale' => 'ar']) }}"> {{ __('custom.links.kids_club') }}</a>
                             </li>
