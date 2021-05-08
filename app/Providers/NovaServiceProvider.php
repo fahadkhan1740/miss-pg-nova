@@ -99,6 +99,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         'label' => 'Home',
                         'resources' => [
                             Home::class,
+                        ]
+                    ]),
+                    TopLevelResource::make([
+                        'label' => 'About',
+                        'resources' => [
                             AboutUs::class,
                         ]
                     ]),
