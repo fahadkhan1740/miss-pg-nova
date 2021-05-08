@@ -19,7 +19,8 @@
             <h1 class="display-6">{{ $titles->title }}</h1>
             <p class="lead">{!! $titles->sub_title !!}</p>
             <p class="lead">
-                <button class="btn btn-success btn-md" href="Jumbo action link" role="button">{{ $titles->button_text }}</button>
+                <button class="btn btn-success btn-md" href="Jumbo action link"
+                        role="button">{{ $titles->button_text }}</button>
             </p>
         </div>
     </div>
@@ -54,7 +55,7 @@
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <i class="{{ $service->icon }}"></i>
+                                <img src="{{ 'storage/'.$service->icon }}" alt="">
                                 <h5 class="card-title">{{ $service->title }}</h5>
                                 <div class="card-text overflow-card">
                                     {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,500).'..' : $service->short_description }}

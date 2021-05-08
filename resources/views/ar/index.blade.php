@@ -52,7 +52,7 @@
                     <div class="col-lg-4">
                         <div class="card" style="height: 90%">
                             <div class="card-body">
-                                <i class="{{ $service->icon }}"></i>
+                                <img src="{{ 'storage/'.$service->icon }}" alt="">
                                 <h5 class="card-title">{{ $service->title }}</h5>
                                 <p class="card-text">
                                      {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,500).'..' : $service->short_description }}
