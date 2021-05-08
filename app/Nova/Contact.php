@@ -47,7 +47,7 @@ class Contact extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
+            ID::make(__('ID'), 'id')->sortable()->hide(),
 
             Trix::make('Address in English', 'address_en')->alwaysShow()->required(true),
             Trix::make('Address in Arabic', 'address_ar')->alwaysShow()->required(true),
