@@ -65,6 +65,7 @@ class AboutUs extends Resource
             Text::make('Sub Title')->rules('string'),
             Image::make('Banner', 'banner_path')->disk('public'),
             Image::make('Image', 'image_path')->disk('public'),
+            // TODO:: Add history and vision according to design
             Trix::make('Overview')->alwaysShow(),
             Trix::make('Mission', 'mission')->rules('min:5', 'max:500'),
             Trix::make('Core Values', 'core_values')->rules('min:5', 'max:500'),
@@ -134,4 +135,7 @@ class AboutUs extends Resource
     {
         return false;
     }
+
+    // TODO: Add HR above mission
+    // TODO: Add black bar in navbar
 }

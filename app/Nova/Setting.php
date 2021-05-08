@@ -118,4 +118,6 @@ class Setting extends Resource
     {
         return 'Home Settings';
     }
+
+    // TODO: Add miss pg favicon icon static
 }

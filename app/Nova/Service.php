@@ -61,7 +61,7 @@ class Service extends Resource
             Text::make('Title')->required(true),
             Trix::make('Short Description')->required(true),
             Trix::make('Long Description')->required(true),
-            Fontawesome::make('Icon')->rules('required'),
+            Fontawesome::make('Icon')->rules('required'), // TODO: Remove fontawesome and give provision to add any icon as image
             Image::make('Banner', 'banner_path')->disk('public'),
             Image::make('Image', 'image_path')->disk('public'),
             Boolean::make('Status')->default(true)
@@ -111,4 +111,7 @@ class Service extends Resource
     {
         return [];
     }
+
+    // TODO: MAX limit to create only 6 services
+    // TODO: Icon should overlay 50% on top
 }
