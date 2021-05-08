@@ -14,7 +14,7 @@
     <!-- breadcrumb area end -->
 
     <!-- about start -->
-    <div class="about-page-top">
+    <div class="about-page-top" style="border-bottom: 2px solid rgba(50, 50, 50, 1);">
         <div class="container section-padding">
             <div class="row row-eq-height">
                 <div class="col-lg-5 px-md-5">
@@ -75,14 +75,13 @@
                     <p class="card-text">Ms. Platinum Gym, Messila</p>
                 </div>
                 <div class="col-lg-4 text-center contact-cards">
-                    <i class="fa fa-asl-interpreting"></i>
+                    <i class="fa fa-phone"></i>
                     <p class="card-text">Ms. Platinum Gym, Messila</p>
                 </div>
                 <div class="col-lg-4 text-center contact-cards">
-                    <i class="fa fa-asl-interpreting"></i>
+                    <i class="fa fa-map-marker-alt"></i>
                     <p class="card-text">Ms. Platinum Gym, Messila</p>
                 </div>
-
             </div>
         </div>
     </div>
