@@ -72,17 +72,20 @@
             <div class="row">
                 <div class="col-lg-4 text-center contact-cards">
                     <i class="fa fa-map-marker-alt"></i>
-                    <p class="card-text">Ms. Platinum Gym, Messila</p>
+                    <p class="card-text">{!! $contact->address_ar !!}</p>
                 </div>
                 <div class="col-lg-4 text-center contact-cards">
                     <i class="fa fa-phone"></i>
-                    <p class="card-text">Ms. Platinum Gym, Messila</p>
+                    <p class="card-text">
+                        <a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a>
+                    </p>
                 </div>
                 <div class="col-lg-4 text-center contact-cards">
-                    <i class="fa fa-asl-interpreting"></i>
-                    <p class="card-text">Ms. Platinum Gym, Messila</p>
+                    <i class="fa fa-envelope"></i>
+                    <p class="card-text">
+                        <a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a>
+                    </p>
                 </div>
-
             </div>
         </div>
     </div>

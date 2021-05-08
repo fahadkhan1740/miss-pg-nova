@@ -19,13 +19,6 @@ class Contact extends Resource
     public static $model = \App\Models\Contact::class;
 
     /**
-     * Custom priority level of the resource.
-     *
-     * @var int
-     */
-    public static $priority = 15;
-
-    /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
@@ -39,6 +32,10 @@ class Contact extends Resource
      */
     public static $search = [
         'id',
+        'address_en',
+        'address_ar',
+        'email',
+        'phone',
     ];
 
     /**
@@ -51,16 +48,12 @@ class Contact extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
-            Trix::make('Address')->alwaysShow()->required(true),
+
+            Trix::make('Address in English', 'address_en')->alwaysShow()->required(true),
+            Trix::make('Address in Arabic', 'address_ar')->alwaysShow()->required(true),
+
             Text::make('Email')->rules('required', 'email', 'max:255'),
-            Text::make('Website')->rules('required', 'url'),
-            Text::make('Phone 1')->rules('required'),
-            Text::make('Phone 2'),
-            Trix::make('Working Hours')->rules('required'),
+            Text::make('Phone')->rules('required'),
 
 
         ];
@@ -122,7 +115,7 @@ class Contact extends Resource
 
     public static function authorizedToCreate(Request $request): bool
     {
-        return !(\App\Models\Contact::query()->count() > 1);
+        return !(\App\Models\Contact::query()->count() > 0);
     }
 
     public function authorizedToDelete(Request $request): bool

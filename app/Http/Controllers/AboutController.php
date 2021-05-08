@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AboutUs;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -11,6 +12,8 @@ class AboutController extends Controller
     {
         $aboutUs = AboutUs::first();
 
-        return view(app()->getLocale().'.about', compact('aboutUs'));
+        $contact = Contact::first();
+
+        return view(app()->getLocale().'.about', compact('aboutUs', 'contact'));
     }
 }
