@@ -49,7 +49,8 @@ class Trainer extends Resource
             Text::make('Name in Arabic', 'name_ar')->rules('required'),
             Trix::make('Description in English', 'description_en')->rules('required'),
             Trix::make('Description in Arabic', 'description_ar')->rules('required'),
-            Text::make('Tag', 'category'),
+            Text::make('Tag In English', 'category_en'),
+            Text::make('Tag In Arabic', 'category_ar'),
             Image::make('Image'),
         ];
     }

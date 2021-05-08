@@ -47,6 +47,9 @@
                                             <p class="card-text">
                                                 {!! $trainer->description_ar !!}
                                             </p>
+                                            <p class="card-text">
+                                                {{ $trainer->category_ar }}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

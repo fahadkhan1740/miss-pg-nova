@@ -19,7 +19,8 @@ class CreateTrainersTable extends Migration
             $table->string('name_ar');
             $table->text('description_en');
             $table->text('description_ar');
-            $table->string('category')->nullable();
+            $table->string('category_en')->nullable();
+            $table->string('category_ar')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
         });

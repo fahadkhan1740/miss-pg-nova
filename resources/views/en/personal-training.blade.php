@@ -19,25 +19,6 @@
     <div class="trainiers">
         <div class="container section-padding padding-bottom-90">
             <div class="row">
-                <div class="col-lg-12 col-xl-12 ">
-                    <ul class="nav  justify-content-center mb-5 " id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                               role="tab"
-                               aria-controls="pills-home" aria-selected="true">Show All</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                               role="tab"
-                               aria-controls="pills-profile" aria-selected="false">Trainer CAT1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                               role="tab"
-                               aria-controls="pills-contact" aria-selected="false">Trainer CAT2</a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="col-lg-12 col-xl-12">
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -51,6 +32,9 @@
                                                 <h5 class="card-title mb-3">{{ $trainer->name_en }}</h5>
                                                 <p class="card-text">
                                                     {!! $trainer->description_en !!}
+                                                </p>
+                                                <p class="card-text">
+                                                    {{ $trainer->category_en }}
                                                 </p>
                                             </div>
                                         </div>
