@@ -34,9 +34,9 @@
                     <img src="{{ 'storage/'.$aboutUs->image_path }}" alt="">
                 </div>
                 <div class="col-lg-6 px-md-5">
-                    <h2 class="display-6 box-underline">من نحن؟</h2>
-                    <h4 class="display-6">مرحبًا بكم في مس بلاتينيوم هيلث</h4>
-                    {!! $aboutUs->overview !!}
+                    <h2 class="display-6 box-underline">{{ $aboutUs->title_ar }}</h2>
+                    <h4 class="display-6">{{ $aboutUs->sub_title_ar }}</h4>
+                    {!! $aboutUs->overview_ar !!}
                 </div>
             </div>
         </div>

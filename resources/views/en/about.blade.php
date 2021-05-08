@@ -19,16 +19,16 @@
             <div class="row row-eq-height">
                 <div class="col-lg-5 px-md-5">
                     <img
-                        src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80"
+                        src="{{ 'storage/'.$aboutUs->image_path }}"
                         alt="">
                 </div>
                 <div class="col-lg-7 px-md-5">
                     <h2 class="display-6 about-box-underline">
-                        {{ $aboutUs->title }}
-                        <br>{{ $aboutUs->sub_title }}
+                        Al NAWADI HOLDING’s <br>
+                        HISTORY & VISION
                     </h2>
                     <div class="card-text">
-                        {!! $aboutUs->history_vision !!}
+                        {!! $aboutUs->history_vision_en !!}
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@
             <div class="row ">
                 <div class="col-lg-12">
                     <h2 class="display-6 box-underline">Our Mission</h2>
-                    <div class="text-center">{!! $aboutUs->mission !!}</div>
+                    <div class="text-center">{!! $aboutUs->mission_en !!}</div>
                 </div>
 
             </div>
@@ -57,7 +57,7 @@
             <div class="row ">
                 <div class="col-lg-12">
                     <h2 class="display-6 box-underline" style="width:20rem">Our Core Values</h2>
-                    <div class="text-center">{!! $aboutUs->core_values !!}</div>
+                    <div class="text-center">{!! $aboutUs->core_values_en !!}</div>
                 </div>
 
             </div>

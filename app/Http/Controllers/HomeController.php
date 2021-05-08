@@ -18,7 +18,7 @@ class HomeController extends Controller
 
         $homeBanners = HomeBanner::locale(app()->getLocale())->get();
 
-        $aboutUs = AboutUs::locale(app()->getLocale())->first();
+        $aboutUs = AboutUs::first();
 
         $services = Service::locale(app()->getLocale())->active()->take(6)->get();
 

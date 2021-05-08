@@ -56,19 +56,31 @@ class AboutUs extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
-            Text::make('Title')->rules('string'),
-            Text::make('Sub Title')->rules('string'),
+            ID::make(__('ID'), 'id')
+                ->sortable()
+                ->hideFromIndex()
+                ->hideFromDetail(),
+
+            Text::make('Title in English', 'title_en')->rules('string'),
+            Text::make('Title in Arabic', 'title_ar')->rules('string'),
+
+            Text::make('Sub Title in English', 'sub_title_en')->rules('string'),
+            Text::make('Sub Title in Arabic', 'sub_title_ar')->rules('string'),
+
+            Trix::make('Overview in English', 'overview_en')->alwaysShow(),
+            Trix::make('Overview in Arabic', 'overview_ar')->alwaysShow(),
+
+            Trix::make('History & Vision in English', 'history_vision_en'),
+            Trix::make('History & Vision in Arabic', 'history_vision_ar'),
+
+            Trix::make('Mission in English', 'mission_en')->rules('min:5', 'max:500'),
+            Trix::make('Mission in Arabic', 'mission_ar')->rules('min:5', 'max:500'),
+
+            Trix::make('Core Values in English', 'core_values_en')->rules('min:5', 'max:500'),
+            Trix::make('Core Values in Arabic', 'core_values_ar')->rules('min:5', 'max:500'),
+
             Image::make('Banner', 'banner_path')->disk('public'),
             Image::make('Image', 'image_path')->disk('public'),
-            Trix::make('Overview')->alwaysShow(),
-            Trix::make('History & Vision', 'history_vision'),
-            Trix::make('Mission', 'mission')->rules('min:5', 'max:500'),
-            Trix::make('Core Values', 'core_values')->rules('min:5', 'max:500'),
         ];
     }
 
@@ -128,7 +140,7 @@ class AboutUs extends Resource
 
     public static function authorizedToCreate(Request $request): bool
     {
-        return !(\App\Models\AboutUs::query()->count() > 1);
+        return !(\App\Models\AboutUs::query()->count() > 0);
     }
 
     public function authorizedToDelete(Request $request): bool

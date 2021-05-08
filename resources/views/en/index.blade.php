@@ -35,9 +35,9 @@
                          alt="">
                 </div>
                 <div class="col-lg-6 px-md-5">
-                    <h2 class="display-6 box-underline">Who we are?</h2>
-                    <h4 class="display-6">Welcome to Miss Platinum Health</h4>
-                    <div class="card-text">{!! $aboutUs->overview !!}
+                    <h2 class="display-6 box-underline">{{ $aboutUs->title_en }}</h2>
+                    <h4 class="display-6">{{ $aboutUs->sub_title_en }}</h4>
+                    <div class="card-text">{!! $aboutUs->overview_en !!}
                     </div>
                 </div>
 

@@ -9,7 +9,7 @@ class AboutController extends Controller
 {
     public function index()
     {
-        $aboutUs = AboutUs::locale(app()->getLocale())->first();
+        $aboutUs = AboutUs::first();
 
         return view(app()->getLocale().'.about', compact('aboutUs'));
     }
