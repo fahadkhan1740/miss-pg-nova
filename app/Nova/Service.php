@@ -54,8 +54,6 @@ class Service extends Resource
             Textarea::make('Description in Arabic', 'description_ar')->required(true),
 
             Image::make('Icon')->disk('public'),
-            Image::make('Banner', 'banner_path')->disk('public'),
-            Image::make('Image', 'image_path')->disk('public'),
             Boolean::make('Status')->default(true)
         ];
     }

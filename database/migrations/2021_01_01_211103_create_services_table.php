@@ -23,8 +23,6 @@ class CreateServicesTable extends Migration
             $table->text('description_ar');
 
             $table->string('icon')->nullable();
-            $table->string('image_path')->nullable();
-            $table->string('banner_path')->nullable();
             $table->boolean('status')->default(true);
 
             $table->timestamps();

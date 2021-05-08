@@ -19,13 +19,6 @@ class KidsClub extends Resource
     public static $model = \App\Models\KidsClub::class;
 
     /**
-     * Custom priority level of the resource.
-     *
-     * @var int
-     */
-    public static $priority = 7;
-
-    /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
@@ -38,7 +31,7 @@ class KidsClub extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'overview'
+        'id',
     ];
 
     /**
@@ -50,15 +43,9 @@ class KidsClub extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
+            ID::make(__('ID'), 'id')->sortable()->hide(),
+
             Image::make('Banner', 'banner_path')->disk('public'),
-            Trix::make('Overview')->alwaysShow(),
-            Trix::make('Services & Facilities', 'services_facilities')->alwaysShow(),
-            Trix::make('Membership & Packages', 'memberships')->alwaysShow()
         ];
     }
 
@@ -108,11 +95,22 @@ class KidsClub extends Resource
 
     public static function authorizedToCreate(Request $request): bool
     {
-        return !(\App\Models\KidsClub::query()->count() > 2);
+        return !(\App\Models\KidsClub::query()->count() > 0);
     }
 
     public function authorizedToDelete(Request $request): bool
     {
         return false;
     }
+
+    public static function label(): string
+    {
+        return 'Banner';
+    }
+
+    public static function singularLabel()
+    {
+        return 'Banner';
+    }
+
 }

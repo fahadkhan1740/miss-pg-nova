@@ -11,12 +11,12 @@ class KidsClubController extends Controller
 {
     public function index()
     {
-        $kidsClub = KidsClub::locale(app()->getLocale())->first();
+        $kidsClub = KidsClub::first();
 
-        $services = KidsService::locale(app()->getLocale())->active()->get();
+        $services = KidsService::active()->get();
 
         $features = KidsFeature::locale(app()->getLocale())->active()->get();
 
-        return view(app()->getLocale().'.kids-club', compact('kidsClub', 'services', 'features'));
+        return view(app()->getLocale().'.kids-club', compact('kidsClub','services', 'features'));
     }
 }

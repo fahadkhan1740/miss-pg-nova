@@ -35,8 +35,8 @@ class KidsService extends Resource
      */
     public static $search = [
         'id',
-        'title',
-        'short_description'
+        'title_en',
+        'title_ar',
     ];
 
     /**
@@ -50,32 +50,20 @@ class KidsService extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
-
-            Text::make('Title')
+            Text::make('Title in English', 'title_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Short Description')
+            Text::make('Title in Arabic', 'title_ar')
+                ->rules('required', 'string', 'min:3', 'max:100'),
+
+            Text::make('Description in English', 'description_en')
                 ->rules('required', 'string', 'min:10', 'max:500'),
 
-            Trix::make('Long Description')
-                ->rules('required', 'string', 'min:10', 'max:2000'),
+            Text::make('Description in Arabic', 'description_ar')
+                ->rules('required', 'string', 'min:10', 'max:500'),
 
-            Fontawesome::make('Icon')
+            Image::make('Icon')
                 ->rules('required'),
-
-            Image::make('Banner', 'banner_path')
-                ->creationRules('required', 'mimes:png,jpg,jpeg')
-                ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
-
-            Image::make('Image', 'image_path')
-                ->creationRules('required', 'mimes:png,jpg,jpeg')
-                ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
 
             Boolean::make('Status')
                 ->default(true)
@@ -128,11 +116,11 @@ class KidsService extends Resource
 
     public static function label(): string
     {
-        return 'Services';
+        return 'Kids Services';
     }
 
     public static function singularLabel()
     {
-        return 'Services';
+        return 'Kids Services';
     }
 }

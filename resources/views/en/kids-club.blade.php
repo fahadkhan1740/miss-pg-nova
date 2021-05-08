@@ -25,9 +25,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">{{ $loop->iteration }}</h3>
-                                <h5 class="card-subtitle">{{ $service->title }}</h5>
+                                <h5 class="card-subtitle">{{ $service->title_en }}</h5>
                                 <p class="card-text">
-                                    {{ strlen($service->short_description) > 100 ? substr($service->short_description,5,500).'..' : $service->short_description }}
+                                    {{ strlen($service->description_en) > 100 ? substr($service->description_en,5,500).'..' : $service->description_en }}
                                 </p>
                             </div>
                         </div>

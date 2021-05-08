@@ -15,11 +15,9 @@ class CreateKidsClubsTable extends Migration
     {
         Schema::create('kids_clubs', function (Blueprint $table) {
             $table->id();
-            $table->enum('locale', ['en', 'ar']);
+
             $table->string('banner_path')->nullable();
-            $table->text('overview')->nullable();
-            $table->text('services_facilities')->nullable();
-            $table->text('memberships')->nullable();
+
             $table->timestamps();
         });
     }
