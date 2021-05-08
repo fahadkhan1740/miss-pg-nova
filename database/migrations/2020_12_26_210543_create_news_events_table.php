@@ -15,10 +15,15 @@ class CreateNewsEventsTable extends Migration
     {
         Schema::create('news_events', function (Blueprint $table) {
             $table->id();
-            $table->enum('locale', ['en', 'ar']);
-            $table->string('title');
-            $table->string('short_description');
-            $table->text('long_description');
+
+            $table->string('title_en');
+            $table->string('short_description_en');
+            $table->text('long_description_en');
+
+            $table->string('title_ar');
+            $table->string('short_description_ar');
+            $table->text('long_description_ar');
+
             $table->string('banner_path')->nullable();
             $table->foreignId('user_id')->nullable();
             $table->boolean('status')->default(true);

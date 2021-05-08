@@ -24,11 +24,10 @@
                                      class="attachment-siiimple_full size-siiimple_full wp-post-image" alt="">
                             </div>
                             <div class="blog-details-content">
-                                <h6><a href="#">{{ $new->created_at->format('d M,Y') }}</a> <a
-                                        href="#"><span>{{ $new->user->name ?? 'User' }}</span></a></h6>
-                                <h2>{{ $new->title }}</h2>
+                                <h6>{{ $new->created_at->format('d M,Y') }}</h6>
+                                <h2>{{ $new->title_en }}</h2>
                                 <div style="color: black">
-                                    {!! $new->long_description !!}
+                                    {!! $new->long_description_en !!}
                                 </div>
                             </div>
                         </article>
@@ -46,8 +45,8 @@
                                                                              alt=""></a>
                                         </div>
                                         <div class="content-part">
-                                            <h4>{{ $new->title }}</h4>
-                                            <span class="text">{{ substr($new->short_description,0, 50) }}...</span>
+                                            <h4>{{ $new->title_en }}</h4>
+                                            <span class="text">{{ substr($new->short_description_en,0, 50) }}...</span>
                                         </div>
                                     </div>
                                 @endforeach

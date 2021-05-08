@@ -24,8 +24,8 @@
                                  alt="Card image cap">
                             <div class="card-body pl-0">
                                 <h6 class="card-subtitle text-white mb-2">{{ $new->created_at->format('d M, Y') }}</h6>
-                                <h5 class="card-title">{{ $new->title }}</h5>
-                                <p class="card-text">{!! $new->short_description !!}</p>
+                                <h5 class="card-title">{{ $new->title_en }}</h5>
+                                <p class="card-text">{!! $new->short_description_en !!}</p>
                                 <a href="{{ route('news-events.show', ['id' => $new->id, 'locale' => app()->getLocale()]) }}"
                                    class="btn btn-sm btn-success pl-4 pr-4 pt-2 pb-2 mt-4">Read more</a>
                             </div>

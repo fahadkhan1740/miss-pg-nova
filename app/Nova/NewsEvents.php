@@ -42,8 +42,10 @@ class NewsEvents extends Resource
      */
     public static $search = [
         'id',
-        'title',
-        'short_description'
+        'title_en',
+        'short_description_en',
+        'title_ar',
+        'short_description_ar',
     ];
 
     /**
@@ -57,18 +59,22 @@ class NewsEvents extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
-
-            Text::make('Title')
+            Text::make('Title in English', 'title_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Textarea::make('Short Description')
+            Text::make('Title in Arabic', 'title_ar')
+                ->rules('required', 'string', 'min:3', 'max:100'),
+
+            Textarea::make('Short Description in English', 'short_description_en')
                 ->rules('required', 'string', 'max:255'),
 
-            Trix::make('Long Description')
+            Textarea::make('Short Description in Arabic', 'short_description_ar')
+                ->rules('required', 'string', 'max:255'),
+
+            Trix::make('Long Description in English', 'long_description_en')
+                ->rules('required', 'string', 'min:10', 'max:2000'),
+
+            Trix::make('Long Description in Arabic', 'long_description_ar')
                 ->rules('required', 'string', 'min:10', 'max:2000'),
 
             Image::make('Banner', 'banner_path')

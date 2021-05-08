@@ -23,10 +23,10 @@
                                 <img src="{{ asset('storage/'.$new->banner_path) }}" class="attachment-siiimple_full size-siiimple_full wp-post-image" alt="">
                             </div>
                             <div class="blog-details-content">
-                                <h6><a href="#">{{ $new->created_at->format('d M,Y') }}</a> <a href="#"><span>{{ $new->user->name ?? 'User' }}</span></a></h6>
-                                <h2>{{ $new->title }}</h2>
+                                <h6 dir="rtl">{{ \Carbon\Carbon::parse($new->created_at)->locale('ar')->isoFormat('MMMM Do , YYYY') }}</h6>
+                                <h2>{{ $new->title_ar }}</h2>
                                 <div style="color: black">
-                                    {!! $new->long_description !!}
+                                    {!! $new->long_description_ar !!}
                                 </div>
                             </div>
                         </article>

@@ -9,7 +9,7 @@ class NewsAndEventController extends Controller
 {
     public function index()
     {
-        $news = NewsEvents::locale(app()->getLocale())->active()->with('user')->latest()->paginate(2);
+        $news = NewsEvents::active()->with('user')->latest()->paginate(15);
 
         return view(app()->getLocale().'.event-news')
             ->with('news', $news);
@@ -17,9 +17,9 @@ class NewsAndEventController extends Controller
 
     public function show($id)
     {
-        $news = NewsEvents::locale(app()->getLocale())->active()->with('user')->latest()->take(6)->get();
+        $news = NewsEvents::active()->where('id', '!=', $id)->with('user')->latest()->take(6)->get();
 
-        $new = NewsEvents::locale(app()->getLocale())->active()->with('user')->find($id);
+        $new = NewsEvents::active()->with('user')->find($id);
 
         return view(app()->getLocale().'.event-news-show')
             ->with('latestNews', $news)
