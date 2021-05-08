@@ -93,7 +93,7 @@
                                 <hr>
                             </div>
                             <p class="lead">
-                                <button class="btn btn-custom btn-sm" href="#" role="button">لنحاول</button>
+                                <a class="btn btn-custom btn-sm" href="{{ route('memberships', ['locale' => app()->getLocale()]) }}" role="button">لنحاول</a>
                             </p>
                         </div>
                     </div>
