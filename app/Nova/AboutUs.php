@@ -77,7 +77,6 @@ class AboutUs extends Resource
             Trix::make('Core Values in English', 'core_values_en')->rules('min:5', 'max:500'),
             Trix::make('Core Values in Arabic', 'core_values_ar')->rules('min:5', 'max:500'),
 
-            Image::make('Banner', 'banner_path')->disk('public'),
             Image::make('Image', 'image_path')->disk('public'),
         ];
     }

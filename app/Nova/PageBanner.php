@@ -52,7 +52,8 @@ class PageBanner extends Resource
                     'kids-club' => 'Kids Club',
                     'news-events' => 'News & Events'
                 ])
-                ->rules('required', 'unique:page_banners,page'),
+                ->creationRules('required', 'unique:page_banners,page')
+                ->rules('required'),
 
             Image::make('Banner', 'banner_image')
                 ->creationRules('required', 'mimes:jpg,png,gif,jpeg')

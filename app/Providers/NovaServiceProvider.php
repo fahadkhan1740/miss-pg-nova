@@ -133,7 +133,6 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     TopLevelResource::make([
                         'label' => 'Kids Club',
                         'resources' => [
-                            KidsClub::class,
                             KidsService::class,
                             KidsFeature::class
                         ]
