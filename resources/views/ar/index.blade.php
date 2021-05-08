@@ -16,11 +16,11 @@
     <div class="banner-area banner-style-one"
          style="background-image:url({{ 'storage/'.getHomeBackground() }})">
         <div class="banner-message">
-            <h1 class="display-6">{{ $titles->title }}</h1>
-            <p class="lead">{!! $titles->sub_title !!}</p>
+            <h1 class="display-6">{{ $titles->title_ar }}</h1>
+            <p class="lead">{!! $titles->sub_title_ar !!}</p>
             <p class="lead">
                 <button class="btn btn-success btn-md" href="Jumbo action link"
-                        role="button">{{ $titles->button_text }}</button>
+                        role="button">{{ $titles->button_text_ar }}</button>
             </p>
         </div>
     </div>

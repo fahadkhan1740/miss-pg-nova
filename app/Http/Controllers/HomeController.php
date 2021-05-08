@@ -14,7 +14,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $titles = Home::locale(app()->getLocale())->first();
+        $titles = Home::first();
 
         $homeBanners = HomeBanner::locale(app()->getLocale())->get();
 

@@ -47,18 +47,22 @@ class Home extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
-
-            Text::make('Title')
+            Text::make('Title in English', 'title_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Trix::make('Sub Title')
+            Text::make('Title in Arabic', 'title_ar')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Button Text')
+            Trix::make('Sub Title in English', 'sub_title_en')
+                ->rules('required', 'string', 'min:3', 'max:100'),
+
+            Trix::make('Sub Title in Arabic', 'sub_title_ar')
+                ->rules('required', 'string', 'min:3', 'max:100'),
+
+            Text::make('Button Text in English', 'button_text_en')
+                ->rules('required', 'string', 'min:3', 'max:100'),
+
+            Text::make('Button Text in Arabic', 'button_text_ar')
                 ->rules('required', 'string', 'min:3', 'max:100')
         ];
     }
@@ -119,7 +123,7 @@ class Home extends Resource
 
     public static function authorizedToCreate(Request $request): bool
     {
-        return !(\App\Models\Home::query()->count() > 1);
+        return !(\App\Models\Home::query()->count() > 0);
     }
 
     public function authorizedToDelete(Request $request): bool

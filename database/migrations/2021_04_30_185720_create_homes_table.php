@@ -15,10 +15,15 @@ class CreateHomesTable extends Migration
     {
         Schema::create('homes', function (Blueprint $table) {
             $table->id();
-            $table->enum('locale', ['en', 'ar']);
-            $table->string('title');
-            $table->string('sub_title');
-            $table->string('button_text');
+
+            $table->string('title_en');
+            $table->string('sub_title_en');
+            $table->string('button_text_en');
+
+            $table->string('title_ar');
+            $table->string('sub_title_ar');
+            $table->string('button_text_ar');
+
             $table->timestamps();
         });
     }
