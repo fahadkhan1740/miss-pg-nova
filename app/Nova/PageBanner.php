@@ -46,27 +46,18 @@ class PageBanner extends Resource
 
             Select::make('Page')
                 ->options([
-                    'projects' => 'Projects',
-                    'our-companies' => 'Our Companies',
-                    'our-history' => 'Our History',
-                    'ceo-message' => 'CEO Message',
-                    'mission-vision' => 'Mission and Vision',
-                    'board-of-directors' => 'Board of Directors',
-                    'management-team' => 'Management Team',
-                    'news' => 'News and Announcements',
-                    'photo-video' => 'Photo and Video',
-                    'social-media' => 'Social Media',
-                    'financial-highlights' => 'Financial Highlights',
-                    'annual-reports' => 'Annual Reports',
-                    'corporate-profile' => 'Corporate Profile',
-                    'join-us' => 'Join Us',
-                    'contact-us' => 'Contact Us'
+                    'about-us' => 'About Us',
+                    'memberships' => 'Memberships',
+                    'personal-training' => 'Personal Training',
+                    'kids-club' => 'Kids Club',
+                    'news-events' => 'News & Events'
                 ])
                 ->rules('required', 'unique:page_banners,page'),
 
             Image::make('Banner', 'banner_image')
                 ->creationRules('required', 'mimes:jpg,png,gif')
-                ->rules('mimes:jpg,png,gif'),
+                ->rules('mimes:jpg,png,gif')
+                ->help('Please upload banner of size 1920x350px'),
         ];
     }
 
