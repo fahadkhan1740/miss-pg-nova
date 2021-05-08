@@ -109,12 +109,12 @@ class Home extends Resource
 
     public static function label(): string
     {
-        return 'Titles';
+        return 'Home Banner Titles';
     }
 
     public static function singularLabel()
     {
-        return 'Titles';
+        return 'Home Banner Titles';
     }
 
     public static function authorizedToCreate(Request $request): bool

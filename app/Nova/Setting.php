@@ -108,4 +108,14 @@ class Setting extends Resource
     {
         return false;
     }
+
+    public static function label(): string
+    {
+        return 'Home Settings';
+    }
+
+    public static function singularLabel()
+    {
+        return 'Home Settings';
+    }
 }
