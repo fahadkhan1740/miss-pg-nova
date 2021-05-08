@@ -46,12 +46,12 @@
                 @foreach ($features as $feature)
                     <div class="col-lg-3">
                         <div class="card">
-                            <img class="card-img-top" src="{{ 'storage/'.$feature->banner_path }}"
+                            <img class="card-img-top" src="{{ 'storage/'.$feature->image_path }}"
                                  alt="Card image cap">
                             <div class="card-body pl-0">
-                                <h5 class="card-title">{{ $feature->title }}</h5>
+                                <h5 class="card-title">{{ $feature->title_ar }}</h5>
                                 <p class="card-text">
-                                    {!! $feature->short_description !!}
+                                    {!! $feature->description_ar !!}
                                 </p>
                             </div>
                         </div>

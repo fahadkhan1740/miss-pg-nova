@@ -15,7 +15,7 @@ class KidsClubController extends Controller
 
         $services = KidsService::active()->get();
 
-        $features = KidsFeature::locale(app()->getLocale())->active()->get();
+        $features = KidsFeature::active()->get();
 
         return view(app()->getLocale().'.kids-club', compact('kidsClub','services', 'features'));
     }

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @method static locale(string $getLocale)
+ * @method static first()
  */
 class KidsClub extends Model
 {

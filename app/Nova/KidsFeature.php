@@ -8,6 +8,7 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Mdixon18\Fontawesome\Fontawesome;
@@ -48,27 +49,17 @@ class KidsFeature extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
-
-            Text::make('Title')
+            Text::make('Title in English', 'title_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Short Description')
+            Text::make('Title in Arabic', 'title_ar')
+                ->rules('required', 'string', 'min:3', 'max:100'),
+
+            Textarea::make('Description in English', 'description_en')
                 ->rules('required', 'string', 'min:10', 'max:500'),
 
-            Trix::make('Long Description')
-                ->rules('required', 'string', 'min:10', 'max:2000'),
-
-            Fontawesome::make('Icon')
-                ->rules('required'),
-
-            Image::make('Banner', 'banner_path')
-                ->creationRules('required', 'mimes:png,jpg,jpeg')
-                ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
+            Textarea::make('Description in Arabic', 'description_ar')
+                ->rules('required', 'string', 'min:10', 'max:500'),
 
             Image::make('Image', 'image_path')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
