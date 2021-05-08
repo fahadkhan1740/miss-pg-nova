@@ -55,19 +55,10 @@ class Branch extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Select::make('Language', 'locale')->options([
-                'en' => 'English',
-                'ar' => 'Arabic',
-            ])->rules('required'),
             Text::make('Name')->required(true),
-            Trix::make('Address')->alwaysShow()->required(true),
-            Image::make('Banner', 'banner_path')->disk('public'),
-            Image::make('Image', 'image_path')->disk('public'),
             Text::make('Latitude')->required(true),
             Text::make('Longitude')->required(true),
-            Text::make('Contact Number')->required(true),
             Boolean::make('Status')->default(true)
-
         ];
     }
 
