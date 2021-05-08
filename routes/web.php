@@ -29,7 +29,6 @@ Route::middleware('set.locale')->group(static function () {
     Route::get('branches/{id}', [BranchController::class, 'show'])->name('branch.show');
     Route::get('memberships', [MembershipController::class, 'index'])->name('memberships');
     Route::get('trainers', [TrainerController::class, 'index'])->name('trainer');
-    Route::get('personal-training', [PersonalTrainingController::class, 'index'])->name('personal-training');
     Route::get('kids-club', [KidsClubController::class, 'index'])->name('kids-club');
     Route::get('news-events', [NewsAndEventController::class, 'index'])->name('news-events');
     Route::get('news-events/{id}', [NewsAndEventController::class, 'show'])->name('news-events.show');
