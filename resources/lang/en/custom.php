@@ -100,7 +100,7 @@ return [
     ],
 
     'news_events' => [
-        'latest_posts' => 'Latest Posts'
+        'latest_posts' => 'Other News'
     ],
 
     'contact_us' => [

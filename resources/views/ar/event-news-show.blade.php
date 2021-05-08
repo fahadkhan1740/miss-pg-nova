@@ -33,14 +33,6 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="blog-right-content widget-area sidebar">
-                            <div class="widget widget_search">
-                                <form class="search-form">
-                                    <div class="form-group">
-                                        <input type="text" name="search" class="form-control" placeholder="Search here">
-                                    </div>
-                                    <button class="submit-btn" type="submit"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
                             <div class="widget latest-post-widget">
                                 <div class="eidget-title">
                                     <h1>{{ __('custom.news_events.latest_posts') }}</h1>
@@ -58,15 +50,6 @@
                                         </div>
                                     </div>
                                 @endforeach
-                            </div>
-                            <div class="widget widget_categories">
-                                <h5 class="widget-title">{{ __('custom.categories') }}</h5>
-                                <ul class="cat-menu">
-                                    <li><a href="#">Boxing</a></li>
-                                    <li><a href="#">Street</a></li>
-                                    <li><a href="#">Fitness</a></li>
-                                    <li><a href="#">Uncategorized</a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
