@@ -55,8 +55,8 @@ class PageBanner extends Resource
                 ->rules('required', 'unique:page_banners,page'),
 
             Image::make('Banner', 'banner_image')
-                ->creationRules('required', 'mimes:jpg,png,gif')
-                ->rules('mimes:jpg,png,gif')
+                ->creationRules('required', 'mimes:jpg,png,gif,jpeg')
+                ->rules('mimes:jpg,png,gif,jpeg')
                 ->help('Please upload banner of size 1920x350px'),
         ];
     }

@@ -2,6 +2,7 @@
 
 use App\Models\Branch;
 use App\Models\Contact;
+use App\Models\PageBanner;
 use App\Models\Setting;
 use App\Models\SocialMediaLink;
 use Illuminate\Support\Facades\Cache;
@@ -16,6 +17,10 @@ function getLogo() {
 
 function getHomeBackground() {
     return Setting::first()->home_background;
+}
+
+function getBanner($page) {
+    return PageBanner::where('page', $page)->first()->banner_image;
 }
 
 function getSocialMediaLinks() {

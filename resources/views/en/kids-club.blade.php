@@ -2,7 +2,7 @@
 
     <!-- breadcrumb area -->
     <div class="breadcrumb-style-1 about-breadcrumb-overlay"
-         style="background-image:url({{ 'storage/'.$kidsClub->banner_path }});">
+         style="background-image:url({{ 'storage/'.getBanner('kids-club') }});">
         <div class="breadcrumb-inner">
             <h1 class="page-title">{{ __('custom.links.kids_club') }}</h1>
             <ul class="page-list">

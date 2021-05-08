@@ -1,7 +1,7 @@
 <x-en-master>
     <!-- breadcrumb area -->
     <div class="breadcrumb-style-1 blog-breadcrumb-overlay"
-         style="background-image:url(/img/blog/bg.png);">
+         style="background-image:url({{ 'storage/'.getBanner('news-events') }});">
         <div class="breadcrumb-inner">
             <h1 class="page-title">{{ __('custom.links.news_events') }}</h1>
             <ul class="page-list margin-bottom-10">

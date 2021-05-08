@@ -2,7 +2,7 @@
 
     <!-- breadcrumb area -->
     <div class="breadcrumb-style-1 about-breadcrumb-overlay"
-         style="background-image:url(/img/bg/contact.png);"
+         style="background-image:url({{ 'storage/'.getBanner('memberships') }});"
     >
         <div class="breadcrumb-inner">
             <h1 class="page-title">{{ __('custom.links.memberships_packages') }}</h1>
