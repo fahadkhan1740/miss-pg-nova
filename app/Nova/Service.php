@@ -9,8 +9,6 @@ use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
-use Laravel\Nova\Http\Requests\NovaRequest;
-use Mdixon18\Fontawesome\Fontawesome;
 
 class Service extends Resource
 {
@@ -112,6 +110,10 @@ class Service extends Resource
         return [];
     }
 
-    // TODO: MAX limit to create only 6 services
+    public static function authorizedToCreate(Request $request): bool
+    {
+        return !(\App\Models\Service::query()->count() > 5);
+    }
+
     // TODO: Icon should overlay 50% on top
 }
