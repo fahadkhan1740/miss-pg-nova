@@ -229,7 +229,6 @@
                     <div class="col-lg-7">
                         <ul>
                             <li><a href="{{ route('home', ['locale' => 'en']) }}">Home</a></li>
-                            <li><a href="{{ route('home', ['locale' => 'en']) }}">Branches</a></li>
                             <li>
                                 <a href="{{ route('memberships', ['locale' => 'en']) }}">{{ __('custom.links.memberships_packages') }}</a>
                             </li>
