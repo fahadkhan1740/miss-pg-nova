@@ -220,7 +220,7 @@
                             <li>
                                 <a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a>
                             </li>
-                            <li><a href="{{ route('home', ['locale' => 'en']) }}"> Terms &amp; Conditions</a></li>
+                            <li><a href="{{ route('terms', ['locale' => 'en']) }}"> Terms &amp; Conditions</a></li>
                             <li>
                                 <a href="{{ route('kids-club', ['locale' => 'en']) }}"> {{ __('custom.links.kids_club') }}</a>
                             </li>

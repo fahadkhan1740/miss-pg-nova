@@ -76,6 +76,7 @@ return [
         'personal_training' => 'Personal Training',
         'kids_club' => 'Kids Club',
         'news_events' => 'News & Events',
+        'terms_and_conditions' => 'Terms & Conditions',
         'contact' => 'Contact Us'
     ],
 

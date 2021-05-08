@@ -76,6 +76,7 @@ return [
         'personal_training' => 'التدريب الشخصي',
         'kids_club' => 'نادي الطفال',
         'news_events' => 'الأخبار و الأحداث',
+        'terms_and_conditions' => 'البنود و الظروف',
         'contact' => 'اتصل بنا'
     ],
 
