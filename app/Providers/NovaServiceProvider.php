@@ -12,6 +12,7 @@ use App\Nova\KidsFeature;
 use App\Nova\KidsService;
 use App\Nova\Membership;
 use App\Nova\NewsEvents;
+use App\Nova\PageBanner;
 use App\Nova\Service;
 use App\Nova\Setting;
 use App\Nova\SocialMediaLink;
@@ -149,7 +150,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                             Setting::class,
                             Branch::class,
                             SocialMediaLink::class,
-                            TermsAndConditions::class
+                            TermsAndConditions::class,
+                            PageBanner::class
                         ]
                     ]),
                 ]

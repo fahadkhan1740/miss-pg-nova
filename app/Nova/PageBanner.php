@@ -5,16 +5,17 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Setting extends Resource
+class PageBanner extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Models\Setting::class;
+    public static $model = \App\Models\PageBanner::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -43,15 +44,29 @@ class Setting extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Image::make('Logo')
-                ->creationRules('required', 'mimes:png,jpg,jpeg')
-                ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
+            Select::make('Page')
+                ->options([
+                    'projects' => 'Projects',
+                    'our-companies' => 'Our Companies',
+                    'our-history' => 'Our History',
+                    'ceo-message' => 'CEO Message',
+                    'mission-vision' => 'Mission and Vision',
+                    'board-of-directors' => 'Board of Directors',
+                    'management-team' => 'Management Team',
+                    'news' => 'News and Announcements',
+                    'photo-video' => 'Photo and Video',
+                    'social-media' => 'Social Media',
+                    'financial-highlights' => 'Financial Highlights',
+                    'annual-reports' => 'Annual Reports',
+                    'corporate-profile' => 'Corporate Profile',
+                    'join-us' => 'Join Us',
+                    'contact-us' => 'Contact Us'
+                ])
+                ->rules('required', 'unique:page_banners,page'),
 
-            Image::make('Home Background')
-                ->creationRules('required', 'mimes:png,jpg,jpeg')
-                ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
+            Image::make('Banner', 'banner_image')
+                ->creationRules('required', 'mimes:jpg,png,gif')
+                ->rules('mimes:jpg,png,gif'),
         ];
     }
 
@@ -98,26 +113,4 @@ class Setting extends Resource
     {
         return [];
     }
-
-    public static function authorizedToCreate(Request $request): bool
-    {
-        return !(\App\Models\Setting::query()->count() > 0);
-    }
-
-    public function authorizedToDelete(Request $request): bool
-    {
-        return false;
-    }
-
-    public static function label(): string
-    {
-        return 'Home Settings';
-    }
-
-    public static function singularLabel()
-    {
-        return 'Home Settings';
-    }
-
-    // TODO: Add miss pg favicon icon static
 }
