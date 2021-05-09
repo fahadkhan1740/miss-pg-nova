@@ -55,7 +55,7 @@
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <img src="{{ 'storage/'.$service->icon }}" alt="">
+                                <img src="{{ 'storage/'.$service->icon }}" alt="" style="bottom: 2rem;width: 5rem;position: relative">
                                 <h5 class="card-title">{{ $service->title_en }}</h5>
                                 <div class="card-text overflow-card">
                                     {{ strlen($service->description_en) > 100 ? substr($service->description_en,5,500).'..' : $service->description_en }}
@@ -103,4 +103,67 @@
         </div>
     </div>
     <!-- home explore end -->
+    <!-- map-area start -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 no-gutter">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="500" id="gmap_canvas"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13922.563150286602!2d48.0851024!3d29.2635096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1eb3e25c0af647c!2sMiss%20Platinum%20Health%20Club!5e0!3m2!1sen!2skw!4v1604780698705!5m2!1sen!2skw"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">elementor
+                                review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- map-area end -->
+    <!-- contact area -->
+    <div class="contact-area padding-top-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-top">
+                        <div class="col-lg-12">
+                            <div class="contact-title text-center">
+                                <h2 class="display-6 box-underline">Contact Us</h2>
+                                {{-- <h2 class="title">{{ __('custom.contact_us.drop_us_a_line') }}</h2> --}}
+                                <p class="subtitle">{{ __('custom.contact_us.any_questions') }}</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 offset-lg-1">
+                            <form class="contact-form row" action="" name="registration">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" name="" id="name" aria-describedby="helpId" placeholder="Name*">                                      
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="" id="name" aria-describedby="helpId" placeholder="Email*">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" name="" id="name" aria-describedby="helpId" placeholder="Mobile*">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">                                      
+                                      <textarea class="form-control" name="" id="" rows="3" placeholder="Message*"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-wrapper desktop-center margin-bottom-10" style="margin: 0 auto">
+                                    <button class="btn btn-success btn-md" href="Jumbo action link" role="button">{{ $titles->button_text_ar }}</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- contact area end -->
 </x-en-master>

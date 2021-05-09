@@ -1290,7 +1290,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .about-breadcrumb-overlay {
   min-height: 350px !important; }
-  .about-breadcrumb-overlay:before {
+  /* .about-breadcrumb-overlay:before {
     position: absolute;
     content: '';
     width: 40%;
@@ -1303,7 +1303,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 295px; }
   .about-breadcrumb-overlay:after {
-    display: none; }
+    display: none; } */
 
 .about-page-top .about-content .about-title {
   font-size: 65px;
@@ -1583,25 +1583,22 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   margin-right: 5px; }
 
 .contact-area .contact-top {
-  background: url(/img/bg/contact-top.png);
-  background-repeat: no-repeat;
-  background-position: 50% -20%;
   position: relative;
-  background-color: #E5E5E5; }
+  background-color: #000000; }
   .contact-area .contact-top:before {
     position: absolute;
     content: '';
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8); }
+    background: #000; }
   .contact-area .contact-top .contact-title {
     padding-top: 63px;
     position: inherit; }
     .contact-area .contact-top .contact-title .title {
       font-family: var(--body-font);
       text-align: center;
-      color: #161616;
+      color: #ffffff;
       font-size: 65px;
       letter-spacing: 1.63px;
       font-weight: 700;
@@ -1610,7 +1607,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       font-size: 18px;
       font-family: var(--body-font);
       text-align: center;
-      color: #161616;
+      color: #fff;
       line-height: 35px;
       letter-spacing: 0.45px;
       font-weight: 500; }
@@ -1628,13 +1625,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     .contact-form .form-group .input-form, .contact-form .form-group textarea {
       width: 100%;
       height: 58px;
-      border-radius: 4px;
-      border: 1px solid #BCBCBC;
-      background: transparent;
+      border-radius: 0px;      
       padding-left: 35px;
       font-family: var(--body-font);
-      font-weight: 400;
-      color: var(--paragraph-color);
+      font-weight: 400;      
       font-size: 18px; }
       .contact-form .form-group .input-form:focus, .contact-form .form-group textarea:focus {
         border: 1px solid #88C13E; }
@@ -1688,12 +1682,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   width: 100%; }
 
 .contact-form input {
-  height: 25px;
+  height: 3rem;
   line-height: 25px;
-  padding: 0 6px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  -webkit-box-sizing: border-box; 
+  border-radius:0px
+}
 
 .contact-form .error {
   color: red; }
@@ -2180,8 +2175,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     # Nav bar
 ----------------------------------------------*/
 .navbar-area {
+  background: #000000;
   padding: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   z-index: 5; }
@@ -2194,7 +2190,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .navbar-area .nav-container {
     background-color: transparent;
     max-width: 90%;
-    padding: 15px 0px; }
+    padding:0px; }
     .navbar-area .nav-container .logo {
       padding-top: 7px; }
       .navbar-area .nav-container .logo a {
@@ -9492,7 +9488,7 @@ body{
 .home-explore {
     background: linear-gradient(0deg,rgba(0, 0, 0, 0)  0%, rgba(50, 50, 50, 1) 100%);
     margin-top: 50px;
-    padding: 5% 20px;
+    padding: 10% 20px;
     /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
     -webkit-transform: skewY(-5deg);
     -moz-transform: skewY(-5deg);
@@ -9540,7 +9536,7 @@ footer label{
   text-align: center;
   border-radius:1rem;
   min-height:25rem;
-  /* width:20rem; */
+  width:20rem;
   background:#000000;
   box-shadow: 15px 20px 12px 5px #333333;
   -webkit-box-shadow: 15px 20px 12px 5px #333333;
@@ -9588,7 +9584,7 @@ margin-top:5rem
   top: -12%;
 }
 .clock-holder .fa {
-    /* position: absolute;     */
+    position: relative;    
     background: #ffffff;
     padding: 1rem;
     border-radius: 100%;

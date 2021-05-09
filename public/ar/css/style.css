@@ -1620,7 +1620,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     min-height: 350px !important;
 }
 
-.about-breadcrumb-overlay:before {
+/* .about-breadcrumb-overlay:before {
     position: absolute;
     content: '';
     width: 40%;
@@ -1632,7 +1632,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     right: 35%;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 295px;
-}
+} */
 
 .about-breadcrumb-overlay:after {
     display: none;
@@ -2014,12 +2014,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     margin-left: 5px;
 }
 
-.contact-area .contact-top {
-    background: url(/img/bg/contact-top.png);
-    background-repeat: no-repeat;
-    background-position: 50% -20%;
+.contact-area .contact-top {    
     position: relative;
-    background-color: #E5E5E5;
+    background-color: #000000;
 }
 
 .contact-area .contact-top:before {
@@ -2028,7 +2025,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: #000;
 }
 
 .contact-area .contact-top .contact-title {
@@ -2039,7 +2036,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .contact-area .contact-top .contact-title .title {
     font-family: var(--body-font);
     text-align: center;
-    color: #161616;
+    color: #fff;
     font-size: 65px;
     letter-spacing: 1.63px;
     font-weight: 700;
@@ -2050,7 +2047,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-size: 18px;
     font-family: var(--body-font);
     text-align: center;
-    color: #161616;
+    color: #fff;
     line-height: 35px;
     letter-spacing: 0.45px;
     font-weight: 500;
@@ -2075,13 +2072,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .contact-form .form-group textarea {
     width: 100%;
     height: 58px;
-    border-radius: 4px;
-    border: 1px solid #BCBCBC;
-    background: transparent;
+    border-radius: 0px;
     padding-right: 35px;
     font-family: var(--body-font);
     font-weight: 400;
-    color: var(--paragraph-color);
     font-size: 18px;
 }
 
@@ -2155,12 +2149,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .contact-form input {
-    height: 25px;
+    height: 3rem;
     line-height: 25px;
-    padding: 0 6px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    border-radius:0px
 }
 
 .contact-form .error {
@@ -2782,8 +2776,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     # Nav bar
 ----------------------------------------------*/
 .navbar-area {
+    background:#000000;
     padding: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     z-index: 5;
@@ -2800,7 +2795,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .navbar-area .nav-container {
     background-color: transparent;
     max-width: 90%;
-    padding: 15px 0px;
+    padding:0px;
 }
 
 .navbar-area .nav-container .logo {
@@ -12804,7 +12799,7 @@ footer label {
 }
 
 .clock-holder .fa {
-    /* position: absolute;     */
+    position: relative;    
     background: #ffffff;
     padding: 1rem;
     border-radius: 100%;
@@ -12989,19 +12984,19 @@ iframe {
     .home-services .card,
     .kids-services .card {
         text-align: center;
-        border-radius: 1rem;
-        min-height: auto;
-        width: 100%;
-        background: #000000;
-        box-shadow: 0rem 1rem 1rem 5px #333333;
-        -webkit-box-shadow: 0rem 1rem 1rem 5px #333333;
-        -moz-box-shadow: 0rem 1rem 1rem 5px #333333;
-        margin-bottom: 5rem
+        border-radius:1rem;
+        min-height:25rem;
+        width:20rem;
+        background:#000000;
+        box-shadow: 15px 20px 12px 5px #333333;
+        -webkit-box-shadow: 15px 20px 12px 5px #333333;
+        -moz-box-shadow: 15px 20px 12px 5px #333333;
+        margin-bottom:5rem
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
 
     .about-box-underline,
     .box-underline,
@@ -13034,7 +13029,7 @@ iframe {
         -moz-box-shadow: 0rem 1rem 1rem 5px #333333;
         margin-bottom: 5rem
     }
-}
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
