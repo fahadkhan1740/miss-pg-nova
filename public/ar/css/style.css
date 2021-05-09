@@ -12793,9 +12793,8 @@ footer label {
 }
 
 .clock-holder {
-    position: absolute;
-    left: 41%;
-    top: -12%;
+    position: relative;
+    bottom: 4rem;
 }
 
 .clock-holder .fa {
