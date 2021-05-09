@@ -106,6 +106,4 @@ class Service extends Resource
     {
         return !(\App\Models\Service::query()->count() > 5);
     }
-
-    // TODO: Icon should overlay 50% on top
 }

@@ -144,6 +144,4 @@ class AboutUs extends Resource
     {
         return false;
     }
-
-    // TODO: Add black bar in navbar
 }
