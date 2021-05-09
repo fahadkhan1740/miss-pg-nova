@@ -72,7 +72,7 @@
     <!-- home explore start -->
     <div class="home-explore ">
         <div class="container">
-            <h2 class="display-6 box-underline">Memberships</h2>
+            <h2 class="display-6 box-underline">{{ __('custom.membership') }}</h2>
             <div class="row">
                 @foreach($memberships as $membership)
                 <div class="col-lg-3">
@@ -105,14 +105,14 @@
     <!-- home explore end -->
 
     <!-- partner-area start -->
-    
+
     <!-- partner-area end -->
-    
+
     <!-- pricing start -->
-    
+
     <!-- pricing end -->
     <!-- map-area start -->
-    <div class="container-fluid">        
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 no-gutter">
                 <div class="mapouter">

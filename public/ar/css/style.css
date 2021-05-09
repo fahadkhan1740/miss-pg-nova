@@ -2014,7 +2014,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     margin-left: 5px;
 }
 
-.contact-area .contact-top {    
+.contact-area .contact-top {
     position: relative;
     background-color: #000000;
 }
@@ -12794,11 +12794,11 @@ footer label {
 
 .clock-holder {
     position: relative;
-    bottom: 4rem;
+    bottom: 3rem;
 }
 
 .clock-holder .fa {
-    position: relative;    
+    position: relative;
     background: #ffffff;
     padding: 1rem;
     border-radius: 100%;
