@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Nova\AboutUs;
 use App\Nova\Branch;
 use App\Nova\Contact;
+use App\Nova\ContactForm;
 use App\Nova\Home;
 use App\Nova\HomeBanner;
 use App\Nova\KidsClub;
@@ -110,6 +111,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         'resources' => [
                             AboutUs::class,
                             Contact::class,
+                            ContactForm::class
                         ]
                     ]),
                     TopLevelResource::make([
