@@ -1,26 +1,26 @@
 <x-ar-master>
 
-    {{-- <!-- preloader area start -->
+{{-- <!-- preloader area start -->
 <div class="preloader" id="preloader">
-    <div class="preloader-inner">
-        <div class="spinner">
-            <div class="dot1"></div>
-            <div class="dot2"></div>
-        </div>
+<div class="preloader-inner">
+    <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
     </div>
 </div>
+</div>
 <!-- preloader area end --> --}}
-    <!-- banner start -->
+<!-- banner start -->
     {{-- <div class="banner-area banner-style-one" style="background-image:url({{ asset('storage/'.getHomeBackground()) }}">
     </div> --}}
     <div class="banner-area banner-style-one"
-    style="background-image:url({{ 'storage/'.getHomeBackground() }})">
+         style="background-image:url({{ 'storage/'.getHomeBackground() }})">
         <div class="banner-message">
             <h1 class="display-6">{{ $titles->title_ar }}</h1>
             <p class="lead">{!! $titles->sub_title_ar !!}</p>
             <p class="lead">
                 <button class="btn btn-success btn-md" href="Jumbo action link"
-                    role="button">{{ $titles->button_text_ar }}</button>
+                        role="button">{{ $titles->button_text_ar }}</button>
             </p>
         </div>
     </div>
@@ -51,18 +51,18 @@
             <h2 class="display-6 box-underline">{{ __('custom.home.services') }}</h2>
             <div class="row">
                 @foreach($services as $service)
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="{{ 'storage/'.$service->icon }}" alt=""
-                                style="bottom: 2rem;width: 5rem;position: relative">
-                            <h5 class="card-title">{{ $service->title_ar }}</h5>
-                            <div class="card-text overflow-card">
-                                {{ strlen($service->description_ar) > 100 ? substr($service->description_ar,5,500).'..' : $service->description_ar }}
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ 'storage/'.$service->icon }}" alt=""
+                                     style="bottom: 2rem;width: 5rem;position: relative">
+                                <h5 class="card-title">{{ $service->title_ar }}</h5>
+                                <div class="card-text overflow-card">
+                                    {{ strlen($service->description_ar) > 100 ? substr($service->description_ar,5,500).'..' : $service->description_ar }}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -75,29 +75,30 @@
             <h2 class="display-6 box-underline">{{ __('custom.membership') }}</h2>
             <div class="row">
                 @foreach($memberships as $membership)
-                <div class="col-lg-3">
-                    <div class="card">
-                        <div class="card-body" style="position: relative">
-                            <div class="clock-holder">
-                                <i class="fa fa-clock-o"></i>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body" style="position: relative">
+                                <div class="clock-holder">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                                <h5 class="card-title">{{ $membership->title_ar }}</h5>
+                                <p class="card-text">
+                                    {!! $membership->short_description_ar !!}
+                                </p>
+                                <hr>
+                                @foreach(explode(',',$membership->features_ar) as $item)
+                                    <p class="card-text">
+                                        {{ trim($item) }}
+                                    </p>
+                                @endforeach
+                                <hr>
                             </div>
-                            <h5 class="card-title">{{ $membership->title_ar }}</h5>
-                            <p class="card-text">
-                                {!! $membership->short_description_ar !!}
+                            <p class="lead">
+                                <a class="btn btn-custom btn-sm"
+                                   href="{{ route('memberships', ['locale' => app()->getLocale()]) }}" role="button">لنحاول</a>
                             </p>
-                            <hr>
-                            @foreach(explode(',',$membership->features_ar) as $item)
-                            <p class="card-text">
-                                {{ trim($item) }}
-                            </p>
-                            @endforeach
-                            <hr>
                         </div>
-                        <p class="lead">
-                            <a class="btn btn-custom btn-sm" href="{{ route('memberships', ['locale' => app()->getLocale()]) }}" role="button">لنحاول</a>
-                        </p>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -118,8 +119,8 @@
                 <div class="mapouter">
                     <div class="gmap_canvas">
                         <iframe width="100%" height="500" id="gmap_canvas"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13922.563150286602!2d48.0851024!3d29.2635096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1eb3e25c0af647c!2sMiss%20Platinum%20Health%20Club!5e0!3m2!1sen!2skw!4v1604780698705!5m2!1sen!2skw"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13922.563150286602!2d48.0851024!3d29.2635096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1eb3e25c0af647c!2sMiss%20Platinum%20Health%20Club!5e0!3m2!1sen!2skw!4v1604780698705!5m2!1sen!2skw"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">elementor
                             review</a>
                     </div>
@@ -133,43 +134,65 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-top">
+                    <div class="contact-top mb-10">
                         <div class="col-lg-12">
                             <div class="contact-title text-center">
-                                <h2 class="display-6 box-underline">Contact Us</h2>
-                                {{-- <h2 class="title">{{ __('custom.contact_us.drop_us_a_line') }}</h2> --}}
+                                <h2 class="display-6 box-underline">{{ __('custom.contact_us.drop_us_a_line') }}</h2>
                                 <p class="subtitle">{{ __('custom.contact_us.any_questions') }}</p>
                             </div>
                         </div>
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
+                        @if(Session::has('success'))
+                            <div class="alert alert-success">
+                                {{Session::get('success')}}
+                            </div>
+                        @endif
+
                         <div class="col-lg-10 offset-lg-1">
-                            <form class="contact-form row" action="" name="registration">
+                            <form class="row" method="post"
+                                  action="{{ route('contact.store', ['locale' => app()->getLocale()]) }}"
+                                  name="registration"
+                                  style="padding-top: 45px;padding-bottom: 70px;position: inherit;"
+                            >
+                                @csrf
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="" id="name"
-                                            aria-describedby="helpId" placeholder="Name*">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                               aria-describedby="helpId" placeholder="{{ __('auth.name') }}*">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" name="" id="name"
-                                            aria-describedby="helpId" placeholder="Email*">
+                                        <input type="email" class="form-control" name="email" id="name"
+                                               aria-describedby="helpId" placeholder="{{ __('custom.email') }}*">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" name="" id="name"
-                                            aria-describedby="helpId" placeholder="Mobile*">
+                                        <input type="tel" class="form-control" name="mobile" id="name"
+                                               aria-describedby="helpId"
+                                               placeholder="{{ __('custom.contact_us.phone') }}*">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="" id="" rows="3"
-                                            placeholder="Message*"></textarea>
+                                        <textarea class="form-control" name="message" id="" rows="3"
+                                                  placeholder="{{ __('custom.contact_us.submit_message') }}*"></textarea>
                                     </div>
                                 </div>
                                 <div class="btn-wrapper desktop-center margin-bottom-10" style="margin: 0 auto">
-                                    <button class="btn btn-success btn-md" href="Jumbo action link"
-                                        role="button">{{ $titles->button_text_ar }}</button>
+                                    <button class="btn btn-success btn-md" type="submit"
+                                            role="button">{{ __('custom.contact_us.submit_message') }}</button>
                                 </div>
                             </form>
                         </div>

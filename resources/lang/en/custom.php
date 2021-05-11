@@ -110,7 +110,8 @@ return [
         'submit_message' => 'Submit Message',
         'office_address' => 'Office Address',
         'email' => 'Email',
-        'phone' => 'Phone'
+        'phone' => 'Phone',
+        'success_message' => 'Your message has been submitted'
     ],
 
     'explore_life_fitness' => 'Explore life fitness',

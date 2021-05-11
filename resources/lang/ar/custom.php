@@ -110,7 +110,8 @@ return [
         'submit_message' => 'تقديم رسالة',
         'office_address' => 'عنوان المكتب',
         'email' => 'البريد الإلكتروني',
-        'phone' => 'رقم الهاتف'
+        'phone' => 'رقم الهاتف',
+        'success_message' => 'تم إرسال رسالتك'
     ],
 
     'explore_life_fitness' => 'Explore life fitness',
