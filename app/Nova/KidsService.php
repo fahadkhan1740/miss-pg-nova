@@ -62,9 +62,6 @@ class KidsService extends Resource
             Text::make('Description in Arabic', 'description_ar')
                 ->rules('required', 'string', 'min:10', 'max:500'),
 
-            Image::make('Icon')
-                ->rules('required'),
-
             Boolean::make('Status')
                 ->default(true)
         ];
