@@ -66,7 +66,8 @@ class Trainer extends Resource
 
             Image::make('Image')
                 ->deletable(false)
-                ->rules('required', 'mimes:png,jpg,jpeg')
+                ->creationRules('required', 'mimes:png,jpg,jpeg')
+                ->rules( 'mimes:png,jpg,jpeg')
                 ->hideFromIndex()
                 ->help('Please upload image of size 450x300px'),
 

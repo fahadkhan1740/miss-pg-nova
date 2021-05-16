@@ -22,13 +22,6 @@ class NewsEvents extends Resource
     public static $model = \App\Models\NewsEvents::class;
 
     /**
-     * Custom priority level of the resource.
-     *
-     * @var int
-     */
-    public static $priority = 6;
-
-    /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
@@ -80,7 +73,8 @@ class NewsEvents extends Resource
             Image::make('Banner', 'banner_path')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
+                ->disk('public')
+                ->deletable(false),
 
             Boolean::make('Is Published', 'status')->default(true),
         ];
