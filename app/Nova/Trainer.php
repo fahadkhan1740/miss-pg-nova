@@ -47,22 +47,22 @@ class Trainer extends Resource
             ID::make(__('ID'), 'id')->sortable(),
 
             Text::make('Name in English', 'name_en')
-                ->rules('required'),
+                ->rules('required', 'string', 'min:3', 'max:200'),
 
             Text::make('Name in Arabic', 'name_ar')
-                ->rules('required'),
+                ->rules('required', 'string', 'min:3', 'max:200'),
 
             Trix::make('Description in English', 'description_en')
-                ->rules('required'),
+                ->rules('required', 'string', 'min:5', 'max:1000'),
 
             Trix::make('Description in Arabic', 'description_ar')
-                ->rules('required'),
+                ->rules('required', 'string', 'min:5', 'max:1000'),
 
             Text::make('Tag In English', 'category_en')
-                ->rules('string'),
+                ->rules('string', 'string', 'min:3', 'max:200'),
 
             Text::make('Tag In Arabic', 'category_ar')
-                ->rules('string'),
+                ->rules('string', 'string', 'min:3', 'max:200'),
 
             Image::make('Image')
                 ->deletable(false)
