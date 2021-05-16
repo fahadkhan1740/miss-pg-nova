@@ -71,11 +71,11 @@ class AboutUs extends Resource
             Trix::make('History & Vision in English', 'history_vision_en'),
             Trix::make('History & Vision in Arabic', 'history_vision_ar'),
 
-            Trix::make('Mission in English', 'mission_en')->rules('min:5', 'max:500'),
-            Trix::make('Mission in Arabic', 'mission_ar')->rules('min:5', 'max:500'),
+            Trix::make('Mission in English', 'mission_en')->rules('min:5', 'max:1500'),
+            Trix::make('Mission in Arabic', 'mission_ar')->rules('min:5', 'max:1500'),
 
-            Trix::make('Core Values in English', 'core_values_en')->rules('min:5', 'max:500'),
-            Trix::make('Core Values in Arabic', 'core_values_ar')->rules('min:5', 'max:500'),
+            Trix::make('Core Values in English', 'core_values_en')->rules('min:5', 'max:1500'),
+            Trix::make('Core Values in Arabic', 'core_values_ar')->rules('min:5', 'max:1500'),
 
             Image::make('Image', 'image_path')->disk('public'),
         ];
