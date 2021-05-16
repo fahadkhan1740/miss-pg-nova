@@ -19,8 +19,8 @@
             <h1 class="display-6">{{ $titles->title_en }}</h1>
             <p class="lead">{!! $titles->sub_title_en !!}</p>
             <p class="lead">
-                <button class="btn btn-success btn-md" href="Jumbo action link"
-                        role="button">{{ $titles->button_text_en }}</button>
+                <a class="btn btn-success btn-md" href="#contactForm"
+                        role="button">{{ $titles->button_text_en }}</a>
             </p>
         </div>
     </div>
@@ -126,7 +126,7 @@
     <!-- contact area -->
     <div class="contact-area padding-top-100">
         <div class="container">
-            <div class="row">
+            <div class="row" id="contactForm">
                 <div class="col-lg-12">
                     <div class="contact-top">
                         <div class="col-lg-12">
