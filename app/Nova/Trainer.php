@@ -45,13 +45,31 @@ class Trainer extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make('Name in English', 'name_en')->rules('required'),
-            Text::make('Name in Arabic', 'name_ar')->rules('required'),
-            Trix::make('Description in English', 'description_en')->rules('required'),
-            Trix::make('Description in Arabic', 'description_ar')->rules('required'),
-            Text::make('Tag In English', 'category_en'),
-            Text::make('Tag In Arabic', 'category_ar'),
-            Image::make('Image'),
+
+            Text::make('Name in English', 'name_en')
+                ->rules('required'),
+
+            Text::make('Name in Arabic', 'name_ar')
+                ->rules('required'),
+
+            Trix::make('Description in English', 'description_en')
+                ->rules('required'),
+
+            Trix::make('Description in Arabic', 'description_ar')
+                ->rules('required'),
+
+            Text::make('Tag In English', 'category_en')
+                ->rules('string'),
+
+            Text::make('Tag In Arabic', 'category_ar')
+                ->rules('string'),
+
+            Image::make('Image')
+                ->deletable(false)
+                ->rules('required', 'mimes:png,jpg,jpeg')
+                ->hideFromIndex()
+                ->help('Please upload image of size 450x300px'),
+
         ];
     }
 
