@@ -24,7 +24,7 @@ class HomeController extends Controller
 
         $socialMediaLinks = SocialMediaLink::all();
 
-        $memberships = Membership::take(4)->get();
+        $memberships = Membership::active()->take(4)->get();
 
         return view(app()->getLocale().'.index')
             ->with('titles', $titles)
