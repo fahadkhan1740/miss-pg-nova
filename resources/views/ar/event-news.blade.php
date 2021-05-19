@@ -20,7 +20,7 @@
                 @foreach ($news as $new)
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="{{ $new->banner_path }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ 'storage/'.$new->banner_path }}" alt="Card image cap">
                         <div class="card-body pl-0">
                             <h6 class="card-subtitle text-white mb-2 text-right">{{ \Carbon\Carbon::parse($new->created_at)->locale('ar')->isoFormat('MMMM Do , YYYY') }}</h6>
                             <h5 class="card-title text-right">{{ $new->title_ar }}</h5>
