@@ -5,7 +5,7 @@
             <h1 class="page-title">{{ __('custom.links.terms_and_conditions') }}</h1>
             <ul class="page-list margin-bottom-4">
                 <li><a href="{{ route('home', ['locale' => 'en']) }}">{{ __('custom.links.home') }}</a></li>
-                <li><a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a>
+                <li><a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.terms_and_conditions') }}</a>
                 </li>
             </ul>
         </div>
