@@ -52,6 +52,7 @@ class PageBanner extends Resource
                     'kids-club' => 'Kids Club',
                     'news-events' => 'News & Events'
                 ])
+                ->displayUsingLabels()
                 ->creationRules('required', 'unique:page_banners,page')
                 ->rules('required')
                 ->readonly(function ($request) {
