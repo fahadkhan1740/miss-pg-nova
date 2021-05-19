@@ -56,7 +56,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-6">
-                            <img src="https://dummyimage.com/585x410/bdb9bd/474747.png">
+                            <img src="{{ 'storage/'.$membership->image }}" style="width: inherit">
                         </div>
                     </div>
                 @endif
