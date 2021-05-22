@@ -44,7 +44,8 @@
     <link rel="stylesheet" href="{{ mix('en/css/style.css') }}">
 
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 <!-- navbar start -->
@@ -90,7 +91,8 @@
                                     id="language-icon">
                             </a>
                         @else
-                            <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link" style="padding:1rem">
+                            <a href="{{ route(request()->route()->getName(), ['locale' => 'ar']) }}" class="nav-link"
+                               style="padding:1rem">
                                 <img
                                     src="https://icons.iconarchive.com/icons/wikipedia/flags/256/KW-Kuwait-Flag-icon.png"
                                     id="language-icon">
@@ -120,7 +122,9 @@
                             <li>
                                 <a href="{{ route('news-events', ['locale' => 'en']) }}">{{ __('custom.links.news_events') }}</a>
                             </li>
-                            <li><a href="{{ route('terms-and-conditions', ['locale' => 'en']) }}">{{ __('custom.links.terms_and_conditions') }}</a></li>
+                            <li>
+                                <a href="{{ route('terms-and-conditions', ['locale' => 'en']) }}">{{ __('custom.links.terms_and_conditions') }}</a>
+                            </li>
                             <li>
                                 <a href="{{ route('kids-club', ['locale' => 'en']) }}"> {{ __('custom.links.kids_club') }}</a>
                             </li>
