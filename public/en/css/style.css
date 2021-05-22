@@ -12967,3 +12967,14 @@ iframe {
         margin-right: 15rem
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .banner-message {
+        position: absolute;
+        color: #ffffff;
+        text-align: center;
+        padding: 0rem;
+        bottom: 80vw;
+        right: 0rem;
+    }
+}
