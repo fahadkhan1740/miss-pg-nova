@@ -115,9 +115,9 @@ body {
 }
 
 @media (max-width: 991px) {
-  body.m-home>div {
-      overflow-x: hidden;
-  }
+    body.m-home>div {
+        overflow-x: hidden;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1740,10 +1740,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 
 .breadcrumb-style-1 .breadcrumb-inner .page-list li {
@@ -12605,7 +12605,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .nice-select .option {
-  text-align: right;
+    text-align: right;
 }
 /* Custom CSS by rishabh */
 body {
@@ -12942,9 +12942,9 @@ iframe {
 
 /* trainer page end */
 /* responsiveness and fixes */
-.logo a img {    
+.logo a img {
     padding-top: 1rem;
-    padding-bottom: 1rem;    
+    padding-bottom: 1rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -13034,21 +13034,21 @@ iframe {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .logo a img {
-    height: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 15rem
-}
+        height: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 15rem
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .logo a img {
-    height: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 15rem
-}
+        height: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 15rem
+    }
 }
 
 /* responsiveness and fixes end */
