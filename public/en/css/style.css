@@ -12924,9 +12924,9 @@ iframe {
         position: absolute;
         color: #ffffff;
         text-align: center;
-        /* padding:6rem; */
+        padding: 0rem;
         bottom: 80vw;
-        left: 0rem;
+        right: 0rem;
     }
 
     footer {
@@ -12965,16 +12965,5 @@ iframe {
         padding-top: 1rem;
         padding-bottom: 1rem;
         margin-right: 15rem
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .banner-message {
-        position: absolute;
-        color: #ffffff;
-        text-align: center;
-        padding: 0rem;
-        bottom: 80vw;
-        right: 0rem;
     }
 }
