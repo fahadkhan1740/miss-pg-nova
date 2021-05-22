@@ -9707,10 +9707,8 @@ border-top: 2px solid #ffffff
 /* trainer page end */
 /* responsiveness and fixes */
 .logo a img{
-  height:5rem;
-  padding-top:1rem;
-  padding-bottom:1rem;
-  margin-right:15rem
+    padding-top:1rem;
+    padding-bottom:1rem;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -9749,4 +9747,23 @@ footer{
   -moz-box-shadow: 0rem 1rem 1rem 5px #333333;
   margin-bottom:5rem
 }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .logo a img {
+        height: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-right: 15rem
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .logo a img {
+        height: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-right: 15rem
+    }
 }

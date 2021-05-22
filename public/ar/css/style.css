@@ -12942,11 +12942,9 @@ iframe {
 
 /* trainer page end */
 /* responsiveness and fixes */
-.logo a img {
-    height: 5rem;
+.logo a img {    
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 15rem
+    padding-bottom: 1rem;    
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -13034,9 +13032,23 @@ iframe {
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .logo a img {
+    height: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 15rem
+}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .logo a img {
+    height: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 15rem
+}
+}
 
 /* responsiveness and fixes end */
