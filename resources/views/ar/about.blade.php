@@ -39,7 +39,7 @@
 
     <!-- project-counter start -->
     <div class="container-fluid">
-        <div class="container padding-top-165 padding-bottom-50">
+        <div class="container padding-top-50 padding-bottom-50">
             <div class="row ">
                 <div class="col-lg-12">
                     <h2 class="display-6 box-underline">مهمتنا</h2>
