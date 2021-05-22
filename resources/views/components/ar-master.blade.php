@@ -114,19 +114,19 @@
     <footer>
         <div class="container">
             <div class="row ">
-                <div class="col-lg-4" style="text-align:center">
-                    {{-- Social Icons --}}
-                    <span class="social-icons">
-                        @foreach(getSocialMediaLinks() as $link)
-                        <a href="{{ $link->link }}" target="_blank"><i class="{{ $link->icon }}" aria-hidden="true"></i></a>
-                        @endforeach
-                    </span>
-                </div>
-                <div class="col-lg-4">
-                </div>                                
                 <div class="col-lg-4">
                     {{-- links --}}
                     <div class="row">
+                        <div class="col-lg-5">
+                            <ul>
+                                <li><a href="{{ route('home', ['locale' => 'ar']) }}">{{ __('custom.links.home') }}</a></li>
+                                <li>
+                                    <a href="{{ route('memberships', ['locale' => 'ar']) }}">{{ __('custom.links.memberships_packages') }}</a>
+                                </li>
+                                <li><a href="{{ route('about', ['locale' => 'ar']) }}">{{ __('custom.links.about') }}</a>
+                                </li>
+                            </ul>                            
+                        </div>
                         <div class="col-lg-7">
                             <ul>
                                 <li>
@@ -141,18 +141,17 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-5">
-                            <ul>
-<li><a href="{{ route('home', ['locale' => 'ar']) }}">{{ __('custom.links.home') }}</a></li>
-<li>
-    <a href="{{ route('memberships', ['locale' => 'ar']) }}">{{ __('custom.links.memberships_packages') }}</a>
-</li>
-<li><a href="{{ route('about', ['locale' => 'ar']) }}">{{ __('custom.links.about') }}</a>
-</li>
-                            </ul>
-                        </div>
-
                     </div>
+                </div>
+                <div class="col-lg-4">
+                </div>                
+                <div class="col-lg-4" style="text-align:center">
+                    {{-- Social Icons --}}
+                    <span class="social-icons">
+                        @foreach(getSocialMediaLinks() as $link)
+                        <a href="{{ $link->link }}" target="_blank"><i class="{{ $link->icon }}" aria-hidden="true"></i></a>
+                        @endforeach
+                    </span>
                 </div>                
             </div>
         </div>
