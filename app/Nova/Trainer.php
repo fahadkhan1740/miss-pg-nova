@@ -70,7 +70,6 @@ class Trainer extends Resource
                 ->deletable(false)
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules( 'mimes:png,jpg,jpeg')
-                ->hideFromIndex()
                 ->help('Please upload image of size 450x300px'),
 
         ];
