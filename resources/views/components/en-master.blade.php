@@ -80,7 +80,7 @@
                         <a href="{{ route('kids-club', ['locale' => 'en']) }}" class="nav-link">Kids Club</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('news-events', ['locale' => 'en']) }}" class="nav-link">News n Events</a>
+                        <a href="{{ route('news-events', ['locale' => 'en']) }}" class="nav-link">News & Events</a>
                     </li>
                     <li class="nav-item">
                         @if(request()->route()->getName() === 'news-events.show')

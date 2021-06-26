@@ -73,7 +73,7 @@ return [
         'about' => 'About Us',
         'branches' => 'Branches',
         'memberships_packages' => 'Memberships',
-        'personal_training' => 'Personal Training',
+        'personal_training' => 'Training',
         'kids_club' => 'Kids Club',
         'news_events' => 'News & Events',
         'terms_and_conditions' => 'Terms & Conditions',
