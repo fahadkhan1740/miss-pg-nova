@@ -49,12 +49,14 @@ class Setting extends Resource
             Image::make('Logo')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
+                ->disk('public')
+                ->deletable(false),
 
             Image::make('Home Background')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
+                ->disk('public')
+                ->deletable(false),
         ];
     }
 
