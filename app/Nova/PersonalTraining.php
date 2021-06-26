@@ -38,9 +38,7 @@ class PersonalTraining extends Resource
      *
      * @var array
      */
-    public static $search = [
-        'id', 'title'
-    ];
+    public static $search = [];
 
     /**
      * Get the fields displayed by the resource.
