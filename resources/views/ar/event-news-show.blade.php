@@ -46,8 +46,8 @@
                                                     alt=""></a>
                                         </div>
                                         <div class="content-part">
-                                            <h4>{{ $new->title }}</h4>
-                                            <span class="text">{{ substr($new->short_description,0, 50) }}...</span>
+                                            <h4>{{ $new->title_ar }}</h4>
+                                            <span class="text">{{ substr($new->short_description_ar,0, 50) }}...</span>
                                         </div>
                                     </div>
                                 @endforeach

@@ -106,7 +106,7 @@ return [
 
     'contact_us' => [
         'drop_us_a_line' => 'Drop Us A Line',
-        'any_questions' => 'If you got any questions, or you just want to say hello to us. feel free to send us a message',
+        'any_questions' => 'If you got any questions, or you just want to say hello to us. Feel free to send us a message.',
         'submit_message' => 'Submit Message',
         'office_address' => 'Office Address',
         'email' => 'Email',

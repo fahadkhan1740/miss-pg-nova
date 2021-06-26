@@ -41,14 +41,16 @@
                                 </div>
                                 @foreach($latestNews as $new)
                                     <div class="share-img-item">
-                                        <div class="img-part">
-                                            <a href="blog-details.html"><img src="{{ $new->banner_path }}"
-                                                                             alt=""></a>
-                                        </div>
-                                        <div class="content-part">
-                                            <h4>{{ $new->title_en }}</h4>
-                                            <span class="text">{{ substr($new->short_description_en,0, 50) }}...</span>
-                                        </div>
+                                        <a href="{{ route('news-events.show', ['id' => $new->id, 'locale' => app()->getLocale()]) }}">
+                                            <div class="img-part">
+                                                <a href="blog-details.html"><img src="{{ 'storage/'.$new->banner_path }}"
+                                                                                 alt=""></a>
+                                            </div>
+                                            <div class="content-part">
+                                                <h4>{{ $new->title_en }}</h4>
+                                                <span class="text">{{ substr($new->short_description_en,0, 50) }}...</span>
+                                            </div>
+                                        </a>
                                     </div>
                                 @endforeach
                             </div>
