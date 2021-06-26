@@ -72,7 +72,6 @@ class Membership extends Resource
             Image::make('Image')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules('mimes:png,jpg,jpeg')
-                ->hideFromIndex()
                 ->deletable(false)
                 ->help('Please upload image of size 585x410px'),
 
