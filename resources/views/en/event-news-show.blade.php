@@ -43,8 +43,7 @@
                                     <div class="share-img-item">
                                         <a href="{{ route('news-events.show', ['id' => $new->id, 'locale' => app()->getLocale()]) }}">
                                             <div class="img-part">
-                                                <a href="blog-details.html"><img src="{{ 'storage/'.$new->banner_path }}"
-                                                                                 alt=""></a>
+                                                <img src="{{ asset('storage/'.$new->banner_path) }}" alt="">
                                             </div>
                                             <div class="content-part">
                                                 <h4>{{ $new->title_en }}</h4>

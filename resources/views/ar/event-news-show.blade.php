@@ -40,15 +40,17 @@
                                 </div>
                                 @foreach($latestNews as $new)
                                     <div class="share-img-item">
+                                            <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}">
                                         <div class="img-part">
-                                            <a href="{{ route('news-events.show', ['locale' => app()->getLocale(), 'id' => $new->id]) }}"><img
+                                                <img
                                                     src="{{ asset('storage/'.$new->banner_path) }}"
-                                                    alt=""></a>
+                                                    alt="">
                                         </div>
                                         <div class="content-part">
                                             <h4>{{ $new->title_ar }}</h4>
                                             <span class="text">{{ substr($new->short_description_ar,0, 50) }}...</span>
                                         </div>
+                                            </a>
                                     </div>
                                 @endforeach
                             </div>
