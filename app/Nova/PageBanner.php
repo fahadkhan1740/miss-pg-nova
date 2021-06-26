@@ -48,7 +48,7 @@ class PageBanner extends Resource
                 ->options([
                     'about-us' => 'About Us',
                     'memberships' => 'Memberships',
-                    'personal-training' => 'Personal Training',
+                    'personal-training' => 'Training',
                     'kids-club' => 'Kids Club',
                     'news-events' => 'News & Events',
                     'terms-conditions' => 'Terms & Conditions'

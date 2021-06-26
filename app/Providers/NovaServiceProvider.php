@@ -127,7 +127,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         ]
                     ]),
                     TopLevelResource::make([
-                        'label' => 'Trainers',
+                        'label' => 'Training',
                         'resources' => [
                             Trainer::class,
                         ]
