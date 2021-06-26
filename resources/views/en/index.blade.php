@@ -73,40 +73,42 @@
     <!-- home service end -->
 
     <!-- home explore start -->
-    <div class="home-explore ">
-        <div class="container">
-            <h2 class="display-6 box-underline">Memberships</h2>
-            <div class="row">
-                @foreach($memberships as $membership)
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <div class="card-body" style="position: relative">
-                                <div class="clock-holder">
-                                    <i class="fa fa-clock-o"></i>
-                                </div>
-                                <h5 class="card-title">{{ $membership->title_en }}</h5>
-                                <p class="card-text">
-                                    {!! $membership->short_description_en !!}
-                                </p>
-                                <hr>
-                                @foreach(explode(',',$membership->features_en) as $item)
+    @if(count($memberships) > 0)
+        <div class="home-explore ">
+            <div class="container">
+                <h2 class="display-6 box-underline">Memberships</h2>
+                <div class="row">
+                    @foreach($memberships as $membership)
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-body" style="position: relative">
+                                    <div class="clock-holder">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <h5 class="card-title">{{ $membership->title_en }}</h5>
                                     <p class="card-text">
-                                        {{ trim($item) }}
+                                        {!! $membership->short_description_en !!}
                                     </p>
-                                @endforeach
-                                <hr>
+                                    <hr>
+                                    @foreach(explode(',',$membership->features_en) as $item)
+                                        <p class="card-text">
+                                            {{ trim($item) }}
+                                        </p>
+                                    @endforeach
+                                    <hr>
+                                </div>
+                                <p class="lead">
+                                    <a class="btn btn-custom btn-sm"
+                                       href="{{ route('memberships', ['locale' => app()->getLocale()]) }}" role="button">Let's
+                                        Try</a>
+                                </p>
                             </div>
-                            <p class="lead">
-                                <a class="btn btn-custom btn-sm"
-                                   href="{{ route('memberships', ['locale' => app()->getLocale()]) }}" role="button">Let's
-                                    Try</a>
-                            </p>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
         </div>
-    </div>
+    @endif
     <!-- home explore end -->
     <!-- map-area start -->
     <div class="container-fluid">
