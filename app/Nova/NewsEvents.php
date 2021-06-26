@@ -74,7 +74,7 @@ class NewsEvents extends Resource
                 ->rules('required', 'string', 'min:10', 'max:2000')
                 ->hideFromIndex(),
 
-            Image::make('Banner', 'banner_path')
+            Image::make('Image', 'banner_path')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules('mimes:png,jpg,jpeg')
                 ->disk('public')
