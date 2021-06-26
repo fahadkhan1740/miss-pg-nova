@@ -149,7 +149,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         'label' => 'Settings',
                         'resources' => [
                             Setting::class,
-                            Branch::class,
+//                            Branch::class,
                             SocialMediaLink::class,
                             TermsAndConditions::class,
                             PageBanner::class
