@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -46,10 +47,16 @@ class TermsAndConditions extends Resource
             ID::make(__('ID'), 'id')->sortable(),
 
             Trix::make('Description in English', 'description_en')
-                ->rules('required'),
+                ->rules('required')
+                ->displayUsing(function ($text) {
+                    return Str::limit($text, 30);
+                }),
 
             Trix::make('Description in Arabic', 'description_ar')
-                ->rules('required'),
+                ->rules('required')
+                ->displayUsing(function ($text) {
+                    return Str::limit($text, 30);
+                }),
         ];
     }
 
