@@ -47,11 +47,11 @@ class Service extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Text::make('Title in English', 'title_en')->required(true),
-            Text::make('Title in Arabic', 'title_ar')->required(true),
+            Text::make('Title (English)', 'title_en')->required(true),
+            Text::make('Title (Arabic)', 'title_ar')->required(true),
 
-            Textarea::make('Description in English', 'description_en')->required(true),
-            Textarea::make('Description in Arabic', 'description_ar')->required(true),
+            Textarea::make('Description (English)', 'description_en')->required(true),
+            Textarea::make('Description (Arabic)', 'description_ar')->required(true),
 
             Image::make('Icon')->disk('public'),
             Boolean::make('Status')->default(true)

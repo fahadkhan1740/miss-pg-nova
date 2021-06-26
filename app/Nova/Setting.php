@@ -41,7 +41,10 @@ class Setting extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
+            ID::make(__('ID'), 'id')
+                ->sortable()
+                ->hideFromIndex()
+                ->hideFromDetail(),
 
             Image::make('Logo')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')

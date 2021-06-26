@@ -59,23 +59,23 @@ class AboutUs extends Resource
                 ->hideFromIndex()
                 ->hideFromDetail(),
 
-            Text::make('Title in English', 'title_en')->rules('string'),
-            Text::make('Title in Arabic', 'title_ar')->rules('string'),
+            Text::make('Title (English)', 'title_en')->rules('string'),
+            Text::make('Title (Arabic)', 'title_ar')->rules('string'),
 
-            Text::make('Sub Title in English', 'sub_title_en')->rules('string'),
-            Text::make('Sub Title in Arabic', 'sub_title_ar')->rules('string'),
+            Text::make('Sub Title (English)', 'sub_title_en')->rules('string'),
+            Text::make('Sub Title (Arabic)', 'sub_title_ar')->rules('string'),
 
-            Trix::make('Overview in English', 'overview_en')->alwaysShow(),
-            Trix::make('Overview in Arabic', 'overview_ar')->alwaysShow(),
+            Trix::make('Overview (English)', 'overview_en')->alwaysShow(),
+            Trix::make('Overview (Arabic)', 'overview_ar')->alwaysShow(),
 
-            Trix::make('History & Vision in English', 'history_vision_en'),
-            Trix::make('History & Vision in Arabic', 'history_vision_ar'),
+            Trix::make('History & Vision (English)', 'history_vision_en'),
+            Trix::make('History & Vision (Arabic)', 'history_vision_ar'),
 
-            Trix::make('Mission in English', 'mission_en')->rules('min:5', 'max:1500'),
-            Trix::make('Mission in Arabic', 'mission_ar')->rules('min:5', 'max:1500'),
+            Trix::make('Mission (English)', 'mission_en')->rules('min:5', 'max:1500'),
+            Trix::make('Mission (Arabic)', 'mission_ar')->rules('min:5', 'max:1500'),
 
-            Trix::make('Core Values in English', 'core_values_en')->rules('min:5', 'max:1500'),
-            Trix::make('Core Values in Arabic', 'core_values_ar')->rules('min:5', 'max:1500'),
+            Trix::make('Core Values (English)', 'core_values_en')->rules('min:5', 'max:1500'),
+            Trix::make('Core Values (Arabic)', 'core_values_ar')->rules('min:5', 'max:1500'),
 
             Image::make('Image', 'image_path')->disk('public'),
         ];

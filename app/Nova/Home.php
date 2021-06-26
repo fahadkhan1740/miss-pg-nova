@@ -47,24 +47,27 @@ class Home extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
+            ID::make(__('ID'), 'id')
+                ->sortable()
+                ->hideFromIndex()
+                ->hideFromDetail(),
 
-            Text::make('Title in English', 'title_en')
+            Text::make('Title (English)', 'title_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Title in Arabic', 'title_ar')
+            Text::make('Title (Arabic)', 'title_ar')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Trix::make('Sub Title in English', 'sub_title_en')
+            Trix::make('Sub Title (English)', 'sub_title_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Trix::make('Sub Title in Arabic', 'sub_title_ar')
+            Trix::make('Sub Title (Arabic)', 'sub_title_ar')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Button Text in English', 'button_text_en')
+            Text::make('Button Text (English)', 'button_text_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Button Text in Arabic', 'button_text_ar')
+            Text::make('Button Text (Arabic)', 'button_text_ar')
                 ->rules('required', 'string', 'min:3', 'max:100')
         ];
     }

@@ -47,24 +47,24 @@ class Membership extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Text::make('English Title', 'title_en')
+            Text::make('Title (English)', 'title_en')
                 ->rules('required'),
 
-            Text::make('Arabic Title', 'title_ar')
+            Text::make('Title (Arabic)', 'title_ar')
                 ->rules('required'),
 
-            Trix::make('English Short Description', 'short_description_en')
+            Trix::make('Short Description (English)', 'short_description_en')
                 ->rules('required'),
 
-            Trix::make('Arabic Short Description', 'short_description_ar')
+            Trix::make('Short Description (Arabic)', 'short_description_ar')
                 ->rules('required'),
 
-            Text::make('English Features', 'features_en')
+            Text::make('Features (English)', 'features_en')
                 ->placeholder('Enter comma separated values')
                 ->rules('required')
                 ->hideFromIndex(),
 
-            Text::make('Arabic Features', 'features_ar')
+            Text::make('Features (Arabic)', 'features_ar')
                 ->placeholder('Enter comma separated values')
                 ->rules('required')
                 ->hideFromIndex(),

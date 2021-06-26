@@ -50,17 +50,19 @@ class KidsService extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Text::make('Title in English', 'title_en')
+            Text::make('Title (English)', 'title_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Title in Arabic', 'title_ar')
+            Text::make('Title (Arabic)', 'title_ar')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Description in English', 'description_en')
-                ->rules('required', 'string', 'min:10', 'max:500'),
+            Text::make('Description (English)', 'description_en')
+                ->rules('required', 'string', 'min:10', 'max:500')
+                ->hideFromIndex(),
 
-            Text::make('Description in Arabic', 'description_ar')
-                ->rules('required', 'string', 'min:10', 'max:500'),
+            Text::make('Description (Arabic)', 'description_ar')
+                ->rules('required', 'string', 'min:10', 'max:500')
+                ->hideFromIndex(),
 
             Boolean::make('Status')
                 ->default(true)

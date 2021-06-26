@@ -52,23 +52,27 @@ class NewsEvents extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Text::make('Title in English', 'title_en')
+            Text::make('Title (English)', 'title_en')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Text::make('Title in Arabic', 'title_ar')
+            Text::make('Title (Arabic)', 'title_ar')
                 ->rules('required', 'string', 'min:3', 'max:100'),
 
-            Textarea::make('Short Description in English', 'short_description_en')
-                ->rules('required', 'string', 'max:255'),
+            Textarea::make('Short Description (English)', 'short_description_en')
+                ->rules('required', 'string', 'max:255')
+                ->hideFromIndex(),
 
-            Textarea::make('Short Description in Arabic', 'short_description_ar')
-                ->rules('required', 'string', 'max:255'),
+            Textarea::make('Short Description (Arabic)', 'short_description_ar')
+                ->rules('required', 'string', 'max:255')
+                ->hideFromIndex(),
 
-            Trix::make('Long Description in English', 'long_description_en')
-                ->rules('required', 'string', 'min:10', 'max:2000'),
+            Trix::make('Long Description (English)', 'long_description_en')
+                ->rules('required', 'string', 'min:10', 'max:2000')
+                ->hideFromIndex(),
 
-            Trix::make('Long Description in Arabic', 'long_description_ar')
-                ->rules('required', 'string', 'min:10', 'max:2000'),
+            Trix::make('Long Description (Arabic)', 'long_description_ar')
+                ->rules('required', 'string', 'min:10', 'max:2000')
+                ->hideFromIndex(),
 
             Image::make('Banner', 'banner_path')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
