@@ -47,27 +47,29 @@
     <!-- home-about end -->
 
     <!-- home service start -->
-    <div class="home-services padding-top-100 padding-bottom-94">
-        <div class="container">
-            <h2 class="display-6 box-underline">Our Services</h2>
-            <div class="row">
-                @foreach($services as $service)
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ 'storage/'.$service->icon }}" alt=""
-                                     style="bottom: 2rem;width: 5rem;position: relative">
-                                <h5 class="card-title">{{ $service->title_en }}</h5>
-                                <div class="card-text overflow-card">
-                                    {{ strlen($service->description_en) > 100 ? substr($service->description_en,5,500).'..' : $service->description_en }}
+    @if(count($services) > 0)
+        <div class="home-services padding-top-100 padding-bottom-94">
+            <div class="container">
+                <h2 class="display-6 box-underline">Our Services</h2>
+                <div class="row">
+                    @foreach($services as $service)
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="{{ 'storage/'.$service->icon }}" alt=""
+                                         style="bottom: 2rem;width: 5rem;position: relative">
+                                    <h5 class="card-title">{{ $service->title_en }}</h5>
+                                    <div class="card-text overflow-card">
+                                        {{ strlen($service->description_en) > 100 ? substr($service->description_en,5,500).'..' : $service->description_en }}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
         </div>
-    </div>
+    @endif
     <!-- home service end -->
 
     <!-- home explore start -->
