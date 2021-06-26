@@ -71,7 +71,7 @@
                         <a href="{{ route('about', ['locale' => 'en']) }}" class="nav-link active">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('memberships', ['locale' => 'en']) }}" class="nav-link">Membership</a>
+                        <a href="{{ route('memberships', ['locale' => 'en']) }}" class="nav-link">Memberships</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('personal-training', ['locale' => 'en']) }}" class="nav-link">Training</a>

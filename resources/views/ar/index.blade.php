@@ -59,7 +59,7 @@
                                          style="bottom: 2rem;width: 5rem;position: relative">
                                     <h5 class="card-title">{{ $service->title_ar }}</h5>
                                     <div class="card-text overflow-card">
-                                        {{ strlen($service->description_ar) > 100 ? substr($service->description_ar,5,500).'..' : $service->description_ar }}
+                                        {{ strlen($service->description_ar) > 100 ? substr($service->description_ar,500).'..' : $service->description_ar }}
                                     </div>
                                 </div>
                             </div>
