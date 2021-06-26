@@ -59,10 +59,12 @@ class Trainer extends Resource
                 ->rules('required', 'string', 'min:5', 'max:1000'),
 
             Text::make('Tag (English)', 'category_en')
-                ->rules('string', 'string', 'min:3', 'max:200'),
+                ->rules('string', 'string', 'min:3', 'max:200')
+                ->hideFromIndex(),
 
             Text::make('Tag (Arabic)', 'category_ar')
-                ->rules('string', 'string', 'min:3', 'max:200'),
+                ->rules('string', 'string', 'min:3', 'max:200')
+                ->hideFromIndex(),
 
             Image::make('Image')
                 ->deletable(false)
