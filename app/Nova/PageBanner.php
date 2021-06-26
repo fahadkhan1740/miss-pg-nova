@@ -50,7 +50,8 @@ class PageBanner extends Resource
                     'memberships' => 'Memberships',
                     'personal-training' => 'Personal Training',
                     'kids-club' => 'Kids Club',
-                    'news-events' => 'News & Events'
+                    'news-events' => 'News & Events',
+                    'terms-conditions' => 'Terms & Conditions'
                 ])
                 ->displayUsingLabels()
                 ->creationRules('required', 'unique:page_banners,page')

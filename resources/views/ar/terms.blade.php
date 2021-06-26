@@ -1,6 +1,7 @@
 <x-ar-master>
     <!-- breadcrumb area -->
-    <div class="breadcrumb-style-1" style="background-image:url(assets/img/bg/blog-details.png);">
+    <div class="breadcrumb-style-1"
+         style="background-image:url({{ 'storage/'.getBanner('terms-conditions') }});">
         <div class="breadcrumb-inner">
             <h1 class="page-title">{{ __('custom.links.terms_and_conditions') }}</h1>
             <ul class="page-list margin-bottom-4">
