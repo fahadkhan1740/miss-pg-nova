@@ -78,7 +78,8 @@ class NewsEvents extends Resource
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules('mimes:png,jpg,jpeg')
                 ->disk('public')
-                ->deletable(false),
+                ->deletable(false)
+                ->help('Please upload image of size 370x230px'),
 
             Boolean::make('Is Published', 'status')->default(true),
         ];

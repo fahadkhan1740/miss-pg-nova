@@ -66,7 +66,8 @@ class KidsFeature extends Resource
             Image::make('Image', 'image_path')
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules('mimes:png,jpg,jpeg')
-                ->disk('public'),
+                ->disk('public')
+                ->help('Please upload image of size 370x230px'),
 
             Boolean::make('Status')
                 ->default(true)
