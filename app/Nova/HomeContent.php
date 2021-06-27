@@ -5,26 +5,25 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
-use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class AboutUs extends Resource
+class HomeContent extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Models\AboutUs::class;
+    public static $model = \App\Models\HomeContent::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'title_en';
 
     /**
      * The columns that should be searched.
@@ -32,17 +31,12 @@ class AboutUs extends Resource
      * @var array
      */
     public static $search = [
-        'id',
         'title_en',
         'sub_title_en',
         'overview_en',
-        'mission_en',
-        'core_values_en',
         'title_ar',
         'sub_title_ar',
         'overview_ar',
-        'mission_ar',
-        'core_values_ar',
     ];
 
     /**
@@ -67,15 +61,6 @@ class AboutUs extends Resource
 
             Trix::make('Overview (English)', 'overview_en')->alwaysShow(),
             Trix::make('Overview (Arabic)', 'overview_ar')->alwaysShow(),
-
-            Trix::make('History & Vision (English)', 'history_vision_en'),
-            Trix::make('History & Vision (Arabic)', 'history_vision_ar'),
-
-            Trix::make('Mission (English)', 'mission_en')->rules('min:5', 'max:1500'),
-            Trix::make('Mission (Arabic)', 'mission_ar')->rules('min:5', 'max:1500'),
-
-            Trix::make('Core Values (English)', 'core_values_en')->rules('min:5', 'max:1500'),
-            Trix::make('Core Values (Arabic)', 'core_values_ar')->rules('min:5', 'max:1500'),
 
             Image::make('Image', 'image_path')
                 ->deletable(false)
@@ -132,17 +117,17 @@ class AboutUs extends Resource
 
     public static function label(): string
     {
-        return 'About Us';
+        return 'Content';
     }
 
     public static function singularLabel()
     {
-        return 'About Us';
+        return 'Content';
     }
 
     public static function authorizedToCreate(Request $request): bool
     {
-        return !(\App\Models\AboutUs::query()->count() > 0);
+        return !(\App\Models\HomeContent::query()->count() > 0);
     }
 
     public function authorizedToDelete(Request $request): bool

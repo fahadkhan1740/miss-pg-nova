@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AboutUs;
 use App\Models\Home;
 use App\Models\HomeBanner;
+use App\Models\HomeContent;
 use App\Models\Membership;
 use App\Models\Service;
 use App\Models\SocialMediaLink;
@@ -18,7 +19,7 @@ class HomeController extends Controller
 
         $homeBanners = HomeBanner::locale(app()->getLocale())->get();
 
-        $aboutUs = AboutUs::first();
+        $homeContent = HomeContent::first();
 
         $services = Service::active()->take(6)->get();
 
@@ -29,7 +30,7 @@ class HomeController extends Controller
         return view(app()->getLocale().'.index')
             ->with('titles', $titles)
             ->with('banners', $homeBanners)
-            ->with('aboutUs', $aboutUs)
+            ->with('homeContent', $homeContent)
             ->with('services', $services)
             ->with('socialMediaLinks', $socialMediaLinks)
             ->with('memberships', $memberships);

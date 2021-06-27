@@ -8,6 +8,7 @@ use App\Nova\Contact;
 use App\Nova\ContactForm;
 use App\Nova\Home;
 use App\Nova\HomeBanner;
+use App\Nova\HomeContent;
 use App\Nova\KidsClub;
 use App\Nova\KidsFeature;
 use App\Nova\KidsService;
@@ -104,6 +105,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         'label' => 'Home',
                         'resources' => [
                             Home::class,
+                            HomeContent::class
                         ]
                     ]),
                     TopLevelResource::make([

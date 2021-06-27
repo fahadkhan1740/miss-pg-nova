@@ -31,13 +31,13 @@
         <div class="container">
             <div class="row row-eq-height">
                 <div class="col-lg-6 px-md-5">
-                    <img src="{{ 'storage/'.$aboutUs->image_path }}"
+                    <img src="{{ 'storage/'.$homeContent->image_path }}"
                          alt="">
                 </div>
                 <div class="col-lg-6 px-md-5">
-                    <h2 class="display-6 box-underline">{{ $aboutUs->title_en }}</h2>
-                    <h4 class="display-6">{{ $aboutUs->sub_title_en }}</h4>
-                    <div class="card-text">{!! $aboutUs->overview_en !!}
+                    <h2 class="display-6 box-underline">{{ $homeContent->title_en }}</h2>
+                    <h4 class="display-6">{{ $homeContent->sub_title_en }}</h4>
+                    <div class="card-text">{!! $homeContent->overview_en !!}
                     </div>
                 </div>
 
