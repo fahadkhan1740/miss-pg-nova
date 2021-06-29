@@ -1714,7 +1714,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .breadcrumb-style-1 .breadcrumb-inner {
     position: absolute;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
     top: 50%;
     right: 50%;
