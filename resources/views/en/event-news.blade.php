@@ -20,7 +20,7 @@
                 @foreach ($news as $new)
                     <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="{{ 'storage/'.$new->banner_path }}"
+                            <img class="card-img-top h-10rem" src="{{ 'storage/'.$new->banner_path }}"
                                  alt="Card image cap">
                             <div class="card-body pl-0">
                                 <h6 class="card-subtitle text-white mb-2">{{ $new->created_at->format('d M, Y') }}</h6>

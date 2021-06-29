@@ -13062,3 +13062,18 @@ iframe {
     }
 }
 /* responsiveness and fixes end */
+.text-clip{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.three-text-line{
+    height: 4rem;
+    overflow:hidden        
+}
+.tnc-colors h1 strong{
+    color:#fff;
+}
+.h-10rem{
+height:10rem;
+}

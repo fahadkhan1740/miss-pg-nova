@@ -19,14 +19,14 @@
             <div class="row mb-5">
                 @foreach ($news as $new)
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="{{ 'storage/'.$new->banner_path }}" alt="Card image cap">
+                    <div class="card">
+                        <img class="card-img-top h-10rem" src="{{ 'storage/'.$new->banner_path }}" alt="Card image cap">
                         <div class="card-body pl-0">
-                            <h6 class="card-subtitle text-white mb-2 text-right">{{ \Carbon\Carbon::parse($new->created_at)->locale('ar')->isoFormat('MMMM Do , YYYY') }}</h6>
-                            <h5 class="card-title text-right">{{ $new->title_ar }}</h5>
-                            <p class="card-text text-right">{!! $new->short_description_ar !!}</p>
+                            <h6 class="card-subtitle text-white mb-2">{{ \Carbon\Carbon::parse($new->created_at)->locale('ar')->isoFormat('MMMM Do , YYYY') }}</h6>
+                            <h5 class="card-title text-clip">{{ $new->title_ar }}</h5>
+                            <p class="card-text three-text-line">{!! $new->short_description_ar !!}</p>
                             <a href="{{ route('news-events.show', ['id' => $new->id, 'locale' => app()->getLocale()]) }}"
-                                class="btn btn-sm btn-success pl-4 pr-4 pt-2 pb-2 mt-4 float-right">اقرأ أكثر</a>
+                                class="btn btn-sm btn-success pl-4 pr-4 pt-2 pb-2 mt-4">اقرأ أكثر</a>
                         </div>
                     </div>
                 </div>
