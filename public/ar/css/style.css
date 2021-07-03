@@ -1714,7 +1714,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .breadcrumb-style-1 .breadcrumb-inner {
     position: absolute;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
     top: 50%;
     right: 50%;
@@ -13062,3 +13062,18 @@ iframe {
     }
 }
 /* responsiveness and fixes end */
+.text-clip{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.three-text-line{
+    height: 4rem;
+    overflow:hidden        
+}
+.tnc-colors h1 strong{
+    color:#fff;
+}
+.h-10rem{
+height:10rem;
+}

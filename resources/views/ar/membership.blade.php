@@ -42,7 +42,7 @@
             </div>
             @else
             <div class="row no-gutter">
-                <div class="col-lg-6 pr-5 pt-3">
+                <div class="col-lg-6 pl-3 pt-3">
                     <h4 class="text-success">{{ $membership->title_ar }}</h4>
                     <p class="text-right">
                         {!! $membership->short_description_ar !!}

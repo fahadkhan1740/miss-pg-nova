@@ -18,7 +18,7 @@
         <main id="main" class="site-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 tnc-colors">
                         {!! $terms->description_en !!}
                     </div>
                 </div>
