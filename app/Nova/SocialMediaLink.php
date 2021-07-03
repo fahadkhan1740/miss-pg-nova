@@ -49,10 +49,19 @@ class SocialMediaLink extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Text::make('Title')->required(true),
-            Fontawesome::make('Icon')->rules('required'),
-            Text::make('Link')->rules('required', 'url'),
+            ID::make(__('ID'), 'id')
+                ->sortable(),
+
+            Text::make('Title')
+                ->required(true),
+
+            Fontawesome::make('Icon')
+                ->rules('required')
+                ->defaultIcon('far', 'check-circle')
+                ->persistDefaultIcon(),
+
+            Text::make('Link')
+                ->rules('required', 'url'),
         ];
     }
 

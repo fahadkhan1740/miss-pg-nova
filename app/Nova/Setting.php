@@ -56,7 +56,8 @@ class Setting extends Resource
                 ->creationRules('required', 'mimes:png,jpg,jpeg')
                 ->rules('mimes:png,jpg,jpeg')
                 ->disk('public')
-                ->deletable(false),
+                ->deletable(false)
+                ->help('Please upload image of size 1900x850px'),
         ];
     }
 
